@@ -85,7 +85,7 @@ class StyleGuide < ProMotion::SectionedTableScreen
   end
 
   def open_style(args={})
-  	open Detail.new(args)
+  	open DetailScreen.new(args)
   end
 
   def open_info_screen(args={})

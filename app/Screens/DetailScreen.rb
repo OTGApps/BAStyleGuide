@@ -1,4 +1,4 @@
-class Detail < PM::Screen
+class DetailScreen < PM::Screen
 
   attr_accessor :name, :path
 
