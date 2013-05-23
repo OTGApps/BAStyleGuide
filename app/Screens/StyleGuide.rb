@@ -1,6 +1,6 @@
 class StyleGuide < ProMotion::SectionedTableScreen
-  searchable
   title "Back"
+  searchable :placeholder => "Search Styles"
 
   def will_appear
     self.setTitle("Brewers Association", subtitle:"2013 Style Guides")
