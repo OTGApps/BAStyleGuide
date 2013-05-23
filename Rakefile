@@ -18,11 +18,12 @@ Motion::Project::App.setup do |app|
   app.pods do
   	# pod 'NUI'
   	pod 'FlurrySDK'
-	end
+  end
+
 end
 
 #Rake Tasks
-desc "Compile the assets from slim->html"
+desc "Compile the guidelines from slim->html"
 task :compile do
   puts "Compiling resources..."
   puts
