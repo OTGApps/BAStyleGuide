@@ -16,29 +16,8 @@ class StyleGuide < ProMotion::SectionedTableScreen
   	@table_setup ||= begin
       s = []
 
-      # Intro section
-      s << {
-        title: nil,
-        cells:
-        [{
-          title: "Introduction",
-          action: :open_style,
-          arguments: {
-            :path => File.join(guidelines_path, "intro.html"),
-            :name => "Introduction"
-          }
-        }]
-      }
-
-      # Judging Tools
-      s << {
-        title: "Judging Tools",
-        cells:
-        [{
-          title: "Flavor Wheel",
-          action: :open_flavor_wheel
-        }]
-      }
+      s << introduction_section
+      s << judging_tools_section
 
       sections.each do |section|
     		s << {
@@ -46,7 +25,8 @@ class StyleGuide < ProMotion::SectionedTableScreen
     			cells: build_cells(section)
     		}
     	end
-    	s
+
+      s << bibliography_section
     end
   end
 
@@ -63,6 +43,47 @@ class StyleGuide < ProMotion::SectionedTableScreen
   	 c
   end
 
+  def judging_tools_section
+    {
+      title: "Judging Tools",
+      cells:
+      [{
+        title: "Flavor Wheel",
+        action: :open_flavor_wheel
+      }]
+    }
+  end
+
+  def introduction_section
+    {
+      title: nil,
+      cells:
+      [{
+        title: "Introduction",
+        action: :open_style,
+        arguments: {
+          :path => File.join(guidelines_path, "Introduction.html"),
+          :name => "Introduction"
+        }
+      }]
+    }
+  end
+
+  def bibliography_section
+    {
+      title: nil,
+      cells:
+      [{
+        title: "Bibliography",
+        action: :open_style,
+        arguments: {
+          :path => File.join(guidelines_path, "Bibliography of Resources.html"),
+          :name => "Bibliography"
+        }
+      }]
+    }
+  end
+
   def open_style(args={})
   	open Detail.new(args)
   end
@@ -70,6 +91,11 @@ class StyleGuide < ProMotion::SectionedTableScreen
   def open_info_screen(args={})
     ap args
     ap "Opening info screen"
+  end
+
+  def open_flavor_wheel(args={})
+    ap args
+    ap "Opening flavor wheel screen"
   end
 
   def open_srm(args={})
