@@ -15,3 +15,5 @@ gem "rake", '>= 0.9.4'
 # Development
 gem 'awesome_print_motion'
 gem 'motion-blow' # https://github.com/derailed/motion-blow
+
+gem 'slim'

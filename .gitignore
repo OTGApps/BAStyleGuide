@@ -20,3 +20,5 @@ vendor/*/build-*
 vendor/Pods
 vendor/Podfile.lock
 vendor/**/*.bridgesupport
+
+/resources/Guidelines/

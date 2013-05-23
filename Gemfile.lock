@@ -56,6 +56,11 @@ GEM
       netrc (~> 0.7.7)
     open4 (1.3.0)
     rake (10.0.4)
+    slim (1.1.1)
+      temple (~> 0.4.0)
+      tilt (~> 1.3.2)
+    temple (0.4.1)
+    tilt (1.3.3)
     xcodeproj (0.5.5)
       activesupport (~> 3.2.13)
       colored (~> 1.2)
@@ -72,3 +77,4 @@ DEPENDENCIES
   motion-cocoapods (~> 1.3.0)
   motion-inappmail
   rake (>= 0.9.4)
+  slim
