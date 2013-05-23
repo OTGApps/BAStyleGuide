@@ -16,16 +16,28 @@ class StyleGuide < ProMotion::SectionedTableScreen
   	@table_setup ||= begin
       s = []
 
-      # Intro esction
+      # Intro section
       s << {
         title: nil,
-        cells: {
-          [{
-            title: "Introduction",
-            action: :open_style,
-            arguments: {:path => File.join(guidelines_path, "introduction.html"), :name => "Introduction"}
-            }]
-        }
+        cells:
+        [{
+          title: "Introduction",
+          action: :open_style,
+          arguments: {
+            :path => File.join(guidelines_path, "introduction.html"),
+            :name => "Introduction"
+          }
+        }]
+      }
+
+      # Judging Tools
+      s << {
+        title: "Judging Tools",
+        cells:
+        [{
+          title: "Flavor Wheel",
+          action: :open_flavor_wheel
+        }]
       }
 
       sections.each do |section|
