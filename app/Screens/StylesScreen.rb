@@ -1,4 +1,4 @@
-class StyleGuide < ProMotion::SectionedTableScreen
+class StylesScreen < ProMotion::SectionedTableScreen
   title "Back"
   searchable :placeholder => "Search Styles"
 
@@ -71,7 +71,7 @@ class StyleGuide < ProMotion::SectionedTableScreen
 
   def bibliography_section
     {
-      title: nil,
+      title: "Extras",
       cells:
       [{
         title: "Bibliography",
