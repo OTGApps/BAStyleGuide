@@ -24,7 +24,7 @@ class StyleGuide < ProMotion::SectionedTableScreen
           title: "Introduction",
           action: :open_style,
           arguments: {
-            :path => File.join(guidelines_path, "introduction.html"),
+            :path => File.join(guidelines_path, "intro.html"),
             :name => "Introduction"
           }
         }]
