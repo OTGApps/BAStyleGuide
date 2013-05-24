@@ -22,3 +22,4 @@ vendor/Podfile.lock
 vendor/**/*.bridgesupport
 
 /resources/Guidelines/
+/provisioning/
