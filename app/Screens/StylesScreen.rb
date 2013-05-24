@@ -94,8 +94,7 @@ class StylesScreen < ProMotion::SectionedTableScreen
   end
 
   def open_info_screen(args={})
-    ap "Opening info screen"
-    App.alert("You actually thought this would DO something??")
+    open DetailScreen.new(:path => File.join(guidelines_path, "Info.html"), :name => "About")
   end
 
   def open_flavor_wheel(args={})
