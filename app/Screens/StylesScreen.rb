@@ -91,6 +91,7 @@ class StylesScreen < ProMotion::SectionedTableScreen
   def open_info_screen(args={})
     ap args
     ap "Opening info screen"
+    App.alert("You actually thought this would DO something??")
   end
 
   def open_flavor_wheel(args={})
