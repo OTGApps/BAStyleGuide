@@ -94,8 +94,8 @@ class StylesScreen < ProMotion::SectionedTableScreen
   end
 
   def open_flavor_wheel(args={})
-    ap args
     ap "Opening flavor wheel screen"
+    open FlavorWheelScreen.new
   end
 
   def open_srm(args={})

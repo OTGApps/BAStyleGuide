@@ -14,11 +14,14 @@ Motion::Project::App.setup do |app|
   app.identifier = "com.mohawkapps.BAStyleGuide"
   app.version = "1"
   app.short_version = "1.0.0"
+  app.frameworks += ['CoreGraphics', "QuartzCore"]
 
   app.pods do
   	# pod 'NUI'
   	pod 'FlurrySDK'
   end
+
+  app.vendor_project('vendor/CircularUIImageView', :static, :cflags => '-fobjc-arc')
 
   app.development do
     app.entitlements['get-task-allow'] = true

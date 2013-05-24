@@ -7,7 +7,6 @@ gem "cocoapods"
 # RubyMotion
 gem 'bubble-wrap', :git => 'https://github.com/rubymotion/BubbleWrap', :require => ['bubble-wrap/core']
 gem 'ProMotion'
-gem 'motion-inappmail' #Easy to send mails
 
 # Rubygems
 gem "rake", '>= 0.9.4'
