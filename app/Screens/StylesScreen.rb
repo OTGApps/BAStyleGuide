@@ -33,7 +33,6 @@ class StylesScreen < ProMotion::SectionedTableScreen
   def build_cells(path)
       c = []
     	category_listing(path).each do |style|
-    		ap style
         c << {
     			title: style.format_title,
     			action: :open_style,
@@ -89,7 +88,6 @@ class StylesScreen < ProMotion::SectionedTableScreen
   end
 
   def open_info_screen(args={})
-    ap args
     ap "Opening info screen"
     App.alert("You actually thought this would DO something??")
   end
@@ -105,7 +103,6 @@ class StylesScreen < ProMotion::SectionedTableScreen
 
   def sections
   	Dir.entries(guidelines_path).select{|d|
-  		ap File.join(guidelines_path, d)
       File.directory?(File.join(guidelines_path, d)) and not_dotfile(d)
   	}
   end
