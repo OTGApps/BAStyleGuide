@@ -1,4 +1,4 @@
-# Brewers Alliance Style Guides
+# Brewers Association Style Guides
 ### A [RubyMotion](http://www.rubymotion.com/) application brought to you by [Mohawk Apps](http://www.mohawkapps.com/).
 
 ## How to run the app:
