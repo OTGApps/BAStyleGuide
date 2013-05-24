@@ -10,18 +10,17 @@ Motion::Project::App.setup do |app|
   # Use `rake config' to see complete project settings.
   app.name = 'BA Styles'
   app.deployment_target = "5.0"
-  app.device_family = [:iphone, :ipad]
+  app.device_family = [:iphone]
   app.identifier = "com.mohawkapps.BAStyleGuide"
-  app.version = "1"
-  app.short_version = "0.0.1"
-  app.frameworks += ['CoreGraphics', "QuartzCore"]
+  app.version = "2"
+  app.short_version = "0.0.2"
 
   app.pods do
   	pod 'FlurrySDK'
     pod 'TestFlightSDK'
   end
 
-  app.vendor_project('vendor/CircularUIImageView', :static, :cflags => '-fobjc-arc')
+  app.vendor_project('vendor/KTOneFingerRotationGestureRecognizer', :static, :cflags => '-fobjc-arc')
 
   app.development do
     app.entitlements['get-task-allow'] = true

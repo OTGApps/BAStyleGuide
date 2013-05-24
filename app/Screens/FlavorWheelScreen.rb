@@ -8,14 +8,21 @@ class FlavorWheelScreen < PM::Screen
 
       view.backgroundColor = UIColor.whiteColor
 
-      @wheel = add CircularUIImageView.alloc.initWithImage(UIImage.imageNamed("flavor_wheel.png")), {
+      @wheel = add UIImageView.alloc.initWithImage(UIImage.imageNamed("flavor_wheel.png")), {
         frame: CGRectMake(10, 10, view.frame.size.height * 1.75, view.frame.size.height * 1.75),
         content_mode: UIViewContentModeScaleAspectFit,
         userInteractionEnabled: true,
-        continueSpinning: false
       }
 
+      rotateGesture = KTOneFingerRotationGestureRecognizer.alloc.initWithTarget(self, action:"rotating:")
+      @wheel.addGestureRecognizer(rotateGesture)
+
     end
+  end
+
+  def rotating(recognizer)
+    view = recognizer.view
+    view.setTransform(CGAffineTransformRotate(view.transform, recognizer.rotation))
   end
 
 end
