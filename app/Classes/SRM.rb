@@ -308,4 +308,21 @@ class SRM
 		UIColor.colorWithRed(@@matrix[value.to_s][0], green:@@matrix[value.to_s][1], blue:@@matrix[value.to_s][2], alpha:1)
 	end
 
+	def self.imageWithSRM(value, andSize:size)
+		# size expects a CGSize
+    color = SRM.color(value)
+
+    rect = CGRectMake(0.0, 0.0, size.width, size.height)
+    UIGraphicsBeginImageContext(rect.size)
+    context = UIGraphicsGetCurrentContext()
+
+    CGContextSetFillColorWithColor(context, color.CGColor)
+    CGContextFillRect(context, rect)
+
+    image = UIGraphicsGetImageFromCurrentImageContext()
+    UIGraphicsEndImageContext()
+
+    image
+	end
+
 end
