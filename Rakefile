@@ -12,8 +12,8 @@ Motion::Project::App.setup do |app|
   app.deployment_target = "5.0"
   app.device_family = [:iphone]
   app.identifier = "com.mohawkapps.BAStyleGuide"
-  app.version = "2"
-  app.short_version = "0.0.2"
+  app.version = "3"
+  app.short_version = "0.0.3"
 
   app.pods do
   	pod 'FlurrySDK'
