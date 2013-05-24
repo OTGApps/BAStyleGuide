@@ -8,9 +8,8 @@ class DetailScreen < PM::Screen
 
   def will_appear
     @view_loaded ||= begin
-
-      ap self.path
       self.view = UIWebView.new
+      self.view.delegate = self
 
       content_string = File.read(self.path)
       baseURL = NSURL.fileURLWithPath(App.resources_path)
@@ -35,6 +34,15 @@ class DetailScreen < PM::Screen
 
       self.view.loadHTMLString(content_string, baseURL:baseURL)
     end
+  end
+
+  #Open UIWebView delegate links in Safari.
+  def webView(inWeb, shouldStartLoadWithRequest:inRequest, navigationType:inType)
+    if inType == UIWebViewNavigationTypeLinkClicked
+      UIApplication.sharedApplication.openURL(inRequest.URL)
+      return false #don't allow the web view to load the link.
+    end
+    true #return true for local file loading.
   end
 
 end
