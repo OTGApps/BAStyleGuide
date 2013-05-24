@@ -13,11 +13,10 @@ Motion::Project::App.setup do |app|
   app.device_family = [:iphone, :ipad]
   app.identifier = "com.mohawkapps.BAStyleGuide"
   app.version = "1"
-  app.short_version = "1.0.0"
+  app.short_version = "0.0.1"
   app.frameworks += ['CoreGraphics', "QuartzCore"]
 
   app.pods do
-  	# pod 'NUI'
   	pod 'FlurrySDK'
     pod 'TestFlightSDK'
   end
@@ -31,7 +30,7 @@ Motion::Project::App.setup do |app|
   end
 
   app.testflight do
-    app.entitlements['get-task-allow'] = true
+    app.entitlements['get-task-allow'] = false
     app.codesign_certificate = "iPhone Distribution: Mohawk Apps, LLC (DW9QQZR4ZL)"
     app.provisioning_profile = "./provisioning/BAStyleGuideAdhoc.mobileprovision"
   end
