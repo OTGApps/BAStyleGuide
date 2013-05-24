@@ -35,6 +35,7 @@ class StylesScreen < ProMotion::SectionedTableScreen
     	category_listing(path).each do |style|
         c << {
     			title: style.format_title,
+          cell_identifier: "StyleCell",
     			action: :open_style,
     			arguments: {:path => File.join(guidelines_path, path, style), :name => style.format_title}
     		}
@@ -48,6 +49,8 @@ class StylesScreen < ProMotion::SectionedTableScreen
       cells:
       [{
         title: "Flavor Wheel",
+        cell_identifier: "ImagedCell",
+        image: { image: UIImage.imageNamed("flavor_wheel_thumb.png") },
         action: :open_flavor_wheel
       }]
     }
@@ -59,6 +62,8 @@ class StylesScreen < ProMotion::SectionedTableScreen
       cells:
       [{
         title: "Introduction",
+        cell_identifier: "ImagedCell",
+        image: { image: UIImage.imageNamed("ba_logo_thumb.png") },
         action: :open_style,
         arguments: {
           :path => File.join(guidelines_path, "Introduction.html"),
@@ -74,6 +79,7 @@ class StylesScreen < ProMotion::SectionedTableScreen
       cells:
       [{
         title: "Bibliography",
+        cell_identifier: "StyleCell",
         action: :open_style,
         arguments: {
           :path => File.join(guidelines_path, "Bibliography of Resources.html"),
