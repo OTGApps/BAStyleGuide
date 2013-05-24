@@ -11,8 +11,9 @@ class DetailScreen < PM::Screen
 
       ap self.path
       self.view = UIWebView.new
-      request = NSURLRequest.requestWithURL(NSURL.fileURLWithPath(self.path))
-      self.view.loadRequest request
+
+      baseURL = NSURL.fileURLWithPath(App.resources_path)
+      self.view.loadHTMLString(File.read(self.path), baseURL:baseURL)
     end
   end
 
