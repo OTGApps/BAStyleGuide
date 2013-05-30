@@ -129,6 +129,16 @@ class StylesScreen < ProMotion::SectionedTableScreen
     open SRMScreen.new
   end
 
+  def open_srm_analyzer_screen(args={})
+    App.alert("Not Implemented Yet")
+    return
+    if analyzer_unlocked?
+      open SRMAnalyzerScreen.new
+    else
+      open SRMAnalyzerDemoScreen.new
+    end
+  end
+
   def sections
   	Dir.entries(guidelines_path).select{|d|
       File.directory?(File.join(guidelines_path, d)) and not_dotfile(d)

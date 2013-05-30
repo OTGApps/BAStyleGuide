@@ -18,7 +18,8 @@ Motion::Project::App.setup do |app|
   app.pods do
   	pod 'FlurrySDK'
     pod 'TestFlightSDK'
-  end
+    pod 'CMPopTipView', :podspec => 'vendor/specs/CMPopTip.podspec'
+end
 
   app.vendor_project('vendor/KTOneFingerRotationGestureRecognizer', :static, :cflags => '-fobjc-arc')
 

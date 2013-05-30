@@ -24,11 +24,50 @@ class SRMScreen < PM::Screen
       #   @srm_views << v
       # end
 
-      view.when_panned do |thing|
-        ap thing
+      view.when_panned do |gesture|
+        got_touch_point gesture.locationInView(view.superview)
       end
 
     end
+  end
+
+  def got_touch_point(cgpoint)
+    total_height = Device.screen.height_for_orientation(Device.orientation) - 44
+    total_steps = SRM.major_steps.count + 1
+    step_height = total_height / total_steps
+
+    srm = (cgpoint.y / step_height).to_i + 1
+    ap srm
+
+    srm_string = "     #{srm.to_s}     "
+
+    @indicators_initialized ||= begin
+      @srm_indicator = CMPopTipView.alloc.initWithTitle("SRM:", message:"")
+      @srm_indicator.delegate = nil
+      @srm_indicator.disableTapToDismiss = true
+      @srm_indicator.dismissTapAnywhere = false
+      @srm_indicator.titleAlignment = UITextAlignmentCenter
+      @srm_indicator.textAlignment = UITextAlignmentCenter
+
+      @transient_view = add UIView.new
+    end
+
+    if srm > total_steps / 2
+      text_color = UIColor.whiteColor
+    else
+      text_color = UIColor.blackColor
+    end
+
+    set_attributes @srm_indicator, {
+      message: srm_string,
+      backgroundColor: SRM.color(srm),
+      textColor: text_color,
+      titleColor: text_color
+    }
+
+    @transient_view.frame = CGRectMake(cgpoint.x, cgpoint.y, 1, 1)
+
+    @srm_indicator.presentPointingAtView(@transient_view, inView:view, animated:false)
   end
 
   def willRotateToInterfaceOrientation(orientation, duration:duration)

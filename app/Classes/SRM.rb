@@ -305,7 +305,7 @@ class SRM
 	}
 
 	def self.color(value)
-		UIColor.colorWithRed(@@matrix[value.to_s][0], green:@@matrix[value.to_s][1], blue:@@matrix[value.to_s][2], alpha:1)
+		BubbleWrap.rgb_color(@@matrix[value.to_s][0], @@matrix[value.to_s][1], @@matrix[value.to_s][2])
 	end
 
 	def self.cgcolor(value)
