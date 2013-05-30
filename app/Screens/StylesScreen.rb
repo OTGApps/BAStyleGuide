@@ -50,15 +50,31 @@ class StylesScreen < ProMotion::SectionedTableScreen
       [{
         title: "Flavor Wheel",
         cell_identifier: "ImagedCell",
-        image: { image: UIImage.imageNamed("flavor_wheel_thumb.png") },
-        action: :open_flavor_wheel
+        image: "flavor_wheel_thumb.png",
+        action: :open_flavor_wheel,
+        searchable: false
       },{
         title: "SRM Spectrum",
         cell_identifier: "ImagedCell",
-        image: { image: UIImage.imageNamed("srm_spectrum_thumb.png") },
-        action: :open_srm_screen
+        image: "srm_spectrum_thumb.png",
+        action: :open_srm_screen,
+        search_help_text: "color"
+      },{
+        title: "SRM Analyzer",
+        cell_identifier: "ImagedCell",
+        image: { image: analyzer_image },
+        action: :open_srm_analyzer_screen,
+        search_help_text: "color"
       }]
     }
+  end
+
+  def analyzer_unlocked?
+    false
+  end
+
+  def analyzer_image
+    analyzer_unlocked? ? "eyedropper.png" : "lock.png"
   end
 
   def introduction_section
