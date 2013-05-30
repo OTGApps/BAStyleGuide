@@ -58,13 +58,13 @@ class StylesScreen < ProMotion::SectionedTableScreen
         cell_identifier: "ImagedCell",
         image: "srm_spectrum_thumb.png",
         action: :open_srm_screen,
-        search_help_text: "color"
+        search_text: "color"
       },{
         title: "SRM Analyzer",
         cell_identifier: "ImagedCell",
         image: analyzer_image,
         action: :open_srm_analyzer_screen,
-        search_help_text: "color"
+        search_text: "color"
       }]
     }
   end
