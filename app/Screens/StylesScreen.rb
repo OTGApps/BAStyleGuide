@@ -51,14 +51,28 @@ class StylesScreen < ProMotion::SectionedTableScreen
         title: "Flavor Wheel",
         cell_identifier: "ImagedCell",
         image: { image: UIImage.imageNamed("flavor_wheel_thumb.png") },
-        action: :open_flavor_wheel
+        action: :open_flavor_wheel,
+        # searchable: false
       },{
         title: "SRM Spectrum",
         cell_identifier: "ImagedCell",
         image: { image: UIImage.imageNamed("srm_spectrum_thumb.png") },
         action: :open_srm_screen
+      },{
+        title: "SRM Analyzer",
+        cell_identifier: "ImagedCell",
+        image: { image: analyzer_image },
+        action: :open_srm_analyzer_screen
       }]
     }
+  end
+
+  def analyzer_unlocked?
+    false
+  end
+
+  def analyzer_image
+    analyzer_unlocked? ? UIImage.imageNamed("eyedropper.png") : UIImage.imageNamed("lock.png")
   end
 
   def introduction_section
@@ -111,6 +125,14 @@ class StylesScreen < ProMotion::SectionedTableScreen
 
   def open_srm_screen(args={})
     open SRMScreen.new
+  end
+
+  def open_srm_analyzer_screen(args={})
+    if analyzer_unlocked?
+      open SRMAnalyzerScreen.new
+    else
+      open SRMAnalyzerDemoScreen.new
+    end
   end
 
   def sections
