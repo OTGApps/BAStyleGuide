@@ -52,6 +52,11 @@ class StylesScreen < ProMotion::SectionedTableScreen
         cell_identifier: "ImagedCell",
         image: { image: UIImage.imageNamed("flavor_wheel_thumb.png") },
         action: :open_flavor_wheel
+      },{
+        title: "SRM Spectrum",
+        cell_identifier: "ImagedCell",
+        image: { image: UIImage.imageNamed("srm_spectrum_thumb.png") },
+        action: :open_srm_screen
       }]
     }
   end
@@ -98,12 +103,11 @@ class StylesScreen < ProMotion::SectionedTableScreen
   end
 
   def open_flavor_wheel(args={})
-    ap "Opening flavor wheel screen"
     open FlavorWheelScreen.new
   end
 
-  def open_srm(args={})
-    ap "Opening srm screen"
+  def open_srm_screen(args={})
+    open SRMScreen.new
   end
 
   def sections

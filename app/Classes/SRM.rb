@@ -308,6 +308,11 @@ class SRM
 		UIColor.colorWithRed(@@matrix[value.to_s][0], green:@@matrix[value.to_s][1], blue:@@matrix[value.to_s][2], alpha:1)
 	end
 
+	def self.cgcolor(value)
+		c = SRM.color(value)
+		c.CGColor
+	end
+
 	def self.imageWithSRM(value, andSize:size)
 		# size expects a CGSize
     color = SRM.color(value)
@@ -323,6 +328,19 @@ class SRM
     UIGraphicsEndImageContext()
 
     image
+	end
+
+	def self.major_steps
+		@@matrix.select {|key, value| !key.include? "."  }
+	end
+
+	def self.spectrum
+		colors = []
+		@@matrix.each do |key, value|
+		# SRM.major_steps.each do |key, value|
+			colors << UIColor.colorWithRed(value[0].to_f/255.0, green:value[1].to_f/255.0, blue:value[2].to_f/255.0, alpha:1.0).CGColor
+		end
+		colors
 	end
 
 end
