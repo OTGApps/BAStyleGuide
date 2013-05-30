@@ -23,6 +23,11 @@ class SRMScreen < PM::Screen
       #   v.setBackgroundColor srm_color
       #   @srm_views << v
       # end
+
+      view.when_panned do |thing|
+        ap thing
+      end
+
     end
   end
 
@@ -30,10 +35,12 @@ class SRMScreen < PM::Screen
     self.will_rotate(orientation, duration)
 
     if [UIInterfaceOrientationPortrait, UIInterfaceOrientationPortraitUpsideDown].include? orientation
-      @gradient.frame = CGRectMake(0, 0, 320, 480)
+      orientation = :portrait
     else
-      @gradient.frame = CGRectMake(0, 0, 480, 320)
+      orientation = :landscape_left
     end
+
+    @gradient.frame = CGRectMake(0, 0, Device.screen.width_for_orientation(orientation), Device.screen.height_for_orientation(orientation) - 44)
 
   end
 

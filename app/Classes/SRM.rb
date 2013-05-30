@@ -338,7 +338,7 @@ class SRM
 		colors = []
 		@@matrix.each do |key, value|
 		# SRM.major_steps.each do |key, value|
-			colors << UIColor.colorWithRed(value[0].to_f/255.0, green:value[1].to_f/255.0, blue:value[2].to_f/255.0, alpha:1.0).CGColor
+			colors << BubbleWrap.rgb_color(value[0], value[1], value[2].to_f).CGColor
 		end
 		colors
 	end
