@@ -99,7 +99,10 @@ class StylesScreen < ProMotion::SectionedTableScreen
   end
 
   def open_info_screen(args={})
-    open DetailScreen.new(:path => File.join(guidelines_path, "Info.html"), :name => "About")
+    open DetailScreen.new(
+      :path => File.join(guidelines_path, "Info.html"),
+      :name => "About"
+    )
   end
 
   def open_flavor_wheel(args={})
