@@ -24,4 +24,18 @@ class UIImage
   	end
 	end
 
+	def crop(rect)
+    if self.scale > 1.0
+			rect = CGRectMake(
+				rect.origin.x * self.scale,
+				rect.origin.y * self.scale,
+				rect.size.width * self.scale,
+				rect.size.height * self.scale
+			)
+    end
+
+		imageRef = CGImageCreateWithImageInRect(self.CGImage, rect)
+		UIImage.imageWithCGImage(imageRef, scale:self.scale, orientation:self.imageOrientation)
+  end
+
 end
