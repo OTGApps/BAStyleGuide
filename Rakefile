@@ -12,13 +12,14 @@ Motion::Project::App.setup do |app|
   app.deployment_target = "5.0"
   app.device_family = [:iphone]
   app.identifier = "com.mohawkapps.BAStyleGuide"
-  app.version = "3"
-  app.short_version = "0.0.3"
+  app.version = "4"
+  app.short_version = "0.0.4"
 
   app.pods do
   	pod 'FlurrySDK'
     pod 'TestFlightSDK'
-  end
+    pod 'CMPopTipView', :podspec => 'vendor/specs/CMPopTip.podspec'
+end
 
   app.vendor_project('vendor/KTOneFingerRotationGestureRecognizer', :static, :cflags => '-fobjc-arc')
 
