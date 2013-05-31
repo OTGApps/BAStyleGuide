@@ -12,6 +12,10 @@ class StylesScreen < ProMotion::SectionedTableScreen
     set_nav_bar_right_button UIImage.imageNamed("info.png"), action: :open_info_screen
   end
 
+  # def on_appear
+  #   open_srm_analyzer_screen
+  # end
+
   def table_data
   	@table_setup ||= begin
       s = []
