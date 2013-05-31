@@ -11,6 +11,8 @@ class SRMAnalyzerScreen < PM::Screen
       layerRect = self.view.layer.bounds
       @captureManager.previewLayer.setBounds(layerRect)
       @captureManager.previewLayer.setPosition(CGPointMake(CGRectGetMidX(layerRect), CGRectGetMidY(layerRect)))
+      view.setBackgroundColor UIColor.whiteColor
+      set_nav_bar_left_button "Done", action: :close_modal, type: UIBarButtonItemStyleDone
 
       view.layer.addSublayer(@captureManager.previewLayer)
 
@@ -60,6 +62,10 @@ class SRMAnalyzerScreen < PM::Screen
 
   def hideLabel(label)
     label.setHidden(true)
+  end
+
+  def close_modal
+    close
   end
 
 end

@@ -131,7 +131,7 @@ class StylesScreen < ProMotion::SectionedTableScreen
 
   def open_srm_analyzer_screen(args={})
     if analyzer_unlocked?
-      open SRMAnalyzerScreen.new
+      open SRMAnalyzerScreen.new, {modal:true, nav_bar:true}
     else
       open SRMAnalyzerDemoScreen.new
     end
