@@ -5,28 +5,39 @@ class SRMScreen < PM::Screen
   def will_appear
     @view_loaded ||= begin
       # view.setBackgroundColor UIColor.redColor
+      @top_view_height = 44
 
       @srm_views ||= []
-      steps = SRM.spectrum
-      height = (self.view.frame.size.height) / steps.count
+      height = self.view.frame.size.height - @top_view_height
+
+      @gradient_view = add UIView.new, {
+        frame: CGRectMake(0, @top_view_height, self.view.frame.size.width, height),
+      }
+      @gradient_view.setBackgroundColor UIColor.whiteColor
+
 
       @gradient = CAGradientLayer.layer
       @gradient.frame = view.bounds
-      @gradient.colors = steps
-      view.layer.insertSublayer(@gradient, atIndex:0)
+      @gradient.colors = SRM.spectrum
 
-      # steps.each_with_index do |srm_color, i|
-      #   v = add UIView.new, {
-      #     frame: CGRectMake(0, (height * i), self.view.frame.size.width, height),
-      #     resize: [:width, :height, :top]
-      #   }
-      #   v.setBackgroundColor srm_color
-      #   @srm_views << v
-      # end
+      @gradient_view.layer.insertSublayer(@gradient, atIndex:0)
 
-      view.when_panned do |gesture|
-        got_touch_point gesture.locationInView(view.superview)
+      @gradient_view.when_panned do |gesture|
+        got_touch_point gesture.locationInView(@gradient_view)
       end
+
+      # Add a top view that changes color.
+      @top_view = add UIView.new, {
+        frame: CGRectMake(0, 0, view.frame.size.width, @top_view_height),
+        background_color: UIColor.whiteColor
+      }
+      @top_view_label = add UILabel.new, {
+        frame: @top_view.frame,
+        text: "Touch Me!",
+        font: UIFont.boldSystemFontOfSize(UIFont.systemFontSize),
+        textAlignment: UITextAlignmentCenter,
+        background_color: UIColor.clearColor
+      }
 
     end
   end
@@ -37,37 +48,45 @@ class SRMScreen < PM::Screen
     step_height = total_height / total_steps
 
     srm = (cgpoint.y / step_height).to_i + 1
-    ap srm
+
+    return if srm < 1
 
     srm_string = "     #{srm.to_s}     "
 
     @indicators_initialized ||= begin
+
+      #Hide the "touch me" label
+      @top_view_label.hidden = true
+
       @srm_indicator = CMPopTipView.alloc.initWithTitle("SRM:", message:"")
       @srm_indicator.delegate = nil
       @srm_indicator.disableTapToDismiss = true
       @srm_indicator.dismissTapAnywhere = false
       @srm_indicator.titleAlignment = UITextAlignmentCenter
       @srm_indicator.textAlignment = UITextAlignmentCenter
+      @srm_indicator.preferredPointDirection = PointDirectionDown
 
       @transient_view = add UIView.new
     end
 
     if srm > total_steps / 2
-      text_color = UIColor.whiteColor
+      text_border_color = UIColor.whiteColor
     else
-      text_color = UIColor.blackColor
+      text_border_color = UIColor.blackColor
     end
 
     set_attributes @srm_indicator, {
       message: srm_string,
       backgroundColor: SRM.color(srm),
-      textColor: text_color,
-      titleColor: text_color
+      textColor: text_border_color,
+      titleColor: text_border_color,
+      borderColor: text_border_color
     }
 
-    @transient_view.frame = CGRectMake(cgpoint.x, cgpoint.y, 1, 1)
+    @transient_view.frame = CGRectMake(cgpoint.x, cgpoint.y + @top_view_height, 1, 1)
 
     @srm_indicator.presentPointingAtView(@transient_view, inView:view, animated:false)
+    @top_view.backgroundColor = SRM.color(srm)
   end
 
   def willRotateToInterfaceOrientation(orientation, duration:duration)
