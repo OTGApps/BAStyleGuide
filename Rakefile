@@ -14,14 +14,16 @@ Motion::Project::App.setup do |app|
   app.identifier = "com.mohawkapps.BAStyleGuide"
   app.version = "4"
   app.short_version = "0.0.4"
+  app.frameworks += %w(AVFoundation)
 
   app.pods do
   	pod 'FlurrySDK'
     pod 'TestFlightSDK'
     pod 'CMPopTipView', :podspec => 'vendor/specs/CMPopTip.podspec'
-end
+  end
 
   app.vendor_project('vendor/KTOneFingerRotationGestureRecognizer', :static, :cflags => '-fobjc-arc')
+  app.vendor_project('vendor/CaptureSessionManager', :static)
 
   app.development do
     app.entitlements['get-task-allow'] = true

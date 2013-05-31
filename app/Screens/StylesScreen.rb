@@ -70,7 +70,7 @@ class StylesScreen < ProMotion::SectionedTableScreen
   end
 
   def analyzer_unlocked?
-    false
+    true
   end
 
   def analyzer_image
