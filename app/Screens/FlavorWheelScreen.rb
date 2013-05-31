@@ -8,8 +8,10 @@ class FlavorWheelScreen < PM::Screen
 
       view.backgroundColor = UIColor.whiteColor
 
+      wheel_size = Device.screen.height_for_orientation(:portrait) * 1.2
+
       @wheel = add UIImageView.alloc.initWithImage(UIImage.imageNamed("flavor_wheel.png")), {
-        frame: CGRectMake(10, 10, view.frame.size.height * 1.5, view.frame.size.height * 1.5),
+        frame: CGRectMake(10, 10, wheel_size, wheel_size),
         content_mode: UIViewContentModeScaleAspectFit,
         userInteractionEnabled: true,
       }
