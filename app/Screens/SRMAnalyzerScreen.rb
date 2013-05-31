@@ -2,7 +2,7 @@ class SRMAnalyzerScreen < PM::Screen
 
   title "SRM Analyzer"
 
-  attr_accessor :vImagePreview, :stillImageOutput, :vImage
+  attr_accessor :live_preview, :still_image_output, :captured_image_preview
 
   def will_appear
     @view_loaded ||= begin
@@ -12,19 +12,24 @@ class SRMAnalyzerScreen < PM::Screen
       set_nav_bar_left_button "Done", action: :close_modal, type: UIBarButtonItemStyleDone
 
       # accessors setup
-      self.vImagePreview = add UIView.alloc.initWithFrame(view.frame)
-      self.stillImageOutput = AVCaptureStillImageOutput.new
+      video_ratio = 1.33333333333
+      # video_width =
+      self.live_preview = add UIView.new, {
+        frame: CGRectMake(0, 0, 220, 293)
+      }
+      self.live_preview.setBackgroundColor UIColor.redColor
+      self.still_image_output = AVCaptureStillImageOutput.new
 
       # Camera View Setup
       @session = AVCaptureSession.alloc.init
-      @session.sessionPreset = AVCaptureSessionPresetMedium
+      @session.sessionPreset = AVCaptureSessionPresetLow
 
-      viewLayer = self.vImagePreview.layer
+      captureVideoPreviewLayer = set_attributes AVCaptureVideoPreviewLayer.alloc.initWithSession(@session), {
+        frame: self.live_preview.frame,
+        background_color: UIColor.blueColor
+      }
 
-      captureVideoPreviewLayer = AVCaptureVideoPreviewLayer.alloc.initWithSession(@session)
-
-      captureVideoPreviewLayer.frame = self.vImagePreview.bounds
-      self.vImagePreview.layer.addSublayer(captureVideoPreviewLayer)
+      self.live_preview.layer.addSublayer(captureVideoPreviewLayer)
 
       device = AVCaptureDevice.defaultDeviceWithMediaType(AVMediaTypeVideo)
 
@@ -36,27 +41,42 @@ class SRMAnalyzerScreen < PM::Screen
         NSLog("ERROR: trying to open camera: %@", error)
       else
         @session.addInput(input)
-        self.stillImageOutput.setOutputSettings({AVVideoCodecKey: AVVideoCodecJPEG})
+        self.still_image_output.setOutputSettings({AVVideoCodecKey: AVVideoCodecJPEG})
 
-        @session.addOutput(stillImageOutput)
-
+        @session.addOutput(still_image_output)
         @session.startRunning
       end
 
       #Create the gradient view.
-      gradient_view_width = 100
-      @gradient_view = add UIView.new, {
-        frame: CGRectMake(view.frame.size.width-gradient_view_width, 0, gradient_view_width, self.view.frame.size.height),
+      # gradient_view_width = 100
+      # @gradient_view = add UIView.new, {
+      #   frame: CGRectMake(view.frame.size.width-gradient_view_width, 0, gradient_view_width, self.view.frame.size.height),
+      # }
+      # @gradient_view.setBackgroundColor UIColor.whiteColor
+
+
+      # @gradient = CAGradientLayer.layer
+      # @gradient.frame = view.bounds
+      # @gradient.colors = SRM.spectrum
+
+      # @gradient_view.layer.insertSublayer(@gradient, atIndex:0)
+
+      # Create the button
+      @capture_button = add UIButton.buttonWithType(UIButtonTypeCustom), {
+        frame: CGRectMake(10, self.view.frame.size.height - 83, 73, 73)
       }
-      @gradient_view.setBackgroundColor UIColor.whiteColor
+      @capture_button.setBackgroundImage(UIImage.imageNamed("CaptureButton.png"), forState: UIControlStateNormal)
+      @capture_button.setBackgroundImage(UIImage.imageNamed("CaptureButtonPressed.png"), forState: UIControlStateHighlighted)
+
+      @capture_button.when(UIControlEventTouchUpInside) do
+        captureNow
+      end
 
 
-      @gradient = CAGradientLayer.layer
-      @gradient.frame = view.bounds
-      @gradient.colors = SRM.spectrum
-
-      @gradient_view.layer.insertSublayer(@gradient, atIndex:0)
-
+      self.captured_image_preview = add UIImageView.new, {
+        frame: CGRectMake(self.view.frame.size.width - 100, self.view.frame.size.height - 100, 100, 100)
+      }
+      self.captured_image_preview.setBackgroundColor UIColor.orangeColor
 
       # overlayImageView = UIImageView.alloc.initWithImage(UIImage.imageNamed("overlaygraphic.png"))
       # overlayImageView.setFrame(CGRectMake(30, 100, 260, 200))
@@ -90,7 +110,7 @@ class SRMAnalyzerScreen < PM::Screen
 
   def captureNow
     videoConnection = nil
-    stillImageOutput.connections.each do |connection|
+    still_image_output.connections.each do |connection|
       connection.inputPorts.each do |port|
         if port.mediaType == AVMediaTypeVideo
           videoConnection = connection
@@ -100,8 +120,8 @@ class SRMAnalyzerScreen < PM::Screen
       break if videoConnection
     end
 
-    NSLog("about to request a capture from: %@", stillImageOutput)
-    stillImageOutput.captureStillImageAsynchronouslyFromConnection(videoConnection, completionHandler:lambda do |imageSampleBuffer, error|
+    NSLog("about to request a capture from: %@", still_image_output)
+    still_image_output.captureStillImageAsynchronouslyFromConnection(videoConnection, completionHandler:lambda do |imageSampleBuffer, error|
       exifAttachments = CMGetAttachment( imageSampleBuffer, KCGImagePropertyExifDictionary, nil)
       if exifAttachments
         # Do something with the attachments.
@@ -113,7 +133,8 @@ class SRMAnalyzerScreen < PM::Screen
       imageData = AVCaptureStillImageOutput.jpegStillImageNSDataRepresentation(imageSampleBuffer)
       image = UIImage.alloc.initWithData(imageData)
 
-      self.vImage = image
+      ap "Got new image: #{image}"
+      self.captured_image_preview.image = image.crop(CGRectMake(0, 0, 25, 25))
      end)
   end
 
