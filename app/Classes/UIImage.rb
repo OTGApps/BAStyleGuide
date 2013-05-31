@@ -24,6 +24,8 @@ class UIImage
   	end
 	end
 
+	# Crops from the top right of the image for some reason.
+	# CGPoint{0, 0} is top right.
 	def crop(rect)
     if self.scale > 1.0
 			rect = CGRectMake(
