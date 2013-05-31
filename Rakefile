@@ -14,7 +14,7 @@ Motion::Project::App.setup do |app|
   app.identifier = "com.mohawkapps.BAStyleGuide"
   app.version = "4"
   app.short_version = "0.0.4"
-  app.frameworks += %w(AVFoundation)
+  app.frameworks += %w(AVFoundation CoreVideo CoreMedia ImageIO QuartzCore)
 
   app.pods do
   	pod 'FlurrySDK'
