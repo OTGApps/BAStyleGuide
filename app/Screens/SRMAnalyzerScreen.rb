@@ -16,9 +16,9 @@ class SRMAnalyzerScreen < PM::Screen
         left: 0,
         top: 0,
         width: self.view.size.width,
-        height: self.view.size.width * video_ratio
+        height: self.view.size.width * video_ratio,
+        background_color: UIColor.whiteColor
       }
-      self.live_preview.setBackgroundColor UIColor.redColor
       self.still_image_output = AVCaptureStillImageOutput.new
 
       # Camera View Setup
@@ -111,22 +111,28 @@ class SRMAnalyzerScreen < PM::Screen
       }
 
       # Create the button
+      capture_image = UIImage.imageNamed("CaptureButton.png")
+      capture_image_pressed = UIImage.imageNamed("CaptureButton.png")
       @capture_button = add UIButton.buttonWithType(UIButtonTypeCustom), {
-        left: 10,
-        top: self.view.frame.size.height - 83,
-        width: 73,
-        height: 73
+        left: (self.captured_image_preview.frame.size.width / 2) - (capture_image.size.width / 2) + self.captured_image_preview.frame.origin.x,
+        top: (self.captured_image_preview.frame.size.height / 2) - (capture_image.size.height / 2) + self.captured_image_preview.frame.origin.y,
+        width: capture_image.size.width,
+        height: capture_image.size.height
       }
-      @capture_button.setBackgroundImage(UIImage.imageNamed("CaptureButton.png"), forState: UIControlStateNormal)
-      @capture_button.setBackgroundImage(UIImage.imageNamed("CaptureButtonPressed.png"), forState: UIControlStateHighlighted)
+      @capture_button.setBackgroundImage(capture_image, forState: UIControlStateNormal)
+      @capture_button.setBackgroundImage(capture_image_pressed, forState: UIControlStateHighlighted)
 
       @capture_button.when(UIControlEventTouchUpInside) do
         captureNow
       end
 
+      # @camera_timer = EM.add_periodic_timer 1.0 do
+      #   captureNow
+      # end
+
       @color_view_label = add UILabel.new, {
         frame: @average_color.frame,
-        text: "Calculated SRM:",
+        text: "Calculated SRM: --",
         font: UIFont.boldSystemFontOfSize(UIFont.systemFontSize),
         textAlignment: UITextAlignmentCenter,
         background_color: UIColor.clearColor
@@ -155,13 +161,13 @@ class SRMAnalyzerScreen < PM::Screen
 
     NSLog("about to request a capture from: %@", still_image_output)
     still_image_output.captureStillImageAsynchronouslyFromConnection(videoConnection, completionHandler:lambda do |imageSampleBuffer, error|
-      exifAttachments = CMGetAttachment( imageSampleBuffer, KCGImagePropertyExifDictionary, nil)
-      if exifAttachments
-        # Do something with the attachments.
-        NSLog("attachements: %@", exifAttachments)
-      else
-        NSLog("no attachments")
-      end
+      # exifAttachments = CMGetAttachment( imageSampleBuffer, KCGImagePropertyExifDictionary, nil)
+      # if exifAttachments
+      #   # Do something with the attachments.
+      #   NSLog("attachements: %@", exifAttachments)
+      # else
+      #   NSLog("no attachments")
+      # end
 
       imageData = AVCaptureStillImageOutput.jpegStillImageNSDataRepresentation(imageSampleBuffer)
       image = UIImage.alloc.initWithData(imageData)
@@ -194,7 +200,7 @@ class SRMAnalyzerScreen < PM::Screen
       else
         # Warn them that a good match could not be found
         set_attributes @color_view_label, {
-          number_of_lines: 1,
+          number_of_lines: 2,
           text: "Calculated SRM: #{my_calculated_srm[0]}\n(Not a good match)",
           textColor: text_color
         }
@@ -229,15 +235,19 @@ class SRMAnalyzerScreen < PM::Screen
   end
 
   def move_slider_to_srm(srm)
-    @slider.frame = CGRectMake(
-      @slider.frame.origin.x,
-      @slider_constraints[:origin] + (@slider_constraints[:height] / (SRM.steps.count + 1) * srm),
-      @slider.frame.size.width,
-      @slider.frame.size.height
-    )
+    UIView.animateWithDuration(0.75,
+      animations:lambda {
+        @slider.frame = CGRectMake(
+          @slider.frame.origin.x,
+          @slider_constraints[:origin] + (@slider_constraints[:height] / (SRM.steps.count + 1) * srm),
+          @slider.frame.size.width,
+          @slider.frame.size.height
+        )
+      })
   end
 
   def close_modal
+    # EM.cancel_timer(@camera_timer)
     close
   end
 
