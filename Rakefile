@@ -22,7 +22,11 @@ Motion::Project::App.setup do |app|
     pod 'CMPopTipView', :podspec => 'vendor/specs/CMPopTip.podspec'
   end
 
-  app.vendor_project('vendor/KTOneFingerRotationGestureRecognizer', :static, :cflags => '-fobjc-arc')
+  # Vendor Projects - ARC
+  %w(KTOneFingerRotationGestureRecognizer CKImageAdditions).each do |v|
+    app.vendor_project("vendor/#{v}", :static, :cflags => '-fobjc-arc')
+  end
+  # Vendor Projects - non-ARC
   app.vendor_project('vendor/CaptureSessionManager', :static)
 
   app.development do

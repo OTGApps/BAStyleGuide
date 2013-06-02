@@ -15,7 +15,7 @@ class SRMAnalyzerScreen < PM::Screen
       video_ratio = 1.33333333333
       # video_width =
       self.live_preview = add UIView.new, {
-        frame: CGRectMake(0, 0, 220, 293)
+        frame: CGRectMake(0, 0, self.view.size.width, self.view.size.width * video_ratio)
       }
       self.live_preview.setBackgroundColor UIColor.redColor
       self.still_image_output = AVCaptureStillImageOutput.new
@@ -48,18 +48,17 @@ class SRMAnalyzerScreen < PM::Screen
       end
 
       #Create the gradient view.
-      # gradient_view_width = 100
-      # @gradient_view = add UIView.new, {
-      #   frame: CGRectMake(view.frame.size.width-gradient_view_width, 0, gradient_view_width, self.view.frame.size.height),
-      # }
-      # @gradient_view.setBackgroundColor UIColor.whiteColor
+      gradient_view_width = 100
+      @gradient_view = add UIView.new, {
+        frame: CGRectMake(view.frame.size.width-gradient_view_width, 0, gradient_view_width, self.view.frame.size.height),
+      }
+      @gradient_view.setBackgroundColor UIColor.whiteColor
 
+      @gradient = CAGradientLayer.layer
+      @gradient.frame = view.bounds
+      @gradient.colors = SRM.spectrum
 
-      # @gradient = CAGradientLayer.layer
-      # @gradient.frame = view.bounds
-      # @gradient.colors = SRM.spectrum
-
-      # @gradient_view.layer.insertSublayer(@gradient, atIndex:0)
+      @gradient_view.layer.insertSublayer(@gradient, atIndex:0)
 
       # Create the button
       @capture_button = add UIButton.buttonWithType(UIButtonTypeCustom), {
@@ -72,11 +71,17 @@ class SRMAnalyzerScreen < PM::Screen
         captureNow
       end
 
-
+      # Placeholder for captured image.
       self.captured_image_preview = add UIImageView.new, {
         frame: CGRectMake(self.view.frame.size.width - 100, self.view.frame.size.height - 100, 100, 100)
       }
       self.captured_image_preview.setBackgroundColor UIColor.orangeColor
+
+      # Placeholder for average image color.
+      @average_color = add UIView.new, {
+        frame: CGRectMake(self.view.frame.size.width - 200, self.view.frame.size.height - 100, 100, 100)
+      }
+      @average_color.setBackgroundColor UIColor.greenColor
 
       # overlayImageView = UIImageView.alloc.initWithImage(UIImage.imageNamed("overlaygraphic.png"))
       # overlayImageView.setFrame(CGRectMake(30, 100, 260, 200))
@@ -98,7 +103,6 @@ class SRMAnalyzerScreen < PM::Screen
 
       # view.addSubview(@scanningLabel)
 
-      # @captureManager.captureSession.startRunning
     end
   end
 
@@ -134,7 +138,9 @@ class SRMAnalyzerScreen < PM::Screen
       image = UIImage.alloc.initWithData(imageData)
 
       ap "Got new image: #{image}"
-      self.captured_image_preview.image = image.crop(CGRectMake(0, 0, 25, 25))
+      cropped = image.crop(CGRectMake(0, 0, 100, 100))
+      self.captured_image_preview.image = cropped
+      @average_color.setBackgroundColor cropped.averageColorAtPixel(CGPointMake(50, 50), radius:50.0)
      end)
   end
 
