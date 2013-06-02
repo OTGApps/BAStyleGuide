@@ -89,12 +89,12 @@ class SRMAnalyzerScreen < PM::Screen
       @average_color.setBackgroundColor UIColor.greenColor
 
       # Add the target image over top of the live camera view.
-      @target_image = UIImage.imageNamed("srm_analyzer_target.png")
-      @target_area = add UIImageView.alloc.initWithImage(@target_image), {
-        left: (self.live_preview.frame.size.width / 3) - (@target_image.size.width/2),
-        top: (self.live_preview.frame.size.height / 2) - (@target_image.size.height/2),
-        width: @target_image.size.width,
-        height: @target_image.size.height
+      target_image = UIImage.imageNamed("srm_analyzer_target.png")
+      @target_area = add UIImageView.alloc.initWithImage(target_image), {
+        left: (self.live_preview.frame.size.width / 3) - (target_image.size.width/2),
+        top: (self.live_preview.frame.size.height / 2) - (target_image.size.height/2),
+        width: target_image.size.width,
+        height: target_image.size.height
       }
 
       # Create the button
@@ -147,20 +147,16 @@ class SRMAnalyzerScreen < PM::Screen
 
       ap "Got new image: #{image}"
 
-      # Calculate the relative size/position of the target area
-      image_ratio = self.live_preview.frame.size.width / image.size.width
-      image_ratio_y = self.live_preview.frame.size.height / image.size.height
-
-      target_scaled_frame = CGRectMake(
-        (self.live_preview.frame.size.width / 3 / image_ratio) - (@target_image.size.width / 2 / image_ratio),
-        (self.live_preview.frame.size.height / 2 / image_ratio) - (@target_image.size.height / 2 / image_ratio),
-        @target_image.size.width / image_ratio,
-        @target_image.size.height / image_ratio
-      )
-
-      cropped = image.crop(target_scaled_frame)
+      cropped = image
+                  .image_resized(self.live_preview.frame.size)
+                  .crop(@target_area.frame)
       self.captured_image_preview.image = cropped
-      @average_color.setBackgroundColor cropped.averageColorAtPixel(CGPointMake(50, 50), radius:50.0)
+
+      avg_color = cropped.averageColorAtPixel(CGPointMake(cropped.size.width, cropped.size.height), radius:(cropped.size.width / 2.0))
+      @average_color.setBackgroundColor avg_color
+
+      SRM.closest_srm_to_color(avg_color)
+
      end)
   end
 
