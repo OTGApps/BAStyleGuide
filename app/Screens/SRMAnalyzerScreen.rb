@@ -84,9 +84,9 @@ class SRMAnalyzerScreen < PM::Screen
         left: 0,
         top: self.view.frame.size.height - gradient_view_size,
         width: self.view.frame.size.width - gradient_view_size,
-        height: gradient_view_size
+        height: gradient_view_size,
+        background_color: UIColor.whiteColor
       }
-      @average_color.setBackgroundColor UIColor.greenColor
 
       # Add the target image over top of the live camera view.
       target_image = UIImage.imageNamed("srm_analyzer_target.png")
@@ -95,6 +95,19 @@ class SRMAnalyzerScreen < PM::Screen
         top: (self.live_preview.frame.size.height / 2) - (target_image.size.height/2),
         width: target_image.size.width,
         height: target_image.size.height
+      }
+
+      # Create the red Slider bar on the the gradient view.
+      @slider = add UIView.new, {
+        left: @gradient_view.frame.origin.x,
+        top: @gradient_view.frame.origin.y,
+        width: @gradient_view.frame.size.width,
+        height: 2,
+        background_color: UIColor.redColor
+      }
+      @slider_constraints = {
+        origin: @gradient_view.frame.origin.y,
+        height: @gradient_view.frame.size.height
       }
 
       # Create the button
@@ -110,6 +123,14 @@ class SRMAnalyzerScreen < PM::Screen
       @capture_button.when(UIControlEventTouchUpInside) do
         captureNow
       end
+
+      @color_view_label = add UILabel.new, {
+        frame: @average_color.frame,
+        text: "Calculated SRM:",
+        font: UIFont.boldSystemFontOfSize(UIFont.systemFontSize),
+        textAlignment: UITextAlignmentCenter,
+        background_color: UIColor.clearColor
+      }
 
     end
   end
@@ -155,8 +176,29 @@ class SRMAnalyzerScreen < PM::Screen
       avg_color = cropped.averageColorAtPixel(CGPointMake(cropped.size.width, cropped.size.height), radius:(cropped.size.width / 2.0))
       @average_color.setBackgroundColor avg_color
 
-      SRM.closest_srm_to_color(avg_color)
+      my_calculated_srm = SRM.closest_srm_to_color(avg_color)
+      move_slider_to_srm(my_calculated_srm[0].to_i)
 
+      if my_calculated_srm[0].to_i > SRM.steps.count / 2
+        text_color = UIColor.whiteColor
+      else
+        text_color = UIColor.blackColor
+      end
+
+      if my_calculated_srm[1] < 50
+        set_attributes @color_view_label, {
+          number_of_lines: 1,
+          text: "Calculated SRM: #{my_calculated_srm[0]}",
+          textColor: text_color
+        }
+      else
+        # Warn them that a good match could not be found
+        set_attributes @color_view_label, {
+          number_of_lines: 1,
+          text: "Calculated SRM: #{my_calculated_srm[0]}\n(Not a good match)",
+          textColor: text_color
+        }
+      end
      end)
   end
 
@@ -184,6 +226,15 @@ class SRMAnalyzerScreen < PM::Screen
     orientations = 0
     orientations |= UIInterfaceOrientationMaskPortrait
     orientations
+  end
+
+  def move_slider_to_srm(srm)
+    @slider.frame = CGRectMake(
+      @slider.frame.origin.x,
+      @slider_constraints[:origin] + (@slider_constraints[:height] / (SRM.steps.count + 1) * srm),
+      @slider.frame.size.width,
+      @slider.frame.size.height
+    )
   end
 
   def close_modal

@@ -73,17 +73,25 @@ class SRM
 	end
 
 	def self.closest_srm_to_color(compare_color)
-		components = CGColorGetComponents(compare_color.CGColor)
-		ap components.inspect
-		c = components[0]
-		ap c
-		NSLog("Red: %f", components[0])
-		NSLog("Green: %f", components[1])
-		NSLog("Blue: %f", components[2])
-		NSLog("Alpha: %f", CGColorGetAlpha(compare_color.CGColor))
+		colors = compare_color.arrayFromRGBAComponents
+		colors_rgba ||= []
+		colors.each_with_index do |component,i|
+			colors_rgba[i] = (component * 255).to_i
+		end
+
+		# Loop through all the SRM colors and give it a closeness score
+		color_match = {}
+		@@matrix.each do |key, value|
+			r_distance = value[0] - colors_rgba[0]
+			g_distance = value[1] - colors_rgba[1]
+			b_distance = value[2] - colors_rgba[2]
+
+			color_match[key] = (r_distance.abs + g_distance.abs + b_distance.abs)
+		end
+
+		# Return the closest SRM color match and the calculated distance
+		color_match.sort_by{|srm, closeness| closeness}.first
+
 	end
-
-
-
 
 end

@@ -27,7 +27,9 @@ Motion::Project::App.setup do |app|
     app.vendor_project("vendor/#{v}", :static, :cflags => '-fobjc-arc')
   end
   # Vendor Projects - non-ARC
-  app.vendor_project('vendor/CaptureSessionManager', :static)
+  %w(CaptureSessionManager UIColor-Utilities).each do |v|
+    app.vendor_project("vendor/#{v}", :static)
+  end
 
   app.development do
     app.entitlements['get-task-allow'] = true
