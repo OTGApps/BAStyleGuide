@@ -11,9 +11,25 @@ class UIImage
 				rect.size.height * self.scale
 			)
     end
-
 		imageRef = CGImageCreateWithImageInRect(self.CGImage, rect)
 		UIImage.imageWithCGImage(imageRef, scale:self.scale, orientation:self.imageOrientation)
+  end
+
+	def image_resized(size)
+    UIGraphicsBeginImageContextWithOptions(size, false, self.scale)
+    context = UIGraphicsGetCurrentContext()
+
+		CGContextSetShouldAntialias(context, true)
+		CGContextSetAllowsAntialiasing(context, true)
+
+		CGContextSetInterpolationQuality(context, KCGInterpolationLow)
+
+    self.drawInRect(CGRectMake(0, 0, size.width, size.height))
+    resizedImage = UIGraphicsGetImageFromCurrentImageContext()
+
+    UIGraphicsEndImageContext()
+
+    resizedImage
   end
 
 end
