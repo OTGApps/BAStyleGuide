@@ -83,15 +83,14 @@ class SRMAnalyzerScreen < PM::Screen
       }
       @average_color.setBackgroundColor UIColor.greenColor
 
-      # overlayImageView = UIImageView.alloc.initWithImage(UIImage.imageNamed("overlaygraphic.png"))
-      # overlayImageView.setFrame(CGRectMake(30, 100, 260, 200))
-      # view.addSubview(overlayImageView)
-
-      # overlayButton = UIButton.buttonWithType(UIButtonTypeCustom)
-      # overlayButton.setImage(UIImage.imageNamed("scanbutton.png"), forState:UIControlStateNormal)
-      # overlayButton.setFrame(CGRectMake(130, 320, 60, 30))
-      # overlayButton.addTarget(self, action:"scanButtonPressed", forControlEvents:UIControlEventTouchUpInside)
-      # self.view.addSubview(overlayButton)
+      # Add the target image over top of the live camera view.
+      target_image = UIImage.imageNamed("srm_analyzer_target.png")
+      @target_area = add UIImageView.alloc.initWithImage(target_image), {
+        left: (self.live_preview.frame.size.width / 3) - (target_image.size.width/2),
+        top: (self.live_preview.frame.size.height / 2) - (target_image.size.height/2),
+        width: target_image.size.width,
+        height: target_image.size.height
+      }
 
       # tempLabel = UILabel.alloc.initWithFrame(CGRectMake(100, 50, 120, 30))
       # @scanningLabel = tempLabel
