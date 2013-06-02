@@ -11,7 +11,10 @@ class SRMScreen < PM::Screen
       height = self.view.frame.size.height - @top_view_height
 
       @gradient_view = add UIView.new, {
-        frame: CGRectMake(0, @top_view_height, self.view.frame.size.width, height),
+        left: 0,
+        top: @top_view_height,
+        width: self.view.frame.size.width,
+        height: height,
       }
       @gradient_view.setBackgroundColor UIColor.whiteColor
 
@@ -28,7 +31,10 @@ class SRMScreen < PM::Screen
 
       # Add a top view that changes color.
       @top_view = add UIView.new, {
-        frame: CGRectMake(0, 0, view.frame.size.width, @top_view_height),
+        left: 0,
+        top: 0,
+        width: view.frame.size.width,
+        height: @top_view_height,
         background_color: UIColor.whiteColor
       }
       @top_view_label = add UILabel.new, {
@@ -58,15 +64,16 @@ class SRMScreen < PM::Screen
       #Hide the "touch me" label
       @top_view_label.hidden = true
 
-      @srm_indicator = CMPopTipView.alloc.initWithTitle("SRM:", message:"")
-      @srm_indicator.delegate = nil
-      @srm_indicator.disableTapToDismiss = true
-      @srm_indicator.dismissTapAnywhere = false
-      @srm_indicator.titleAlignment = UITextAlignmentCenter
-      @srm_indicator.textAlignment = UITextAlignmentCenter
-      @srm_indicator.preferredPointDirection = PointDirectionDown
+      @srm_indicator = set_attributes CMPopTipView.alloc.initWithTitle("SRM:", message:""), {
+        delegate: nil,
+        disableTapToDismiss: true,
+        dismissTapAnywhere: false,
+        titleAlignment: UITextAlignmentCenter,
+        textAlignment: UITextAlignmentCenter,
+        preferredPointDirection: PointDirectionDown,
+      }
 
-      @transient_view = add UIView.new
+      @target_tap_view = add UIView.new
     end
 
     if srm > total_steps / 2
@@ -83,9 +90,9 @@ class SRMScreen < PM::Screen
       borderColor: text_border_color
     }
 
-    @transient_view.frame = CGRectMake(cgpoint.x, cgpoint.y + @top_view_height, 1, 1)
+    @target_tap_view.frame = CGRectMake(cgpoint.x, cgpoint.y + @top_view_height, 1, 1)
 
-    @srm_indicator.presentPointingAtView(@transient_view, inView:view, animated:false)
+    @srm_indicator.presentPointingAtView(@target_tap_view, inView:view, animated:false)
     @top_view.backgroundColor = SRM.color(srm)
   end
 

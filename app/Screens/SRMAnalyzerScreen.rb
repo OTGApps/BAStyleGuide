@@ -15,7 +15,10 @@ class SRMAnalyzerScreen < PM::Screen
       video_ratio = 1.33333333333
       # video_width =
       self.live_preview = add UIView.new, {
-        frame: CGRectMake(0, 0, self.view.size.width, self.view.size.width * video_ratio)
+        left: 0,
+        top: 0,
+        width: self.view.size.width,
+        height: self.view.size.width * video_ratio
       }
       self.live_preview.setBackgroundColor UIColor.redColor
       self.still_image_output = AVCaptureStillImageOutput.new
@@ -50,7 +53,10 @@ class SRMAnalyzerScreen < PM::Screen
       #Create the gradient view.
       gradient_view_width = 100
       @gradient_view = add UIView.new, {
-        frame: CGRectMake(view.frame.size.width-gradient_view_width, 0, gradient_view_width, self.view.frame.size.height),
+        left: view.frame.size.width-gradient_view_width,
+        top: 0,
+        width: gradient_view_width,
+        height: self.view.frame.size.height,
       }
       @gradient_view.setBackgroundColor UIColor.whiteColor
 
@@ -62,7 +68,10 @@ class SRMAnalyzerScreen < PM::Screen
 
       # Create the button
       @capture_button = add UIButton.buttonWithType(UIButtonTypeCustom), {
-        frame: CGRectMake(10, self.view.frame.size.height - 83, 73, 73)
+        left: 10,
+        top: self.view.frame.size.height - 83,
+        width: 73,
+        height: 73
       }
       @capture_button.setBackgroundImage(UIImage.imageNamed("CaptureButton.png"), forState: UIControlStateNormal)
       @capture_button.setBackgroundImage(UIImage.imageNamed("CaptureButtonPressed.png"), forState: UIControlStateHighlighted)
@@ -73,13 +82,19 @@ class SRMAnalyzerScreen < PM::Screen
 
       # Placeholder for captured image.
       self.captured_image_preview = add UIImageView.new, {
-        frame: CGRectMake(self.view.frame.size.width - 100, self.view.frame.size.height - 100, 100, 100)
+        left: self.view.frame.size.width - 100,
+        top: self.view.frame.size.height - 100,
+        width: 100,
+        height: 100
       }
       self.captured_image_preview.setBackgroundColor UIColor.orangeColor
 
       # Placeholder for average image color.
       @average_color = add UIView.new, {
-        frame: CGRectMake(self.view.frame.size.width - 200, self.view.frame.size.height - 100, 100, 100)
+        left: self.view.frame.size.width - 200,
+        top: self.view.frame.size.height - 100,
+        width: 100,
+        height: 100
       }
       @average_color.setBackgroundColor UIColor.greenColor
 
@@ -91,16 +106,6 @@ class SRMAnalyzerScreen < PM::Screen
         width: target_image.size.width,
         height: target_image.size.height
       }
-
-      # tempLabel = UILabel.alloc.initWithFrame(CGRectMake(100, 50, 120, 30))
-      # @scanningLabel = tempLabel
-      # @scanningLabel.setBackgroundColor(UIColor.clearColor)
-      # @scanningLabel.setFont(UIFont.fontWithName("Courier", size:18.0))
-      # @scanningLabel.setTextColor(UIColor.redColor)
-      # @scanningLabel.setText("Scanning...")
-      # @scanningLabel.setHidden(true)
-
-      # view.addSubview(@scanningLabel)
 
     end
   end

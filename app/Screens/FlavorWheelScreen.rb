@@ -11,7 +11,10 @@ class FlavorWheelScreen < PM::Screen
       wheel_size = Device.screen.height_for_orientation(:portrait) * 1.2
 
       @wheel = add UIImageView.alloc.initWithImage(UIImage.imageNamed("flavor_wheel.png")), {
-        frame: CGRectMake(10, 10, wheel_size, wheel_size),
+        left: 10,
+        top: 10,
+        width: wheel_size,
+        height: wheel_size,
         content_mode: UIViewContentModeScaleAspectFit,
         userInteractionEnabled: true,
       }
