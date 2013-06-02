@@ -23,7 +23,7 @@ class SRMAnalyzerScreen < PM::Screen
 
       # Camera View Setup
       @session = AVCaptureSession.alloc.init
-      @session.sessionPreset = AVCaptureSessionPresetLow
+      @session.sessionPreset = AVCaptureSessionPresetHigh
 
       captureVideoPreviewLayer = set_attributes AVCaptureVideoPreviewLayer.alloc.initWithSession(@session), {
         frame: self.live_preview.frame,
