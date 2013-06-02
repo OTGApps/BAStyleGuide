@@ -11,9 +11,7 @@ class SRMAnalyzerScreen < PM::Screen
       view.setBackgroundColor UIColor.whiteColor
       set_nav_bar_left_button "Done", action: :close_modal, type: UIBarButtonItemStyleDone
 
-      # accessors setup
-      video_ratio = 1.33333333333
-      # video_width =
+      video_ratio = 1.333333333333
       self.live_preview = add UIView.new, {
         left: 0,
         top: 0,
@@ -51,20 +49,53 @@ class SRMAnalyzerScreen < PM::Screen
       end
 
       #Create the gradient view.
-      gradient_view_width = 100
+      gradient_view_size = self.live_preview.frame.size.width / 3
       @gradient_view = add UIView.new, {
-        left: view.frame.size.width-gradient_view_width,
+        left: view.frame.size.width-gradient_view_size,
         top: 0,
-        width: gradient_view_width,
-        height: self.view.frame.size.height,
+        width: gradient_view_size,
+        height: self.view.frame.size.height - gradient_view_size,
+        background_color: UIColor.whiteColor,
+        # Shadow
+        shadowColor: UIColor.blackColor.CGColor,
+        shadowOpacity: 0.8,
+        shadowRadius: 3.0,
+        shadowOffset: CGSizeMake(2.0, 2.0)
       }
-      @gradient_view.setBackgroundColor UIColor.whiteColor
 
       @gradient = CAGradientLayer.layer
       @gradient.frame = view.bounds
       @gradient.colors = SRM.spectrum
 
       @gradient_view.layer.insertSublayer(@gradient, atIndex:0)
+
+      # Placeholder for captured image.
+      self.captured_image_preview = add UIImageView.new, {
+        left: self.view.frame.size.width - gradient_view_size,
+        top: self.view.frame.size.height - gradient_view_size,
+        width: gradient_view_size,
+        height: gradient_view_size,
+        content_mode: UIViewContentModeScaleAspectFit
+      }
+      self.captured_image_preview.setBackgroundColor UIColor.orangeColor
+
+      # Placeholder for average image color.
+      @average_color = add UIView.new, {
+        left: 0,
+        top: self.view.frame.size.height - gradient_view_size,
+        width: self.view.frame.size.width - gradient_view_size,
+        height: gradient_view_size
+      }
+      @average_color.setBackgroundColor UIColor.greenColor
+
+      # Add the target image over top of the live camera view.
+      @target_image = UIImage.imageNamed("srm_analyzer_target.png")
+      @target_area = add UIImageView.alloc.initWithImage(@target_image), {
+        left: (self.live_preview.frame.size.width / 3) - (@target_image.size.width/2),
+        top: (self.live_preview.frame.size.height / 2) - (@target_image.size.height/2),
+        width: @target_image.size.width,
+        height: @target_image.size.height
+      }
 
       # Create the button
       @capture_button = add UIButton.buttonWithType(UIButtonTypeCustom), {
@@ -79,33 +110,6 @@ class SRMAnalyzerScreen < PM::Screen
       @capture_button.when(UIControlEventTouchUpInside) do
         captureNow
       end
-
-      # Placeholder for captured image.
-      self.captured_image_preview = add UIImageView.new, {
-        left: self.view.frame.size.width - 100,
-        top: self.view.frame.size.height - 100,
-        width: 100,
-        height: 100
-      }
-      self.captured_image_preview.setBackgroundColor UIColor.orangeColor
-
-      # Placeholder for average image color.
-      @average_color = add UIView.new, {
-        left: self.view.frame.size.width - 200,
-        top: self.view.frame.size.height - 100,
-        width: 100,
-        height: 100
-      }
-      @average_color.setBackgroundColor UIColor.greenColor
-
-      # Add the target image over top of the live camera view.
-      target_image = UIImage.imageNamed("srm_analyzer_target.png")
-      @target_area = add UIImageView.alloc.initWithImage(target_image), {
-        left: (self.live_preview.frame.size.width / 3) - (target_image.size.width/2),
-        top: (self.live_preview.frame.size.height / 2) - (target_image.size.height/2),
-        width: target_image.size.width,
-        height: target_image.size.height
-      }
 
     end
   end
@@ -142,7 +146,19 @@ class SRMAnalyzerScreen < PM::Screen
       image = UIImage.alloc.initWithData(imageData)
 
       ap "Got new image: #{image}"
-      cropped = image.crop(CGRectMake(0, 0, 100, 100))
+
+      # Calculate the relative size/position of the target area
+      image_ratio = self.live_preview.frame.size.width / image.size.width
+      image_ratio_y = self.live_preview.frame.size.height / image.size.height
+
+      target_scaled_frame = CGRectMake(
+        (self.live_preview.frame.size.width / 3 / image_ratio) - (@target_image.size.width / 2 / image_ratio),
+        (self.live_preview.frame.size.height / 2 / image_ratio) - (@target_image.size.height / 2 / image_ratio),
+        @target_image.size.width / image_ratio,
+        @target_image.size.height / image_ratio
+      )
+
+      cropped = image.crop(target_scaled_frame)
       self.captured_image_preview.image = cropped
       @average_color.setBackgroundColor cropped.averageColorAtPixel(CGPointMake(50, 50), radius:50.0)
      end)

@@ -18,7 +18,6 @@ class SRMScreen < PM::Screen
       }
       @gradient_view.setBackgroundColor UIColor.whiteColor
 
-
       @gradient = CAGradientLayer.layer
       @gradient.frame = view.bounds
       @gradient.colors = SRM.spectrum
