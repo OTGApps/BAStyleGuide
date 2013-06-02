@@ -49,7 +49,7 @@ class SRMScreen < PM::Screen
 
   def got_touch_point(cgpoint)
     total_height = Device.screen.height_for_orientation(Device.orientation) - 44
-    total_steps = SRM.major_steps.count + 1
+    total_steps = SRM.steps.count + 1
     step_height = total_height / total_steps
 
     srm = (cgpoint.y / step_height).to_i + 1
