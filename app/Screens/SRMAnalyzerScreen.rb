@@ -75,9 +75,9 @@ class SRMAnalyzerScreen < PM::Screen
         top: self.view.frame.size.height - gradient_view_size,
         width: gradient_view_size,
         height: gradient_view_size,
-        content_mode: UIViewContentModeScaleAspectFit
+        content_mode: UIViewContentModeScaleAspectFit,
+        background_color: UIColor.whiteColor
       }
-      self.captured_image_preview.setBackgroundColor UIColor.orangeColor
 
       # Placeholder for average image color.
       @average_color = add UIView.new, {
