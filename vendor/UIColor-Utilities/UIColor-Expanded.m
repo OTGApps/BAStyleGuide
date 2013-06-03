@@ -516,16 +516,6 @@ static NSLock *colorNameCacheLock;
 	return colorNameCache;
 }
 
-+ (UIColor *)colorWithHue:(CGFloat)hue saturation:(CGFloat)saturation brightness:(CGFloat)brightness alpha:(CGFloat)alpha {
-	// Convert hsb to rgb
-	CGFloat r,g,b;
-	[self hue:hue saturation:saturation brightness:brightness toRed:&r green:&g blue:&b];
-
-	// Create a color with rgb
-	return [self colorWithRed:r green:g blue:b alpha:alpha];
-}
-
-
 #pragma mark Color Space Conversions
 
 + (void)hue:(CGFloat)h saturation:(CGFloat)s brightness:(CGFloat)v toRed:(CGFloat *)pR green:(CGFloat *)pG blue:(CGFloat *)pB {
