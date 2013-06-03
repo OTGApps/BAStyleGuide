@@ -13,7 +13,9 @@ class StylesScreen < ProMotion::SectionedTableScreen
   end
 
   # def on_appear
-  #   open_srm_analyzer_screen
+  #   @opened_screen ||= begin
+  #     open_srm_analyzer_screen
+  #   end
   # end
 
   def table_data

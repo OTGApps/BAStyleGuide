@@ -5,6 +5,10 @@ class SRMAnalyzerScreen < PM::Screen
   attr_accessor :live_preview, :still_image_output, :captured_image_preview
 
   def will_appear
+    if Device.simulator?
+      App.alert("Unfortunately, this feature ONLY works on real devices.")
+    end
+
     @view_loaded ||= begin
 
       # UIView Setup
@@ -23,7 +27,7 @@ class SRMAnalyzerScreen < PM::Screen
 
       # Camera View Setup
       @session = AVCaptureSession.alloc.init
-      @session.sessionPreset = AVCaptureSessionPresetHigh
+      @session.sessionPreset = AVCaptureSessionPresetLow
 
       captureVideoPreviewLayer = set_attributes AVCaptureVideoPreviewLayer.alloc.initWithSession(@session), {
         frame: self.live_preview.frame,
@@ -55,12 +59,7 @@ class SRMAnalyzerScreen < PM::Screen
         top: 0,
         width: gradient_view_size,
         height: self.view.frame.size.height - gradient_view_size,
-        background_color: UIColor.whiteColor,
-        # Shadow
-        shadowColor: UIColor.blackColor.CGColor,
-        shadowOpacity: 0.8,
-        shadowRadius: 3.0,
-        shadowOffset: CGSizeMake(2.0, 2.0)
+        background_color: UIColor.whiteColor
       }
 
       @gradient = CAGradientLayer.layer
@@ -91,8 +90,8 @@ class SRMAnalyzerScreen < PM::Screen
       # Add the target image over top of the live camera view.
       target_image = UIImage.imageNamed("srm_analyzer_target.png")
       @target_area = add UIImageView.alloc.initWithImage(target_image), {
-        left: (self.live_preview.frame.size.width / 3) - (target_image.size.width/2),
-        top: (self.live_preview.frame.size.height / 2) - (target_image.size.height/2),
+        left: (self.live_preview.frame.size.width / 3) - (target_image.size.width / 2),
+        top: (self.live_preview.frame.size.height / 2) - (target_image.size.height / 2),
         width: target_image.size.width,
         height: target_image.size.height
       }
