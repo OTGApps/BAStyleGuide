@@ -15,6 +15,7 @@ class SRMAnalyzerScreen < PM::Screen
       view.setBackgroundColor UIColor.whiteColor
       set_nav_bar_left_button "Done", action: :close_modal, type: UIBarButtonItemStyleDone
 
+      #Live Preview video screen setup
       video_ratio = 1.333333333333
       self.live_preview = add UIView.new, {
         left: 0,
@@ -35,9 +36,9 @@ class SRMAnalyzerScreen < PM::Screen
       }
 
       self.live_preview.layer.addSublayer(captureVideoPreviewLayer)
-
       device = AVCaptureDevice.defaultDeviceWithMediaType(AVMediaTypeVideo)
 
+      # Try and start the AVCaptureSession
       error_ptr = Pointer.new(:object)
       input = AVCaptureDeviceInput.deviceInputWithDevice(device, error:error_ptr)
       error = error_ptr #De-reference the pointer.
