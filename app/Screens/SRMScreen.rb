@@ -60,7 +60,11 @@ class SRMScreen < PM::Screen
 
     return if srm < 1
 
-    srm_string = "     #{srm.to_s}     "
+    if srm.to_s.length == 1
+      srm_string = "      #{srm.to_s}     "
+    else
+      srm_string = "     #{srm.to_s}     "
+    end
 
     @indicators_initialized ||= begin
 
