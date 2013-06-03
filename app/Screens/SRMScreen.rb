@@ -28,6 +28,10 @@ class SRMScreen < PM::Screen
         got_touch_point gesture.locationInView(@gradient_view)
       end
 
+      @gradient_view.when_tapped do |gesture|
+        got_touch_point gesture.locationInView(@gradient_view)
+      end
+
       # Add a top view that changes color.
       @top_view = add UIView.new, {
         left: 0,
