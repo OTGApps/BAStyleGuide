@@ -5,7 +5,9 @@
 
 1. You must have a valid license of RubyMotion.
 2. Run `bundle`.
-3. Run `rake compile:ba` to compile all assets for the Brewers Association version of the project or `rake compile:bjcp` for the BJCP style guidelines version of the app.
+3. Compile the app's resources
+	1. `rake compile:ba` for the Brewers Association version of the project.
+	2. `rake compile:bjcp` for the BJCP style guidelines version of the app. (not complete)
 4. The simulator should launch automatically.
 
 ## Versions:
