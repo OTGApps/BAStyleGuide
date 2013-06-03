@@ -8,16 +8,16 @@ Bundler.require
 
 Motion::Project::App.setup do |app|
   # Use `rake config' to see complete project settings.
-  app.name = 'BA Styles'
+  app.name = ''
   app.deployment_target = "5.0"
   app.device_family = [:iphone]
-  app.identifier = "com.mohawkapps.BAStyleGuide"
+  app.identifier = ''
   app.version = "5"
   app.short_version = "0.1.0"
   app.frameworks += %w(AVFoundation CoreVideo CoreMedia ImageIO QuartzCore)
 
   app.pods do
-  	pod 'FlurrySDK'
+    pod 'FlurrySDK'
     pod 'TestFlightSDK'
     pod 'CMPopTipView', :podspec => 'vendor/specs/CMPopTip.podspec'
   end
@@ -63,6 +63,8 @@ namespace :compile do
     copy_provisioning("BrewersAssociation")
     compile_guidelines('BrewersAssociation')
 
+    change_rakefile("BA Styles", "com.mohawkapps.BAStyleGuide")
+
     `rake clean && rake`
   end
 
@@ -71,6 +73,8 @@ namespace :compile do
     copy_resources("BJCP")
     copy_provisioning("BJCP")
     compile_guidelines('BJCP')
+
+    change_rakefile("BJCP Styles", "com.mohawkapps.BJCPStyleGuide")
 
     `rake clean && rake`
   end
@@ -112,4 +116,10 @@ def compile_guidelines(directory)
     FileUtils.mkdir_p(File.dirname(dst))
     File.open(dst, 'w') { |file| file.write(converted) }
   end
+end
+
+def change_rakefile(name, identifier)
+  text = File.read("Rakefile")
+  text = text.sub(/app.name = '.*?'/, "app.name = '#{name}'").sub(/app.identifier = '.*?'/, "app.identifier = '#{identifier}'")
+  File.open("Rakefile", "w") {|file| file.puts text}
 end
