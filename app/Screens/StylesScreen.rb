@@ -32,7 +32,7 @@ class StylesScreen < ProMotion::SectionedTableScreen
     		}
     	end
 
-      s << bibliography_section
+      s
     end
   end
 
@@ -95,22 +95,6 @@ class StylesScreen < ProMotion::SectionedTableScreen
         arguments: {
           :path => File.join(guidelines_path, "Introduction.html"),
           :name => "Introduction"
-        }
-      }]
-    }
-  end
-
-  def bibliography_section
-    {
-      title: "Extras",
-      cells:
-      [{
-        title: "Bibliography",
-        cell_identifier: "StyleCell",
-        action: :open_style,
-        arguments: {
-          :path => File.join(guidelines_path, "Bibliography of Resources.html"),
-          :name => "Bibliography"
         }
       }]
     }
