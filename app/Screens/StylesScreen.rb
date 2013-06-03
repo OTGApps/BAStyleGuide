@@ -3,7 +3,7 @@ class StylesScreen < ProMotion::SectionedTableScreen
   searchable :placeholder => "Search Styles"
 
   def will_appear
-    self.setTitle(localized_string("orginization", nil), subtitle:localized_string("version", nil))
+    self.setTitle("orginization"._, subtitle:"version"._)
 
     set_attributes self.view, {
       backgroundColor: UIColor.whiteColor
