@@ -73,12 +73,11 @@ class SRMScreen < PM::Screen
 
       @srm_indicator = set_attributes CMPopTipView.alloc.initWithTitle("SRM:", message:""), {
         delegate: nil,
-        disableTapToDismiss: true,
-        dismissTapAnywhere: false,
         titleAlignment: UITextAlignmentCenter,
         textAlignment: UITextAlignmentCenter,
         preferredPointDirection: PointDirectionDown,
       }
+      @srm_indicator.disableTapToDismiss = true
 
       @target_tap_view = add UIView.new
     end
