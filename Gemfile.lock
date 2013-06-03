@@ -1,40 +1,36 @@
 GIT
   remote: https://github.com/rubymotion/BubbleWrap
-  revision: 6322a429b7dc27854bb7355dd6de9e082d6346d7
+  revision: e72f5a4f523aef396af073647f92589e02a82a88
   specs:
     bubble-wrap (1.3.0)
-
-PATH
-  remote: ../ProMotion/
-  specs:
-    ProMotion (0.6.4)
 
 GEM
   remote: https://rubygems.org/
   specs:
+    ProMotion (0.7.0)
     activesupport (3.2.13)
       i18n (= 0.6.1)
       multi_json (~> 1.0)
     addressable (2.3.4)
     awesome_print_motion (0.1.0)
-    claide (0.2.0)
-    cocoapods (0.19.1)
+    claide (0.3.2)
+    cocoapods (0.20.2)
       activesupport (~> 3.2.13)
-      claide (~> 0.2.0)
-      cocoapods-core (= 0.19.1)
-      cocoapods-downloader (~> 0.1.0)
+      claide (~> 0.3.2)
+      cocoapods-core (= 0.20.2)
+      cocoapods-downloader (~> 0.1.1)
       colored (~> 1.2)
       escape (~> 0.0.4)
       faraday (~> 0.8.1)
-      json (~> 1.7.3)
+      json (~> 1.8.0)
       octokit (~> 1.7)
       open4 (~> 1.3.0)
       rake (~> 10.0.0)
-      xcodeproj (~> 0.5.5)
-    cocoapods-core (0.19.1)
+      xcodeproj (~> 0.6.0)
+    cocoapods-core (0.20.2)
       activesupport (~> 3.2.13)
       rake (~> 10.0.0)
-    cocoapods-downloader (0.1.0)
+    cocoapods-downloader (0.1.1)
     colored (1.2)
     escape (0.0.4)
     faraday (0.8.7)
@@ -43,12 +39,12 @@ GEM
       faraday (>= 0.7.4, < 0.9)
     hashie (2.0.5)
     i18n (0.6.1)
-    json (1.7.7)
+    json (1.8.0)
     motion-blow (0.0.1)
     motion-cocoapods (1.3.2)
       cocoapods (>= 0.17.0)
-    motion-testflight (1.4)
-    multi_json (1.7.3)
+    motion-testflight (1.5)
+    multi_json (1.7.5)
     multipart-post (1.2.0)
     netrc (0.7.7)
     octokit (1.24.0)
@@ -60,12 +56,12 @@ GEM
       netrc (~> 0.7.7)
     open4 (1.3.0)
     rake (10.0.4)
-    slim (1.1.1)
-      temple (~> 0.4.0)
-      tilt (~> 1.3.2)
-    temple (0.4.1)
-    tilt (1.3.3)
-    xcodeproj (0.5.5)
+    slim (2.0.0)
+      temple (~> 0.6.5)
+      tilt (~> 1.3, >= 1.3.3)
+    temple (0.6.5)
+    tilt (1.4.1)
+    xcodeproj (0.6.0)
       activesupport (~> 3.2.13)
       colored (~> 1.2)
 
@@ -73,7 +69,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  ProMotion!
+  ProMotion
   awesome_print_motion
   bubble-wrap!
   cocoapods

@@ -55,22 +55,47 @@ Motion::Project::App.setup do |app|
 end
 
 #Rake Tasks
-desc "Compile the guidelines from slim->html"
-task :compile do
-  puts "Compiling resources..."
-  puts
+namespace :compile do
 
-  # Removing previously compiled guildelines directory
-  `rm -rf ./resources/Guidelines`
+  desc "Compile the Brewers Association Version"
+  task :ba do
+    reset_folder("./resources/.")
+    reset_folder("./provisioning/.")
 
-  # Convert the slim documents to HTML and place in the resources directory
-  Dir["./Guidelines/**/*.slim"].each do |file|
+    copy_resources("shared")
+    copy_provisioning("BrewersAssociation")
+    compile_guidelines('BrewersAssociation')
+    `rake clean && rake`
+  end
+end
+
+def reset_folder(name)
+  FileUtils.rm_rf name, secure: true
+end
+
+def reset_resources_folder
+  reset_folder "./resources/."
+end
+
+def reset_resources_folder
+  reset_folder "./resources/."
+end
+
+def copy_resources(directory)
+  FileUtils.cp_r Dir.glob("./version/#{directory}/resources/**"), "./resources/"
+end
+
+def copy_provisioning(directory)
+  FileUtils.mkdir_p("./provisioning/") # Create the directory if it doesn't exist.
+  FileUtils.cp Dir.glob("./version/#{directory}/provisioning/**"), "./provisioning/"
+end
+
+def compile_guidelines(directory)
+  Dir["./version/#{directory}/guidelines/**/*.slim"].each do |file|
     puts "Converting #{file}"
-    dst = File.join("./resources", file.chomp(".slim"))
+    dst = File.join("./resources", file.chomp('.slim').gsub("./version/#{directory}/", ""))
     converted = `slimrb "#{file}"`
     FileUtils.mkdir_p(File.dirname(dst))
     File.open(dst, 'w') { |file| file.write(converted) }
   end
-
-  `rake`
 end

@@ -1,11 +1,11 @@
-# Brewers Association Style Guides
+# Beer Style Guides
 ### A [RubyMotion](http://www.rubymotion.com/) application brought to you by [Mohawk Apps](http://www.mohawkapps.com/).
 
 ## How to run the app:
 
 1. You must have a valid license of RubyMotion.
 2. Run `bundle`.
-3. Run `rake compile` to convert the guideline files and place them in the `/resources` directory.
+3. Run `rake compile:ba` to compile all assets for the Brewers Association version of the project or `rake compile:bjcp` for the BJCP style guidelines version of the app.
 4. The simulator should launch automatically.
 
 ## Contributing
