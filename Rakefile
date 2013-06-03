@@ -58,16 +58,28 @@ end
 namespace :compile do
 
   desc "Compile the Brewers Association Version"
-  task :ba do
-    reset_folder("./resources/.")
-    reset_folder("./provisioning/.")
-
-    copy_resources("shared")
+  task :ba => :reset_everything do
     copy_resources("BrewersAssociation")
     copy_provisioning("BrewersAssociation")
     compile_guidelines('BrewersAssociation')
 
     `rake clean && rake`
+  end
+
+  desc "Compile the BJCP Version"
+  task :bjcp => :reset_everything do
+    copy_resources("BJCP")
+    copy_provisioning("BJCP")
+    compile_guidelines('BJCP')
+
+    `rake clean && rake`
+  end
+
+  desc "Reset folders and copy shared assets"
+  task :reset_everything do
+    reset_folder("./resources/.")
+    reset_folder("./provisioning/.")
+    copy_resources("shared")
   end
 end
 
