@@ -16,7 +16,7 @@ class DetailScreen < PM::Screen
 
       #Convert images over to retina if the images exist.
       if Device.retina?
-        content_string.gsub!(/src=['"](.*)\.(jpg|gif|png)['"]/) do |img|
+        content_string.gsub!(/src=['"](.*?)\.(jpg|gif|png)['"]/) do |img|
           if File.exists?(App.resources_path + "/#{$1}@2x.#{$2}")
             # Create the image only so that we can get its actual size
             uiImage = UIImage.imageNamed("/#{$1}@2x.#{$2}")
