@@ -97,7 +97,7 @@ class SRMScreen < PM::Screen
       borderColor: text_border_color
     }
 
-    @target_tap_view.frame = CGRectMake(cgpoint.x, cgpoint.y + @top_view_height, 1, 1)
+    @target_tap_view.frame = CGRectMake(cgpoint.x, cgpoint.y + @top_view_height - 5, 1, 1)
 
     @srm_indicator.presentPointingAtView(@target_tap_view, inView:view, animated:false)
     @top_view.backgroundColor = SRM.color(srm)
