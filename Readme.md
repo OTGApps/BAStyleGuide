@@ -8,7 +8,17 @@
 3. Run `rake compile:ba` to compile all assets for the Brewers Association version of the project or `rake compile:bjcp` for the BJCP style guidelines version of the app.
 4. The simulator should launch automatically.
 
-## Contributing
+## Versions:
+
+### Brewers Association
+
+http://www.brewersassociation.org/pages/business-tools/publications/beer-style-guidelines
+
+### BJCP - NOT DONE!
+
+http://www.bjcp.org/2008styles/catdex.php
+
+## Contributing:
 
 1. Fork it.
 2. Work on a feature branch.
