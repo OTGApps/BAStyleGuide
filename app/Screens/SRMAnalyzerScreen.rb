@@ -91,7 +91,7 @@ class SRMAnalyzerScreen < PM::Screen
       target_image = UIImage.imageNamed("srm_analyzer_target.png")
       @target_area = add UIImageView.alloc.initWithImage(target_image), {
         left: (self.live_preview.frame.size.width / 3) - (target_image.size.width / 2),
-        top: (self.live_preview.frame.size.height / 2) - (target_image.size.height / 2),
+        top: (self.live_preview.frame.size.height / 2) - (target_image.size.height),
         width: target_image.size.width,
         height: target_image.size.height
       }
