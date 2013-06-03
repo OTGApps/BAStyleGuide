@@ -12,8 +12,8 @@ Motion::Project::App.setup do |app|
   app.deployment_target = "5.0"
   app.device_family = [:iphone]
   app.identifier = "com.mohawkapps.BAStyleGuide"
-  app.version = "4"
-  app.short_version = "0.0.4"
+  app.version = "5"
+  app.short_version = "0.1.0"
   app.frameworks += %w(AVFoundation CoreVideo CoreMedia ImageIO QuartzCore)
 
   app.pods do
