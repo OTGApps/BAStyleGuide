@@ -3,7 +3,7 @@ class StylesScreen < ProMotion::SectionedTableScreen
   searchable :placeholder => "Search Styles"
 
   def will_appear
-    self.setTitle("Brewers Association", subtitle:"2013 Style Guides")
+    self.setTitle(NSLocalizedString("orginization", nil), subtitle:NSLocalizedString("version", nil))
 
     set_attributes self.view, {
       backgroundColor: UIColor.whiteColor
@@ -150,7 +150,7 @@ class StylesScreen < ProMotion::SectionedTableScreen
   end
 
   def guidelines_path
-  	File.join(App.resources_path, "Guidelines")
+  	File.join(App.resources_path, "guidelines")
 	end
 
   def category_path(category)

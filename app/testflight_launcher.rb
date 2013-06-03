@@ -2,6 +2,7 @@
 
 if Object.const_defined?('TestFlight') and !UIDevice.currentDevice.model.include?('Simulator')
   NSNotificationCenter.defaultCenter.addObserverForName(UIApplicationDidBecomeActiveNotification, object:nil, queue:nil, usingBlock:lambda do |notification|
+  
   TestFlight.takeOff('566af85ab4aaa64ecedbd95cf7bc2bf7_MjI3Nzc2MjAxMy0wNS0yMyAyMzo0NTowNS4xNzkxODI')
   end)
 end
