@@ -34,19 +34,19 @@ Motion::Project::App.setup do |app|
   app.development do
     app.entitlements['get-task-allow'] = true
     app.codesign_certificate = "iPhone Developer: Mark Rickert (YA2VZGDX4S)"
-    app.provisioning_profile = "./provisioning/BAStyleGuideDevelopment.mobileprovision"
+    app.provisioning_profile = "./provisioning/development.mobileprovision"
   end
 
   app.testflight do
     app.entitlements['get-task-allow'] = false
     app.codesign_certificate = "iPhone Distribution: Mohawk Apps, LLC (DW9QQZR4ZL)"
-    app.provisioning_profile = "./provisioning/BAStyleGuideAdhoc.mobileprovision"
+    app.provisioning_profile = "./provisioning/adhoc.mobileprovision"
   end
 
   app.release do
     app.entitlements['get-task-allow'] = false
     app.codesign_certificate = "iPhone Distribution: Mohawk Apps, LLC (DW9QQZR4ZL)"
-    app.provisioning_profile = "./provisioning/BAStyleGuideDistribution.mobileprovision"
+    app.provisioning_profile = "./provisioning/release.mobileprovision"
   end
 
   app.testflight.api_token = ENV['testflight_api_token'] || abort("You need to set your Testflight API Token environment variable.")
@@ -63,8 +63,10 @@ namespace :compile do
     reset_folder("./provisioning/.")
 
     copy_resources("shared")
+    copy_resources("BrewersAssociation")
     copy_provisioning("BrewersAssociation")
     compile_guidelines('BrewersAssociation')
+
     `rake clean && rake`
   end
 end
