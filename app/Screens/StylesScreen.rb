@@ -38,7 +38,7 @@ class StylesScreen < ProMotion::SectionedTableScreen
 
   def build_cells(path)
       c = []
-    	category_listing(path).each do |style|
+    	section_listing(path).each do |style|
         c << {
     			title: style.format_title,
           cell_identifier: "StyleCell",
@@ -128,7 +128,8 @@ class StylesScreen < ProMotion::SectionedTableScreen
   end
 
   def sections
-  	Dir.entries(guidelines_path).select{|d|
+  	# Returns all folder names
+    Dir.entries(guidelines_path).select{|d|
       File.directory?(File.join(guidelines_path, d)) and not_dotfile(d)
   	}
   end
@@ -137,14 +138,10 @@ class StylesScreen < ProMotion::SectionedTableScreen
   	File.join(App.resources_path, "guidelines")
 	end
 
-  def category_path(category)
-  	File.join(guidelines_path, category)
-	end
-
-	def category_listing(cateogry)
-		cp = category_path(cateogry)
-		Dir.entries(cp).select{|d|
-  		!File.directory?(File.join(cp, d)) and not_dotfile(d)
+	def section_listing(category)
+		path = File.join(guidelines_path, category)
+    Dir.entries(path).select{|d|
+  		!File.directory?(File.join(path, d)) and not_dotfile(d)
   	}
 	end
 
