@@ -31,6 +31,8 @@ class DetailScreen < PM::Screen
 
       # Prepend the stylesheet to the html document before displaying.
       content_string = '<link href="style.css" rel="stylesheet" type="text/css" />' + content_string
+      # Prepend the name of the file.
+      content_string = "<h1>#{self.name}</h1>" + content_string
 
       self.view.loadHTMLString(content_string, baseURL:baseURL)
     end
