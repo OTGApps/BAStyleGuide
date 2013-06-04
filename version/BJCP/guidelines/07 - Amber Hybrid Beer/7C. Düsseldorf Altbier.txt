@@ -1,0 +1,44 @@
+p
+  b Aroma:
+  | Clean yet robust and complex aroma of rich malt, noble hops and restrained fruity esters.  The malt character reflects German base malt varieties.  The hop aroma may vary from moderate to very low, and can have a peppery, floral or perfumy character associated with noble hops.  No diacetyl.
+p
+  b Appearance:
+  | Light amber to orange-bronze to deep copper color, yet stopping short of brown.  Brilliant clarity (may be filtered). Thick, creamy, long-lasting off-white head.
+p
+  b Flavor:
+  | Assertive hop bitterness well balanced by a sturdy yet clean and crisp malt character.  The malt presence is moderated by moderately-high to high attenuation, but considerable rich and complex malt flavors remain.  Some fruity esters may survive the lagering period.  A long-lasting, medium-dry to dry, bittersweet or nutty finish reflects both the hop bitterness and malt complexity.  Noble hop flavor can be moderate to low.  No roasted malt flavors or harshness.  No diacetyl.  Some yeast strains may impart a slight sulfury character.  A light minerally character is also sometimes present in the finish, but is not required.  The apparent bitterness level is sometimes masked by the high malt character; the bitterness can seem as low as moderate if the finish is not very dry.
+p
+  b Mouthfeel:
+  | Medium-bodied.  Smooth.  Medium to medium-high carbonation.  Astringency low to none.  Despite being very full of flavor, is light bodied enough to be consumed as a session beer in its home brewpubs in Düsseldorf.
+p
+  b Overall Impression:
+  | A well balanced, bitter yet malty, clean, smooth, well-attenuated amber-colored German ale.
+p
+  b Comments:
+  | A bitter beer balanced by a pronounced malt richness.  Fermented at cool ale temperature (60-65?F), and lagered at cold temperatures to produce a cleaner, smoother palate than is typical for most ales.   Common variants include Sticke (“secret”) alt, which is slightly stronger, darker, richer and more complex than typical alts.  Bitterness rises up to 60 IBUs and is usually dry hopped and lagered for a longer time.  Münster alt is typically lower in gravity and alcohol, sour, lighter in color (golden), and can contain a significant portion of wheat.  Both Sticke alt and Münster alt should be entered in the specialty category.
+p
+  b History:
+  | The traditional style of beer from Düsseldorf.  “Alt” refers to the “old” style of brewing (i.e., making top-fermented ales) that was common before lager brewing became popular.  Predates the isolation of bottom-fermenting yeast strains, though it approximates many characteristics of lager beers.  The best examples can be found in brewpubs in the Altstadt (“old town”) section of Düsseldorf.
+p
+  b Ingredients:
+  | Grists vary, but usually consist of German base malts (usually Pils, sometimes Munich) with small amounts of crystal, chocolate, and/or black malts used to adjust color.  Occasionally will include some wheat.  Spalt hops are traditional, but other noble hops can also be used.  Moderately carbonate water.  Clean, highly attenuative ale yeast.  A step mash or decoction mash program is traditional.
+table border="1" cellpadding="5"
+  tr
+    td
+      b> Vital Statistics
+      | \:
+    td
+      | OG: 1.046 &ndash; 1.054
+  tr
+    td
+      | IBUs: 35 &ndash; 50
+    td
+      | FG: 1.010 &ndash; 1.015
+  tr
+    td
+      | SRM: 11 &ndash; 17
+    td
+      | ABV: 4.5 &ndash; 5.2%
+p
+  b Commercial Examples:
+  | Altstadt brewpubs: Zum Uerige, Im Füchschen, Schumacher, Zum Schlüssel; other examples: Diebels Alt, Schlösser Alt, Frankenheim Alt

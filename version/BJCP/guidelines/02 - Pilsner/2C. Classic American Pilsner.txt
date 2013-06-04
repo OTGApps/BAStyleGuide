@@ -1,0 +1,44 @@
+p
+  b Aroma:
+  | Low to medium grainy, corn-like or sweet maltiness may be evident (although rice-based beers are more neutral).  Medium to moderately high hop aroma, often classic noble hops.  Clean lager character, with no fruitiness or diacetyl.  Some DMS is acceptable.
+p
+  b Appearance:
+  | Yellow to deep gold color.  Substantial, long lasting white head.  Bright clarity.
+p
+  b Flavor:
+  | Moderate to moderately high maltiness similar in character to the Continental Pilsners but somewhat lighter in intensity due to the use of up to 30% flaked maize (corn) or rice used as an adjunct.  Slight grainy, corn-like sweetness from the use of maize with substantial offsetting hop bitterness.  Rice-based versions are crisper, drier, and often lack corn-like flavors.  Medium to high hop flavor from noble hops (either late addition or first-wort hopped).  Medium to high hop bitterness, which should not be coarse nor have a harsh aftertaste. No fruitiness or diacetyl.  Should be smooth and well-lagered.
+p
+  b Mouthfeel:
+  | Medium body and rich, creamy mouthfeel.  Medium to high carbonation levels.
+p
+  b Overall Impression:
+  | A substantial Pilsner that can stand up to the classic European Pilsners, but exhibiting the native American grains and hops available to German brewers who initially brewed it in the USA.   Refreshing, but with the underlying malt and hops that stand out when compared to other modern American light lagers. Maize lends a distinctive grainy sweetness.  Rice contributes a crisper, more neutral character.
+p
+  b Comments:
+  | The classic American Pilsner was brewed both pre-Prohibition and post-Prohibition with some differences.  OGs of 1.050-1.060 would have been appropriate for pre-Prohibition beers while gravities dropped to 1.044-1.048 after Prohibition.  Corresponding IBUs dropped from a pre-Prohibition level of 30-40 to 25-30 after Prohibition.
+p
+  b History:
+  | A version of Pilsner brewed in the USA by immigrant German brewers who brought the process and yeast with them when they settled in America.  They worked with the ingredients that were native to America to create a unique version of the original Pilsner.  This style died out after Prohibition but was resurrected as a home-brewed style by advocates of the hobby.
+p
+  b Ingredients:
+  | Six-row barley with 20% to 30% flaked maize to dilute the excessive protein levels.  Native American hops such as Clusters, traditional continental noble hops, or modern noble crosses (Ultra, Liberty, Crystal) are also appropriate.  Modern American hops such as Cascade are inappropriate.  Water with a high mineral content can lead to an inappropriate coarseness in flavor and harshness in aftertaste.
+table border="1" cellpadding="5"
+  tr
+    td
+      b> Vital Statistics
+      | \:
+    td
+      | OG: 1.044 &ndash; 1.060
+  tr
+    td
+      | IBUs: 25 &ndash; 40
+    td
+      | FG: 1.010 &ndash; 1.015
+  tr
+    td
+      | SRM: 3 &ndash; 6
+    td
+      | ABV: 4.5 &ndash; 6%
+p
+  b Commercial Examples:
+  | Occasional brewpub and microbrewery specials

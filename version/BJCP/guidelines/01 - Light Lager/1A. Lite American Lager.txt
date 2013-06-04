@@ -1,0 +1,50 @@
+						<p>
+							<b>Aroma:</b> Little to no malt aroma, although it can be grainy, sweet or corn-like if present. Hop aroma may range from none to a light, spicy or floral hop presence. Low levels of yeast character (green apples, DMS, or fruitiness) are optional but acceptable. No diacetyl.
+						</p>
+						<p>
+							<b>Appearance:</b> Very pale straw to pale yellow color. White, frothy head seldom persists. Very clear.
+						</p>
+						<p>
+							<b>Flavor:</b> Crisp and dry flavor with some low levels of grainy or corn-like sweetness. Hop flavor ranges from none to low levels. Hop bitterness at low level. Balance may vary from slightly malty to slightly bitter, but is relatively close to even. High levels of carbonation may provide a slight acidity or dry "sting." No diacetyl. No fruitiness.
+						</p>
+						<p>
+							<b>Mouthfeel:</b> Very light body from use of a high percentage of adjuncts such as rice or corn. Very highly carbonated with slight carbonic bite on the tongue. May seem watery.
+						</p>
+						<p>
+							<b>Overall Impression:</b> Very refreshing and thirst quenching.
+						</p>
+						<p>
+							<b>Comments:</b> A lower gravity and lower calorie beer than standard international lagers. Strong flavors are a fault. Designed to appeal to the broadest range of the general public as possible.
+						</p>
+						<p>
+							<b>Ingredients:</b> Two- or six-row barley with high percentage (up to 40%) of rice or corn as adjuncts.
+						</p>
+						<table cellpadding="5" border="1">
+							<tr>
+								<td>
+									<b>Vital Statistics</b>:
+								</td>
+								<td>
+									OG: 1.028 &ndash; 1.040
+								</td>
+							</tr>
+							<tr>
+								<td>
+									IBUs: 8 &ndash; 12
+								</td>
+								<td>
+									FG: 0.998 &ndash; 1.008
+								</td>
+							</tr>
+							<tr>
+								<td>
+									SRM: 2 &ndash; 3
+								</td>
+								<td>
+									ABV: 2.8 &ndash; 4.2%
+								</td>
+							</tr>
+						</table>
+						<p>
+							<b>Commercial Examples:</b> Bitburger Light, Sam Adams Light, Heineken Premium Light, Miller Lite, Bud Light, Coors Light, Baltika #1 Light, Old Milwaukee Light, Amstel Light
+						</p>

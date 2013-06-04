@@ -1,0 +1,44 @@
+p
+  b Aroma:
+  | Light to moderate sweet malty aroma.  Low to moderate fruitiness is optional, but acceptable.  May have a low to medium hop aroma, and can reflect almost any hop variety.  No diacetyl.
+p
+  b Appearance:
+  | Light yellow to deep gold in color.  Clear to brilliant.  Low to medium white head with fair to good retention.
+p
+  b Flavor:
+  | Initial soft malty sweetness, but optionally some light character malt flavor (e.g., bread, toast, biscuit, wheat) can also be present.  Caramel flavors typically absent.  Low to medium esters optional, but are commonly found in many examples.  Light to moderate hop flavor (any variety), but shouldn’t be overly aggressive.  Low to medium bitterness, but the balance is normally towards the malt.  Finishes medium-dry to somewhat sweet.  No diacetyl.
+p
+  b Mouthfeel:
+  | Medium-light to medium body.  Medium to high carbonation.  Smooth without harsh bitterness or astringency.
+p
+  b Overall Impression:
+  | Easy-drinking, approachable, malt-oriented American craft beer.
+p
+  b Comments:
+  | In addition to the more common American Blonde Ale, this category can also include modern English Summer Ales, American Kölsch-style beers, and less assertive American and English pale ales.
+p
+  b History:
+  | Currently produced by many (American) microbreweries and brewpubs.  Regional variations exist (many West Coast brewpub examples are more assertive, like pale ales) but in most areas this beer is designed as the entry-level craft beer.
+p
+  b Ingredients:
+  | Generally all malt, but can include up to 25% wheat malt and some sugar adjuncts.  Any hop variety can be used.  Clean American, lightly fruity English, or Kölsch yeast.  May also be made with lager yeast, or cold-conditioned.  Some versions may have honey, spices and/or fruit added, although if any of these ingredients are stronger than a background flavor they should be entered in specialty, spiced or fruit beer categories instead.  Extract versions should only use the lightest malt extracts and avoid kettle caramelization.
+table border="1" cellpadding="5"
+  tr
+    td
+      b> Vital Statistics
+      | \:
+    td
+      | OG: 1.038 &ndash; 1.054
+  tr
+    td
+      | IBUs: 15 &ndash; 28
+    td
+      | FG: 1.008 &ndash; 1.013
+  tr
+    td
+      | SRM: 3 &ndash; 6
+    td
+      | ABV: 3.8 &ndash; 5.5%
+p
+  b Commercial Examples:
+  | Pelican Kiwanda Cream Ale, Russian River Aud Blonde, Rogue Oregon Golden Ale, Widmer Blonde Ale, Fuller’s Summer Ale, Hollywood Blonde, Redhook Blonde

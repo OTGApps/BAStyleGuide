@@ -1,0 +1,46 @@
+p
+  b Aroma:
+  | Rich German malt aroma (of Vienna and/or Munich malt).  A light to moderate toasted malt aroma is often present.  Clean lager aroma with no fruity esters or diacetyl.  No hop aroma.  Caramel aroma is inappropriate.
+p
+  b Appearance:
+  | Dark gold to deep orange-red color. Bright clarity, with solid, off-white, foam stand.
+p
+  b Flavor:
+  | Initial malty sweetness, but finish is moderately dry.  Distinctive and complex maltiness often includes a toasted aspect.  Hop bitterness is moderate, and noble hop flavor is low to none. Balance is toward malt, though the finish is not sweet.  Noticeable caramel or roasted flavors are inappropriate.  Clean lager character with no diacetyl or fruity esters.
+p
+  b Mouthfeel:
+  | Medium body, with a creamy texture and medium carbonation.  Smooth.  Fully fermented, without a cloying finish.
+p
+  b Overall Impression:
+  | Smooth, clean, and rather rich, with a depth of malt character.  This is one of the classic malty styles, with a maltiness that is often described as soft, complex, and elegant but never cloying.
+p
+  b Comments:
+  | Domestic German versions tend to be golden, like a strong Pils-dominated Helles.  Export German versions are typically orange-amber in color, and have a distinctive toasty malt character.  German beer tax law limits the OG of the style at 14?P since it is a
+  i vollbier,
+  | although American versions can be stronger.  “Fest” type beers are special occasion beers that are usually stronger than their everyday counterparts.
+p
+  b History:
+  | Origin is credited to Gabriel Sedlmayr, based on an adaptation of the Vienna style developed by Anton Dreher around 1840, shortly after lager yeast was first isolated.  Typically brewed in the spring, signaling the end of the traditional brewing season and stored in cold caves or cellars during the warm summer months.  Served in autumn amidst traditional celebrations.
+p
+  b Ingredients:
+  | Grist varies, although German Vienna malt is often the backbone of the grain bill, with some Munich malt, Pils malt, and possibly some crystal malt. All malt should derive from the finest quality two-row barley. Continental hops, especially noble varieties, are most authentic.  Somewhat alkaline water (up to 300 PPM), with significant carbonate content is welcome.  A decoction mash can help develop the rich malt profile.
+table border="1" cellpadding="5"
+  tr
+    td
+      b> Vital Statistics
+      | \:
+    td
+      | OG: 1.050 – 1.057
+  tr
+    td
+      | IBUs: 20 – 28
+    td
+      | FG: 1.012 – 1.016
+  tr
+    td
+      | SRM: 7 – 14
+    td
+      | ABV: 4.8 – 5.7%
+p
+  b Commercial Examples:
+  | Paulaner Oktoberfest, Ayinger Oktoberfest-Märzen, Hacker-Pschorr Original Oktoberfest, Hofbräu Oktoberfest, Victory Festbier, Great Lakes Oktoberfest, Spaten Oktoberfest, Capital Oktoberfest, Gordon Biersch Märzen, Goose Island Oktoberfest, Samuel Adams Oktoberfest (a bit unusual in its late hopping)

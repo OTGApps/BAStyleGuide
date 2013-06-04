@@ -1,0 +1,44 @@
+p
+  b Aroma:
+  | Usually moderate to strong hop aroma from dry hopping or late kettle additions of American hop varieties.  A citrusy hop character is very common, but not required. Low to moderate maltiness supports the hop presentation, and may optionally show small amounts of specialty malt character (bready, toasty, biscuity).  Fruity esters vary from moderate to none.  No diacetyl.  Dry hopping (if used) may add grassy notes, although this character should not be excessive.
+p
+  b Appearance:
+  | Pale golden to deep amber.  Moderately large white to off-white head with good retention.  Generally quite clear, although dry-hopped versions may be slightly hazy.
+p
+  b Flavor:
+  | Usually a moderate to high hop flavor, often showing a citrusy American hop character (although other hop varieties may be used).  Low to moderately high clean malt character supports the hop presentation, and may optionally show small amounts of specialty malt character (bready, toasty, biscuity).  The balance is typically towards the late hops and bitterness, but the malt presence can be substantial.  Caramel flavors are usually restrained or absent.  Fruity esters can be moderate to none.  Moderate to high hop bitterness with a medium to dry finish.  Hop flavor and bitterness often lingers into the finish.  No diacetyl. Dry hopping (if used) may add grassy notes, although this character should not be excessive.
+p
+  b Mouthfeel:
+  | Medium-light to medium body.  Carbonation moderate to high.  Overall smooth finish without astringency often associated with high hopping rates.
+p
+  b Overall Impression:
+  | Refreshing and hoppy, yet with sufficient supporting malt.
+p
+  b Comments:
+  | There is some overlap in color between American pale ale and American amber ale.  The American pale ale will generally be cleaner, have a less caramelly malt profile, less body, and often more finishing hops.
+p
+  b History:
+  | An American adaptation of English pale ale, reflecting indigenous ingredients (hops, malt, yeast, and water).  Often lighter in color, cleaner in fermentation by-products, and having less caramel flavors than English counterparts.
+p
+  b Ingredients:
+  | Pale ale malt, typically American two-row.  American hops, often but not always ones with a citrusy character.  American ale yeast.  Water can vary in sulfate content, but carbonate content should be relatively low.  Specialty grains may add character and complexity, but generally make up a relatively small portion of the grist.  Grains that add malt flavor and richness, light sweetness, and toasty or bready notes are often used (along with late hops) to differentiate brands.
+table border="1" cellpadding="5"
+  tr
+    td
+      b> Vital Statistics
+      | \:
+    td
+      | OG: 1.045 &ndash; 1.060
+  tr
+    td
+      | IBUs: 30 &ndash; 45
+    td
+      | FG: 1.010 &ndash; 1.015
+  tr
+    td
+      | SRM: 5 &ndash; 14
+    td
+      | ABV: 4.5 &ndash; 6.2%
+p
+  b Commercial Examples:
+  | Sierra Nevada Pale Ale, Stone Pale Ale, Great Lakes Burning River Pale Ale, Bear Republic XP Pale Ale, Anderson Valley Poleeko Gold Pale Ale, Deschutes Mirror Pond, Full Sail Pale Ale, Three Floyds X-Tra Pale Ale, Firestone Pale Ale, Left Hand Brewing Jackman’s Pale Ale

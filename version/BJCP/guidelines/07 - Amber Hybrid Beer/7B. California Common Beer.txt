@@ -1,0 +1,44 @@
+p
+  b Aroma:
+  | Typically showcases the signature Northern Brewer hops (with woody, rustic or minty qualities) in moderate to high strength.  Light fruitiness acceptable.  Low to moderate caramel and/or toasty malt aromatics support the hops.  No diacetyl.
+p
+  b Appearance:
+  | Medium amber to light copper color.  Generally clear.  Moderate off-white head with good retention.
+p
+  b Flavor:
+  | Moderately malty with a pronounced hop bitterness.  The malt character is usually toasty (not roasted) and caramelly.  Low to moderately high hop flavor, usually showing Northern Brewer qualities (woody, rustic, minty).  Finish fairly dry and crisp, with a lingering hop bitterness and a firm, grainy malt flavor.  Light fruity esters are acceptable, but otherwise clean.  No diacetyl.
+p
+  b Mouthfeel:
+  | Medium-bodied.  Medium to medium-high carbonation.
+p
+  b Overall Impression:
+  | A lightly fruity beer with firm, grainy maltiness, interesting toasty and caramel flavors, and showcasing the signature Northern Brewer varietal hop character.
+p
+  b Comments:
+  | This style is narrowly defined around the prototypical Anchor Steam example.  Superficially similar to an American pale or amber ale, yet differs in that the hop flavor/aroma is woody/minty rather than citrusy, malt flavors are toasty and caramelly, the hopping is always assertive, and a warm-fermented lager yeast is used.
+p
+  b History:
+  | American West Coast original.  Large shallow open fermenters (coolships) were traditionally used to compensate for the absence of refrigeration and to take advantage of the cool ambient temperatures in the San Francisco Bay area.  Fermented with a lager yeast, but one that was selected to thrive at the cool end of normal ale fermentation temperatures.
+p
+  b Ingredients:
+  | Pale ale malt, American hops (usually Northern Brewer, rather than citrusy varieties), small amounts of toasted malt and/or crystal malts.  Lager yeast, however some strains (often with the mention of “California” in the name) work better than others at the warmer fermentation temperatures (55 to 60?F) used.  Note that some German yeast strains produce inappropriate sulfury character.  Water should have relatively low sulfate and low to moderate carbonate levels.
+table border="1" cellpadding="5"
+  tr
+    td
+      b> Vital Statistics
+      | \:
+    td
+      | OG: 1.048 &ndash; 1.054
+  tr
+    td
+      | IBUs: 30 &ndash; 45
+    td
+      | FG: 1.011 &ndash; 1.014
+  tr
+    td
+      | SRM: 10 &ndash; 14
+    td
+      | ABV: 4.5 &ndash; 5.5%
+p
+  b Commercial Examples:
+  | Anchor Steam, Southampton Steem Beer, Flying Dog Old Scratch Amber Lager

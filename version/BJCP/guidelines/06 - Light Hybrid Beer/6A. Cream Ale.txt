@@ -1,0 +1,44 @@
+p
+  b Aroma:
+  | Faint malt notes.  A sweet, corn-like aroma and low levels of DMS are commonly found.  Hop aroma low to none.  Any variety of hops may be used, but neither hops nor malt dominate.  Faint esters may be present in some examples, but are not required.  No diacetyl.
+p
+  b Appearance:
+  | Pale straw to moderate gold color, although usually on the pale side.  Low to medium head with medium to high carbonation.  Head retention may be no better than fair due to adjunct use.  Brilliant, sparkling clarity.
+p
+  b Flavor:
+  | Low to medium-low hop bitterness. Low to moderate maltiness and sweetness, varying with gravity and attenuation.  Usually well attenuated.  Neither malt nor hops prevail in the taste.  A low to moderate corny flavor from corn adjuncts is commonly found, as is some DMS.  Finish can vary from somewhat dry to faintly sweet from the corn, malt, and sugar.  Faint fruity esters are optional.  No diacetyl.
+p
+  b Mouthfeel:
+  | Generally light and crisp, although body can reach medium.  Smooth mouthfeel with medium to high attenuation; higher attenuation levels can lend a “thirst quenching” finish.  High carbonation.  Higher gravity examples may exhibit a slight alcohol warmth.
+p
+  b Overall Impression:
+  | A clean, well-attenuated, flavorful American lawnmower beer.
+p
+  b Comments:
+  | Classic American (i.e., pre-prohibition) Cream Ales were slightly stronger, hoppier (including some dry hopping) and more bitter (25-30+ IBUs).  These versions should be entered in the specialty/experimental category.  Most commercial examples are in the 1.050&ndash;1.053 OG range, and bitterness rarely rises above 20 IBUs.
+p
+  b History:
+  | An ale version of the American lager style.  Produced by ale brewers to compete with lager brewers in the Northeast and Mid-Atlantic States.  Originally known as sparkling or present use ales, lager strains were (and sometimes still are) used by some brewers, but were not historically mixed with ale strains.  Many examples are kräusened to achieve carbonation.  Cold conditioning isn’t traditional, although modern brewers sometimes use it.
+p
+  b Ingredients:
+  | American ingredients most commonly used.  A grain bill of six-row malt, or a combination of six-row and North American two-row, is common.  Adjuncts can include up to 20% flaked maize in the mash, and up to 20% glucose or other sugars in the boil.  Soft water preferred.  Any variety of hops can be used for bittering and finishing.
+table border="1" cellpadding="5"
+  tr
+    td
+      b> Vital Statistics
+      | \:
+    td
+      | OG: 1.042 &ndash; 1.055
+  tr
+    td
+      | IBUs: 15 &ndash; 20
+    td
+      | FG: 1.006 &ndash; 1.012
+  tr
+    td
+      | SRM: 2.5 &ndash; 5
+    td
+      | ABV: 4.2&ndash; 5.6%
+p
+  b Commercial Examples:
+  | Genesee Cream Ale, Little Kings Cream Ale (Hudepohl), Anderson Valley Summer Solstice Cerveza Crema, Sleeman Cream Ale, New Glarus Spotted Cow, Wisconsin Brewing Whitetail Cream Ale

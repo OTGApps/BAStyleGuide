@@ -1,0 +1,44 @@
+p
+  b Aroma:
+  | Very low to no Pils malt aroma.  A pleasant, subtle fruit aroma from fermentation (apple, cherry or pear) is acceptable, but not always present.  A low noble hop aroma is optional but not out of place (it is present only in a small minority of authentic versions).  Some yeasts may give a slight winy or sulfury character (this characteristic is also optional, but not a fault).
+p
+  b Appearance:
+  | Very pale gold to light gold.  Authentic versions are filtered to a brilliant clarity.  Has a delicate white head that may not persist.
+p
+  b Flavor:
+  | Soft, rounded palate comprising of a delicate flavor balance between soft yet attenuated malt, an almost imperceptible fruity sweetness from fermentation, and a medium-low to medium bitterness with a delicate dryness and slight pucker in the finish (but no harsh aftertaste).  The noble hop flavor is variable, and can range from low to moderately high; most are medium-low to medium.  One or two examples (Dom being the most prominent) are noticeably malty-sweet up front.  Some versions can have a slightly minerally or sulfury water or yeast character that accentuates the dryness and flavor balance. Some versions may have a slight wheat taste, although this is quite rare.  Otherwise very clean with no diacetyl or fusels.
+p
+  b Mouthfeel:
+  | Smooth and crisp.  Medium-light body, although a few versions may be medium.  Medium to medium-high carbonation.  Generally well-attenuated.
+p
+  b Overall Impression:
+  | A clean, crisp, delicately balanced beer usually with very subtle fruit flavors and aromas.  Subdued maltiness throughout leads to a pleasantly refreshing tang in the finish.  To the untrained taster easily mistaken for a light lager, a somewhat subtle Pilsner, or perhaps a blonde ale.
+p
+  b Comments:
+  | Served in a tall, narrow 200ml glass called a “Stange.”  Each Köln brewery produces a beer of different character, and each interprets the Konvention slightly differently.  Allow for a range of variation within the style when judging.  Note that drier versions may seem hoppier or more bitter than the IBU specifications might suggest.  Due to its delicate flavor profile, Kölsch tends to have a relatively short shelf-life; older examples can show some oxidation defects.  Some Köln breweries (e.g., Dom, Hellers) are now producing young, unfiltered versions known as Wiess (which should not be entered in this category).
+p
+  b History:
+  | Kölsch is an appellation protected by the Kölsch Konvention, and is restricted to the 20 or so breweries in and around Cologne (Köln).  The Konvention simply defines the beer as a “light, highly attenuated, hop-accentuated, clear top-fermenting Vollbier.”
+p
+  b Ingredients:
+  | German noble hops (Hallertau, Tettnang, Spalt or Hersbrucker).  German Pils or pale malt.  Attenuative, clean ale yeast.  Up to 20% wheat may be used, but this is quite rare in authentic versions.  Water can vary from extremely soft to moderately hard.  Traditionally uses a step mash program, although good results can be obtained using a single rest at 149?F.  Fermented at cool ale temperatures (59-65?F) and lagered for at least a month, although many Cologne brewers ferment at 70?F and lager for no more than two weeks.
+table border="1" cellpadding="5"
+  tr
+    td
+      b> Vital Statistics
+      | \:
+    td
+      | OG: 1.044 &ndash; 1.050
+  tr
+    td
+      | IBUs: 20 &ndash; 30
+    td
+      | FG: 1.007 &ndash; 1.011
+  tr
+    td
+      | SRM: 3.5 &ndash; 5
+    td
+      | ABV: 4.4 &ndash; 5.2%
+p
+  b Commercial Examples:
+  | Available in Cologne only: PJ Früh, Hellers, Malzmühle, Paeffgen, Sion, Peters, Dom; import versions available in parts of North America: Reissdorf, Gaffel; Non-German versions: Eisenbahn Dourada, Goose Island Summertime, Alaska Summer Ale, Harpoon Summer Beer, New Holland Lucid, Saint Arnold Fancy Lawnmower, Capitol City Capitol Kölsch, Shiner Kölsch

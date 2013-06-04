@@ -1,0 +1,44 @@
+p
+  b Aroma:
+  | Rich malty sweetness often containing caramel, toffee, nutty to deep toast, and/or licorice notes.  Complex alcohol and ester profile of moderate strength, and reminiscent of plums, prunes, raisins, cherries or currants, occasionally with a vinous Port-like quality.  Some darker malt character that is deep chocolate, coffee or molasses but never burnt.  No hops.  No sourness.  Very smooth.
+p
+  b Appearance:
+  | Dark reddish copper to opaque dark brown (not black).  Thick, persistent tan-colored head.  Clear, although darker versions can be opaque.
+p
+  b Flavor:
+  | As with aroma, has a rich malty sweetness with a complex blend of deep malt, dried fruit esters, and alcohol.  Has a prominent yet smooth schwarzbier-like roasted flavor that stops short of burnt.  Mouth-filling and very smooth.  Clean lager character; no diacetyl.  Starts sweet but darker malt flavors quickly dominates and persists through finish.  Just a touch dry with a hint of roast coffee or licorice in the finish.  Malt can have a caramel, toffee, nutty, molasses and/or licorice complexity.  Light hints of black currant and dark fruits.  Medium-low to medium bitterness from malt and hops, just to provide balance.  Hop flavor from slightly spicy hops (Lublin or Saaz types) ranges from none to medium-low.
+p
+  b Mouthfeel:
+  | Generally quite full-bodied and smooth, with a well-aged alcohol warmth (although the rarer lower gravity Carnegie-style versions will have a medium body and less warmth).  Medium to medium-high carbonation, making it seem even more mouth-filling.  Not heavy on the tongue due to carbonation level.  Most versions are in the 7-8.5% ABV range.
+p
+  b Overall Impression:
+  | A Baltic Porter often has the malt flavors reminiscent of an English brown porter and the restrained roast of a schwarzbier, but with a higher OG and alcohol content than either.  Very complex, with multi-layered flavors.
+p
+  b Comments:
+  | May also be described as an Imperial Porter, although heavily roasted or hopped versions should be entered as either Imperial Stouts (13F) or Specialty Beers (23).
+p
+  b History:
+  | Traditional beer from countries bordering the Baltic Sea.  Derived from English porters but influenced by Russian Imperial Stouts.
+p
+  b Ingredients:
+  | Generally lager yeast (cold fermented if using ale yeast).  Debittered chocolate or black malt.  Munich or Vienna base malt.  Continental hops.  May contain crystal malts and/or adjuncts.  Brown or amber malt common in historical recipes.
+table border="1" cellpadding="5"
+  tr
+    td
+      b> Vital Statistics
+      | \:
+    td
+      | OG: 1.060 &ndash; 1.090
+  tr
+    td
+      | IBUs: 20 &ndash; 40
+    td
+      | FG: 1.016 &ndash; 1.024
+  tr
+    td
+      | SRM: 17 &ndash; 30
+    td
+      | ABV: 5.5 &ndash; 9.5%
+p
+  b Commercial Examples:
+  | Sinebrychoff Porter (Finland), Okocim Porter (Poland), Zywiec Porter (Poland), Baltika #6 Porter (Russia), Carnegie Stark Porter (Sweden), Aldaris Porteris (Latvia), Utenos Porter (Lithuania), Stepan Razin Porter (Russia), Nøgne ø porter (Norway), Neuzeller Kloster-Bräu Neuzeller Porter (Germany), Southampton Imperial Baltic Porter

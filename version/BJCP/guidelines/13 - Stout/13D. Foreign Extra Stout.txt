@@ -1,0 +1,47 @@
+p
+  b Aroma:
+  | Roasted grain aromas moderate to high, and can have coffee, chocolate and/or lightly burnt notes.  Fruitiness medium to high.  Some versions may have a sweet aroma, or molasses, licorice, dried fruit, and/or vinous aromatics.  Stronger versions can have the aroma of alcohol (never sharp, hot, or solventy).  Hop aroma low to none.  Diacetyl low to none.
+p
+  b Appearance:
+  | Very deep brown to black in color.  Clarity usually obscured by deep color (if not opaque, should be clear).  Large tan to brown head with good retention.
+p
+  b Flavor:
+  | Tropical versions can be quite sweet without much roast or bitterness, while export versions can be moderately dry (reflecting impression of a scaled-up version of either sweet stout or dry stout).  Roasted grain and malt character can be moderate to high, although sharpness of dry stout will not be present in any example.  Tropical versions can have high fruity esters, smooth dark grain flavors, and restrained bitterness; they often have a sweet, rum-like quality.  Export versions tend to have lower esters, more assertive roast flavors, and higher bitterness.  The roasted flavors of either version may taste of coffee, chocolate, or lightly burnt grain.  Little to no hop flavor.  Very low to no diacetyl.
+p
+  b Mouthfeel:
+  | Medium-full to full body, often with a smooth, creamy character.  May give a warming (but never hot) impression from alcohol presence.  Moderate to moderately-high carbonation.
+p
+  b Overall Impression:
+  | A very dark, moderately strong, roasty ale.  Tropical varieties can be quite sweet, while export versions can be drier and fairly robust.
+p
+  b Comments:
+  | A rather broad class of stouts, these can be either fruity and sweet, dry and bitter, or even tinged with Brettanomyces (e.g., Guinness Foreign Extra Stout; this type of beer is best entered as a Specialty Beer &ndash; Category 23).  Think of the style as either a scaled-up dry and/or sweet stout, or a scaled-down Imperial stout without the late hops.  Highly bitter and hoppy versions are best entered as American-style Stouts (13E).
+p
+  b History:
+  | Originally high-gravity stouts brewed for tropical markets (and hence, sometimes known as “Tropical Stouts”). Some bottled export (i.e., stronger) versions of dry or sweet stout also fit this profile.  Guinness Foreign Extra Stout has been made since the early 1800s.
+p
+  b Ingredients:
+  | Similar to dry or sweet stout, but with more gravity.  Pale and dark roasted malts and grains.  Hops mostly for bitterness.  May use adjuncts and sugar to boost gravity.  Ale yeast (although some tropical stouts are brewed with lager yeast).
+table border="1" cellpadding="5"
+  tr
+    td
+      b> Vital Statistics
+      | \:
+    td
+      | OG: 1.056 &ndash; 1.075
+  tr
+    td
+      | IBUs: 30 &ndash; 70
+    td
+      | FG: 1.010 &ndash; 1.018
+  tr
+    td
+      | SRM: 30 &ndash; 40
+    td
+      | ABV: 5.5 &ndash; 8%
+p
+  b Commercial Examples:
+  b Tropical-Type:
+  | Lion Stout (Sri Lanka), Dragon Stout (Jamaica), ABC Stout (Singapore), Royal Extra “The Lion Stout” (Trinidad), Jamaica Stout (Jamaica),
+  b Export-Type:
+  | Freeminer Deep Shaft Stout, Guinness Foreign Extra Stout (bottled, not sold in the US), Ridgeway of Oxfordshire Foreign Extra Stout, Coopers Best Extra Stout, Elysian Dragonstooth Stout

@@ -1,0 +1,44 @@
+p
+  b Aroma:
+  | Strong malt aroma, often with moderate amounts of rich melanoidins and/or toasty overtones.  Virtually no hop aroma.  Some alcohol may be noticeable.  Clean.  No diacetyl.  Low to no fruity esters.
+p
+  b Appearance:
+  | Light copper to brown color, often with attractive garnet highlights.  Lagering should provide good clarity despite the dark color.  Large, creamy, persistent, off-white head.
+p
+  b Flavor:
+  | Complex maltiness is dominated by the rich flavors of Munich and Vienna malts, which contribute melanoidins and toasty flavors.  Some caramel notes may be present from decoction mashing and a long boil.  Hop bitterness is generally only high enough to support the malt flavors, allowing a bit of sweetness to linger into the finish.  Well-attenuated, not cloying.  Clean, with no esters or diacetyl. No hop flavor.  No roasted or burnt character.
+p
+  b Mouthfeel:
+  | Medium to medium-full bodied.  Moderate to moderately low carbonation.  Some alcohol warmth may be found, but should never be hot.  Smooth, without harshness or astringency.
+p
+  b Overall Impression:
+  | A dark, strong, malty lager beer.
+p
+  b Comments:
+  | Decoction mashing and long boiling plays an important part of flavor development, as it enhances the caramel and melanoidin flavor aspects of the malt.  Any fruitiness is due to Munich and other specialty malts, not yeast-derived esters developed during fermentation.
+p
+  b History:
+  | Originated in the Northern German city of Einbeck, which was a brewing center and popular exporter in the days of the Hanseatic League (14th to 17th century).    Recreated in Munich starting in the 17th century.  The name “bock” is based on a corruption of the name “Einbeck” in the Bavarian dialect, and was thus only used after the beer came to Munich.  “Bock” also means “billy-goat” in German, and is often used in logos and advertisements.
+p
+  b Ingredients:
+  | Munich and Vienna malts, rarely a tiny bit of dark roasted malts for color adjustment, never any non-malt adjuncts.  Continental European hop varieties are used.  Clean lager yeast.  Water hardness can vary, although moderately carbonate water is typical of Munich.
+table border="1" cellpadding="5"
+  tr
+    td
+      b> Vital Statistics
+      | \:
+    td
+      | OG: 1.064 &ndash; 1.072
+  tr
+    td
+      | IBUs: 20 &ndash; 27
+    td
+      | FG: 1.013 &ndash; 1.019
+  tr
+    td
+      | SRM: 14 &ndash; 22
+    td
+      | ABV: 6.3 &ndash; 7.2%
+p
+  b Commercial Examples:
+  | Einbecker Ur-Bock Dunkel, Pennsylvania Brewing St. Nick Bock, Aass Bock, Great Lakes Rockefeller Bock, Stegmaier Brewhouse Bock

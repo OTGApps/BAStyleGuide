@@ -1,0 +1,44 @@
+p
+  b Aroma:
+  | Hop aroma moderately-high to moderately-low, and can use any variety of hops although UK hops are most traditional.  Medium to medium-high malt aroma, often with a low to moderately strong caramel component (although this character will be more subtle in paler versions). Medium-low to medium-high fruity esters.  Generally no diacetyl, although very low levels are allowed.   May have light, secondary notes of sulfur and/or alcohol in some examples (optional).
+p
+  b Appearance:
+  | Golden to deep copper.  Good to brilliant clarity.  Low to moderate white to off-white head.  A low head is acceptable when carbonation is also low
+p
+  b Flavor:
+  | Medium-high to medium bitterness with supporting malt flavors evident.  Normally has a moderately low to somewhat strong caramelly malt sweetness.  Hop flavor moderate to moderately high (any variety, although earthy, resiny, and/or floral UK hops are most traditional).  Hop bitterness and flavor should be noticeable, but should not totally dominate malt flavors.  May have low levels of secondary malt flavors (e.g., nutty, biscuity) adding complexity.  Moderately-low to high fruity esters.  Optionally may have low amounts of alcohol, and up to a moderate minerally/sulfury flavor.  Medium-dry to dry finish (particularly if sulfate water is used).  Generally no diacetyl, although very low levels are allowed.
+p
+  b Mouthfeel:
+  | Medium-light to medium-full body.  Low to moderate carbonation, although bottled commercial versions will be higher.  Stronger versions may have a slight alcohol warmth but this character should not be too high.
+p
+  b Overall Impression:
+  | An average-strength to moderately-strong English ale. The balance may be fairly even between malt and hops to somewhat bitter.  Drinkability is a critical component of the style; emphasis is still on the bittering hop addition as opposed to the aggressive middle and late hopping seen in American ales.  A rather broad style that allows for considerable interpretation by the brewer.
+p
+  b Comments:
+  | More evident malt and hop flavors than in a special or best bitter.  Stronger versions may overlap somewhat with old ales, although strong bitters will tend to be paler and more bitter.  Fuller’s ESB is a unique beer with a very large, complex malt profile not found in other examples; most strong bitters are fruitier and hoppier. Judges should not judge all beers in this style as if they were Fuller’s ESB clones.  Some modern English variants are brewed exclusively with pale malt and are known as golden or summer bitters. Most bottled or kegged versions of UK-produced bitters are higher-alcohol versions of their cask (draught) products produced specifically for export.  The IBU levels are often not adjusted, so the versions available in the US often do not directly correspond to their style subcategories in Britain.  English pale ales are generally considered a premium, export-strength pale, bitter beer that roughly approximates a strong bitter, although reformulated for bottling (including containing higher carbonation).
+p
+  b History:
+  | Strong bitters can be seen as a higher-gravity version of best bitters (although not necessarily “more premium” since best bitters are traditionally the brewer’s finest product).  Since beer is sold by strength in the UK, these beers often have some alcohol flavor (perhaps to let the consumer know they are getting their due).  In England today, “ESB” is a brand unique to Fullers; in America, the name has been co-opted to describe a malty, bitter, reddish, standard-strength (for the US) English-type ale.  Hopping can be English or a combination of English and American.
+p
+  b Ingredients:
+  | Pale ale, amber, and/or crystal malts, may use a touch of black malt for color adjustment.  May use sugar adjuncts, corn or wheat.  English hops most typical, although American and European varieties are becoming more common (particularly in the paler examples).  Characterful English yeast.  “Burton” versions use medium to high sulfate water.
+table border="1" cellpadding="5"
+  tr
+    td
+      b> Vital Statistics
+      | \:
+    td
+      | OG: 1.048 &ndash; 1.060
+  tr
+    td
+      | IBUs: 30 &ndash; 50
+    td
+      | FG: 1.010 &ndash; 1.016
+  tr
+    td
+      | SRM: 6 &ndash; 18
+    td
+      | ABV: 4.6 &ndash; 6.2%
+p
+  b Commercial Examples:
+  | Fullers ESB, Adnams Broadside, Shepherd Neame Bishop's Finger, Young’s Ram Rod, Samuel Smith’s Old Brewery Pale Ale, Bass Ale, Whitbread Pale Ale, Shepherd Neame Spitfire, Marston’s Pedigree, Black Sheep Ale, Vintage Henley, Mordue Workie Ticket, Morland Old Speckled Hen, Greene King Abbot Ale, Bateman's  XXXB, Gale’s Hordean Special Bitter (HSB), Ushers 1824 Particular Ale, Hopback Summer Lightning, Great Lakes Moondog Ale, Shipyard Old Thumper, Alaskan ESB, Geary’s Pale Ale, Cooperstown Old Slugger, Anderson Valley Boont ESB, Avery 14’er ESB, Redhook ESB

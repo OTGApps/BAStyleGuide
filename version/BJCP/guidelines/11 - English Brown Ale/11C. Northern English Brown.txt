@@ -1,0 +1,41 @@
+p
+  b Aroma:
+  | Light, sweet malt aroma with toffee, nutty and/or caramel notes.  A light but appealing fresh hop aroma (UK varieties) may also be noticed.  A light fruity ester aroma may be evident in these beers, but should not dominate.  Very low to no diacetyl.
+p
+  b Appearance:
+  | Dark amber to reddish-brown color.  Clear.  Low to moderate off-white to light tan head.
+p
+  b Flavor:
+  | Gentle to moderate malt sweetness, with a nutty, lightly caramelly character and a medium-dry to dry finish.  Malt may also have a toasted, biscuity, or toffee-like character.  Medium to medium-low bitterness.  Malt-hop balance is nearly even, with hop flavor low to none (UK varieties).  Some fruity esters can be present; low diacetyl (especially butterscotch) is optional but acceptable.
+p
+  b Mouthfeel:
+  | Medium-light to medium body.  Medium to medium-high carbonation.
+p
+  b Overall Impression:
+  | Drier and more hop-oriented that southern English brown ale, with a nutty character rather than caramel.
+p
+  b Comments:
+  | English brown ales are generally split into sub-styles along geographic lines.
+p
+  b Ingredients:
+  | English mild ale or pale ale malt base with caramel malts. May also have small amounts darker malts (e.g., chocolate) to provide color and the nutty character.  English hop varieties are most authentic. Moderate carbonate water.
+table border="1" cellpadding="5"
+  tr
+    td
+      b> Vital Statistics
+      | \:
+    td
+      | OG: 1.040 &ndash; 1.052
+  tr
+    td
+      | IBUs: 20 &ndash; 30
+    td
+      | FG: 1.008 &ndash; 1.013
+  tr
+    td
+      | SRM: 12 &ndash; 22
+    td
+      | ABV: 4.2 &ndash; 5.4%
+p
+  b Commercial Examples:
+  | Newcastle Brown Ale, Samuel Smith’s Nut Brown Ale, Riggwelter Yorkshire Ale, Wychwood Hobgoblin, Tröegs Rugged Trail Ale, Alesmith Nautical Nut Brown Ale, Avery Ellie’s Brown Ale, Goose Island Nut Brown Ale, Samuel Adams Brown Ale

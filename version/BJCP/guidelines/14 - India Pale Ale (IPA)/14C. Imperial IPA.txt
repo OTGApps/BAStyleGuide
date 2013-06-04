@@ -1,0 +1,44 @@
+p
+  b Aroma:
+  | A prominent to intense hop aroma that can be derived from American, English and/or noble varieties (although a citrusy hop character is almost always present).  Most versions are dry hopped and can have an additional resinous or grassy aroma, although this is not absolutely required.  Some clean malty sweetness may be found in the background.  Fruitiness, either from esters or hops, may also be detected in some versions, although a neutral fermentation character is typical.  Some alcohol can usually be noted, but it should not have a “hot” character.
+p
+  b Appearance:
+  | Color ranges from golden amber to medium reddish copper; some versions can have an orange-ish tint.  Should be clear, although unfiltered dry-hopped versions may be a bit hazy.  Good head stand with off-white color should persist.
+p
+  b Flavor:
+  | Hop flavor is strong and complex, and can reflect the use of American, English and/or noble hop varieties.  High to absurdly high hop bitterness, although the malt backbone will generally support the strong hop character and provide the best balance.  Malt flavor should be low to medium, and is generally clean and malty although some caramel or toasty flavors are acceptable at low levels. No diacetyl.  Low fruitiness is acceptable but not required.  A long, lingering bitterness is usually present in the aftertaste but should not be harsh.  Medium-dry to dry finish.  A clean, smooth alcohol flavor is usually present.  Oak is inappropriate in this style.  May be slightly sulfury, but most examples do not exhibit this character.
+p
+  b Mouthfeel:
+  | Smooth, medium-light to medium body.  No harsh hop-derived astringency, although moderate to medium-high carbonation can combine to render an overall dry sensation in the presence of malt sweetness.  Smooth alcohol warming.
+p
+  b Overall Impression:
+  | An intensely hoppy, very strong pale ale without the big maltiness and/or deeper malt flavors of an American barleywine.  Strongly hopped, but clean, lacking harshness, and a tribute to historical IPAs.  Drinkability is an important characteristic; this should not be a heavy, sipping beer.  It should also not have much residual sweetness or a heavy character grain profile.
+p
+  b Comments:
+  | Bigger than either an English or American IPA in both alcohol strength and overall hop level (bittering and finish).  Less malty, lower body, less rich and a greater overall hop intensity than an American Barleywine.  Typically not as high in gravity/alcohol as a barleywine, since high alcohol and malt tend to limit drinkability.  A showcase for hops.
+p
+  b History:
+  | A recent American innovation reflecting the trend of American craft brewers “pushing the envelope” to satisfy the need of hop aficionados for increasingly intense products. The adjective “Imperial” is arbitrary and simply implies a stronger version of an IPA; “double,” “extra,” “extreme,” or any other variety of adjectives would be equally valid.
+p
+  b Ingredients:
+  | Pale ale malt (well-modified and suitable for single-temperature infusion mashing); can use a complex variety of hops (English, American, noble). American yeast that can give a clean or slightly fruity profile. Generally all-malt, but mashed at lower temperatures for high attenuation.  Water character varies from soft to moderately sulfate.
+table border="1" cellpadding="5"
+  tr
+    td
+      b> Vital Statistics
+      | \:
+    td
+      | OG: 1.070 &ndash; 1.090
+  tr
+    td
+      | IBUs: 60 &ndash; 120
+    td
+      | FG: 1.010 &ndash; 1.020
+  tr
+    td
+      | SRM: 8 &ndash; 15
+    td
+      | ABV: 7.5 &ndash; 10%
+p
+  b Commercial Examples:
+  | Russian River Pliny the Elder, Three Floyd’s Dreadnaught, Avery Majaraja, Bell’s Hop Slam, Stone Ruination IPA, Great Divide Hercules Double IPA, Surly Furious, Rogue I2PA, Moylan’s Hopsickle Imperial India Pale Ale, Stoudt’s Double IPA, Dogfish Head 90-minute IPA, Victory Hop Wallop

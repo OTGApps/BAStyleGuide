@@ -1,0 +1,44 @@
+p
+  b Aroma:
+  | Very strong maltiness.  Darker versions will have significant melanoidins and often some toasty aromas.  A light caramel flavor from a long boil is acceptable.  Lighter versions will have a strong malt presence with some melanoidins and toasty notes.  Virtually no hop aroma, although a light noble hop aroma is acceptable in pale versions.  No diacetyl.  A moderately low fruity aspect to the aroma often described as prune, plum or grape may be present (but is optional) in dark versions due to reactions between malt, the boil, and aging.  A very slight chocolate-like aroma may be present in darker versions, but no roasted or burned aromatics should ever be present.  Moderate alcohol aroma may be present.
+p
+  b Appearance:
+  | Deep gold to dark brown in color.  Darker versions often have ruby highlights.  Lagering should provide good clarity.  Large, creamy, persistent head (color varies with base style: white for pale versions, off-white for dark varieties).  Stronger versions might have impaired head retention, and can display noticeable legs.
+p
+  b Flavor:
+  | Very rich and malty.  Darker versions will have significant melanoidins and often some toasty flavors.  Lighter versions will a strong malt flavor with some melanoidins and toasty notes.  A very slight chocolate flavor is optional in darker versions, but should never be perceived as roasty or burnt.  Clean lager flavor with no diacetyl.  Some fruitiness (prune, plum or grape) is optional in darker versions.   Invariably there will be an impression of alcoholic strength, but this should be smooth and warming rather than harsh or burning.  Presence of higher alcohols (fusels) should be very low to none.  Little to no hop flavor (more is acceptable in pale versions).  Hop bitterness varies from moderate to moderately low but always allows malt to dominate the flavor.  Most versions are fairly sweet, but should have an impression of attenuation.  The sweetness comes from low hopping, not from incomplete fermentation.  Paler versions generally have a drier finish.
+p
+  b Mouthfeel:
+  | Medium-full to full body.  Moderate to moderately-low carbonation.  Very smooth without harshness or astringency.
+p
+  b Overall Impression:
+  | A very strong and rich lager.  A bigger version of either a traditional bock or a helles bock.
+p
+  b Comments:
+  | Most versions are dark colored and may display the caramelizing and melanoidin effect of decoction mashing, but excellent pale versions also exist.  The pale versions will not have the same richness and darker malt flavors of the dark versions, and may be a bit drier, hoppier and more bitter.  While most traditional examples are in the ranges cited, the style can be considered to have no upper limit for gravity, alcohol and bitterness (thus providing a home for very strong lagers). Any fruitiness is due to Munich and other specialty malts, not yeast-derived esters developed during fermentation.
+p
+  b History:
+  | A Bavarian specialty first brewed in Munich by the monks of St. Francis of Paula.  Historical versions were less well attenuated than modern interpretations, with consequently higher sweetness and lower alcohol levels (and hence was considered “liquid bread” by the monks).  The term “doppel (double) bock” was coined by Munich consumers.  Many doppelbocks have names ending in “-ator,” either as a tribute to the prototypical Salvator or to take advantage of the beer’s popularity.
+p
+  b Ingredients:
+  | Pils and/or Vienna malt for pale versions (with some Munich), Munich and Vienna malts for darker ones and occasionally a tiny bit of darker color malts (such as Carafa).  Noble hops.  Water hardness varies from soft to moderately carbonate.  Clean lager yeast.  Decoction mashing is traditional.
+table border="1" cellpadding="5"
+  tr
+    td
+      b> Vital Statistics
+      | \:
+    td
+      | OG: 1.072 &ndash; 1.112
+  tr
+    td
+      | IBUs: 16 &ndash; 26
+    td
+      | FG: 1.016 &ndash; 1.024
+  tr
+    td
+      | SRM: 6 &ndash; 25
+    td
+      | ABV: 7 &ndash; 10%
+p
+  b Commercial Examples:
+  | Paulaner Salvator, Ayinger Celebrator, Weihenstephaner Korbinian, Andechser Doppelbock Dunkel, Spaten Optimator, Tucher Bajuvator, Weltenburger Kloster Asam-Bock, Capital Autumnal Fire, EKU 28, Eggenberg Urbock 23º, Bell’s Consecrator, Moretti La Rossa, Samuel Adams Double Bock

@@ -1,0 +1,53 @@
+						<p>
+							<b>Aroma:</b> Low to medium noble (German or Czech) hop aroma. Moderate Pils malt aroma; can be grainy to somewhat sweet. May have an initial sulfury aroma (from water and/or yeast) and a low background note of DMS (from Pils malt). No diacetyl.
+						</p>
+						<p>
+							<b>Appearance:</b> Light gold to deep gold, clear with a persistent white head.
+						</p>
+						<p>
+							<b>Flavor:</b> Neither Pils malt nor noble hops dominate, but both are in good balance with a touch of malty sweetness, providing a smooth yet crisply refreshing beer. Balance continues through the finish and the hop bitterness lingers in aftertaste (although some examples may finish slightly sweet). Clean, no fruity esters, no diacetyl. Some mineral character might be noted from the water, although it usually does not come across as an overt minerally flavor.
+						</p>
+						<p>
+							<b>Mouthfeel:</b> Medium body, medium carbonation. 
+						</p>
+						<p>
+							<b>Overall Impression:</b> Balance and smoothness are the hallmarks of this style. It has the malt profile of a Helles, the hop character of a Pils, and is slightly stronger than both. 
+						</p>
+						<p>
+							<b>Comments:</b> Brewed to a slightly higher starting gravity than other light lagers, providing a firm malty body and underlying maltiness to complement the sulfate-accentuated hop bitterness. The term "Export" is a beer strength category under German beer tax law, and is not strictly synonymous with the "Dortmunder" style. Beer from other cities or regions can be brewed to Export strength, and labeled as such.
+						</p>
+						<p>
+							<b>History:</b> A style indigenous to the Dortmund industrial region, Dortmunder has been on the decline in Germany in recent years.
+						</p>
+						<p>
+							<b>Ingredients:</b> Minerally water with high levels of sulfates, carbonates and chlorides, German or Czech noble hops, Pilsner malt, German lager yeast.
+						</p>
+						<table cellpadding="5" border="1">
+							<tr>
+								<td>
+									<b>Vital Statistics</b>:
+								</td>
+								<td>
+									OG: 1.048 &ndash; 1.056
+								</td>
+							</tr>
+							<tr>
+								<td>
+									IBUs: 23 &ndash; 30
+								</td>
+								<td>
+									FG: 1.010 &ndash; 1.015
+								</td>
+							</tr>
+							<tr>
+								<td>
+									SRM: 4 &ndash; 6
+								</td>
+								<td>
+									ABV: 4.8 &ndash; 6.0%
+								</td>
+							</tr>
+						</table>
+						<p>
+							<b>Commercial Examples:</b> DAB Export, Dortmunder Union Export, Dortmunder Kronen, Ayinger Jahrhundert, Great Lakes Dortmunder Gold, Barrel House Duveneck's Dortmunder, Bell's Lager, Dominion Lager, Gordon Biersch Golden Export, Flensburger Gold
+						</p>

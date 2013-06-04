@@ -1,0 +1,44 @@
+p
+  b Aroma:
+  | Low to moderate malt, with low aromatic sweetness and/or hints of roast malt often apparent.  The malt can be clean and neutral or rich and Munich-like, and may have a hint of caramel.  The roast can be coffee-like but should never be burnt.  A low noble hop aroma is optional. Clean lager yeast character (light sulfur possible) with no fruity esters or diacetyl.
+p
+  b Appearance:
+  | Medium to very dark brown in color, often with deep ruby to garnet highlights, yet almost never truly black.  Very clear.  Large, persistent, tan-colored head.
+p
+  b Flavor:
+  | Light to moderate malt flavor, which can have a clean, neutral character to a rich, sweet, Munich-like intensity.  Light to moderate roasted malt flavors can give a bitter-chocolate palate that lasts into the finish, but which are never burnt.  Medium-low to medium bitterness, which can last into the finish.  Light to moderate noble hop flavor.  Clean lager character with no fruity esters or diacetyl.  Aftertaste tends to dry out slowly and linger, featuring hop bitterness with a complementary but subtle roastiness in the background.  Some residual sweetness is acceptable but not required.
+p
+  b Mouthfeel:
+  | Medium-light to medium body.  Moderate to moderately high carbonation.  Smooth.  No harshness or astringency, despite the use of dark, roasted malts.
+p
+  b Overall Impression:
+  | A dark German lager that balances roasted yet smooth malt flavors with moderate hop bitterness.
+p
+  b Comments:
+  | In comparison with a Munich Dunkel, usually darker in color, drier on the palate and with a noticeable (but not high) roasted malt edge to balance the malt base.  While sometimes called a “black Pils,” the beer is rarely that dark; don’t expect strongly roasted, porter-like flavors.
+p
+  b History:
+  | A regional specialty from southern Thuringen and northern Franconia in Germany, and probably a variant of the Munich Dunkel style.
+p
+  b Ingredients:
+  | German Munich malt and Pilsner malts for the base, supplemented by a small amount of roasted malts (such as Carafa) for the dark color and subtle roast flavors.  Noble-type German hop varieties and clean German lager yeasts are preferred.
+table border="1" cellpadding="5"
+  tr
+    td
+      b> Vital Statistics
+      | \:
+    td
+      | OG: 1.046 &ndash; 1.052
+  tr
+    td
+      | IBUs: 22 &ndash; 32
+    td
+      | FG: 1.010 &ndash; 1.016
+  tr
+    td
+      | SRM: 17 &ndash; 30
+    td
+      | ABV: 4.4 &ndash; 5.4%
+p
+  b Commercial Examples:
+  | Köstritzer Schwarzbier, Kulmbacher Mönchshof Premium Schwarzbier, Samuel Adams Black Lager, Krušovice Cerne, Original Badebier, Einbecker Schwarzbier, Gordon Biersch Schwarzbier, Weeping Radish Black Radish Dark Lager, Sprecher Black Bavarian

@@ -1,0 +1,44 @@
+p
+  b Aroma:
+  | Coffee-like roasted barley and roasted malt aromas are prominent; may have slight chocolate, cocoa and/or grainy secondary notes.  Esters medium-low to none.  No diacetyl.  Hop aroma low to none.
+p
+  b Appearance:
+  | Jet black to deep brown with garnet highlights in color.  Can be opaque (if not, it should be clear).  A thick, creamy, long-lasting, tan- to brown-colored head is characteristic.
+p
+  b Flavor:
+  | Moderate roasted, grainy sharpness, optionally with light to moderate acidic sourness, and medium to high hop bitterness.  Dry, coffee-like finish from roasted grains.  May have a bittersweet or unsweetened chocolate character in the palate, lasting into the finish.  Balancing factors may include some creaminess, medium-low to no fruitiness, and medium to no hop flavor.  No diacetyl.
+p
+  b Mouthfeel:
+  | Medium-light to medium-full body, with a creamy character. Low to moderate carbonation.  For the high hop bitterness and significant proportion of dark grains present, this beer is remarkably smooth.  The perception of body can be affected by the overall gravity with smaller beers being lighter in body.  May have a light astringency from the roasted grains, although harshness is undesirable.
+p
+  b Overall Impression:
+  | A very dark, roasty, bitter, creamy ale.
+p
+  b Comments:
+  | This is the draught version of what is otherwise known as Irish stout or Irish dry stout.  Bottled versions are typically brewed from a significantly higher OG and may be designated as foreign extra stouts (if sufficiently strong).  While most commercial versions rely primarily on roasted barley as the dark grain, others use chocolate malt, black malt or combinations of the three.  The level of bitterness is somewhat variable, as is the roasted character and the dryness of the finish; allow for interpretation by brewers.
+p
+  b History:
+  | The style evolved from attempts to capitalize on the success of London porters, but originally reflected a fuller, creamier, more “stout” body and strength.  When a brewery offered a stout and a porter, the stout was always the stronger beer (it was originally called a “Stout Porter”).  Modern versions are brewed from a lower OG and no longer reflect a higher strength than porters.
+p
+  b Ingredients:
+  | The dryness comes from the use of roasted unmalted barley in addition to pale malt, moderate to high hop bitterness, and good attenuation.  Flaked unmalted barley may also be used to add creaminess. A small percentage (perhaps 3%) of soured beer is sometimes added for complexity (generally by Guinness only).  Water typically has moderate carbonate hardness, although high levels will not give the classic dry finish.
+table border="1" cellpadding="5"
+  tr
+    td
+      b> Vital Statistics
+      | \:
+    td
+      | OG: 1.036 &ndash; 1.050
+  tr
+    td
+      | IBUs: 30 &ndash; 45
+    td
+      | FG: 1.007 &ndash; 1.011
+  tr
+    td
+      | SRM: 25 &ndash; 40
+    td
+      | ABV: 4 &ndash; 5%
+p
+  b Commercial Examples:
+  | Guinness Draught Stout (also canned), Murphy's Stout, Beamish Stout, O’Hara’s Celtic Stout, Russian River O.V.L. Stout, Three Floyd’s Black Sun Stout, Dorothy Goodbody’s Wholesome Stout, Orkney Dragonhead Stout, Old Dominion Stout, Goose Island Dublin Stout, Brooklyn Dry Stout

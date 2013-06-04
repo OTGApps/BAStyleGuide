@@ -1,0 +1,44 @@
+p
+  b Aroma:
+  | Mild roasted grain aroma, sometimes with coffee and/or chocolate notes.  An impression of cream-like sweetness often exists.  Fruitiness can be low to moderately high.  Diacetyl low to none.  Hop aroma low to none.
+p
+  b Appearance:
+  | Very dark brown to black in color.  Can be opaque (if not, it should be clear).  Creamy tan to brown head.
+p
+  b Flavor:
+  | Dark roasted grains and malts dominate the flavor as in dry stout, and provide coffee and/or chocolate flavors.  Hop bitterness is moderate (lower than in dry stout).  Medium to high sweetness (often from the addition of lactose) provides a counterpoint to the roasted character and hop bitterness, and lasts into the finish.  Low to moderate fruity esters.  Diacetyl low to none.  The balance between dark grains/malts and sweetness can vary, from quite sweet to moderately dry and somewhat roasty.
+p
+  b Mouthfeel:
+  | Medium-full to full-bodied and creamy.  Low to moderate carbonation.  High residual sweetness from unfermented sugars enhances the full-tasting mouthfeel.
+p
+  b Overall Impression:
+  | A very dark, sweet, full-bodied, slightly roasty ale.  Often tastes like sweetened espresso.
+p
+  b Comments:
+  | Gravities are low in England, higher in exported and US products.  Variations exist, with the level of residual sweetness, the intensity of the roast character, and the balance between the two being the variables most subject to interpretation.
+p
+  b History:
+  | An English style of stout.  Historically known as “Milk” or “Cream” stouts, legally this designation is no longer permitted in England (but is acceptable elsewhere).  The “milk” name is derived from the use of lactose, or milk sugar, as a sweetener.
+p
+  b Ingredients:
+  | The sweetness in most Sweet Stouts comes from a lower bitterness level than dry stouts and a high percentage of unfermentable dextrins.   Lactose, an unfermentable sugar, is frequently added to provide additional residual sweetness.  Base of pale malt, and may use roasted barley, black malt, chocolate malt, crystal malt, and adjuncts such as maize or treacle.  High carbonate water is common.
+table border="1" cellpadding="5"
+  tr
+    td
+      b> Vital Statistics
+      | \:
+    td
+      | OG: 1.044 &ndash; 1.060
+  tr
+    td
+      | IBUs: 20 &ndash; 40
+    td
+      | FG: 1.012 &ndash; 1.024
+  tr
+    td
+      | SRM: 30 &ndash; 40
+    td
+      | ABV: 4 &ndash; 6%
+p
+  b Commercial Examples:
+  | Mackeson's XXX Stout, Watney's Cream Stout, Farson’s Lacto Stout, St. Peter’s Cream Stout, Marston’s Oyster Stout, Sheaf Stout, Hitachino Nest Sweet Stout (Lacto), Samuel Adams Cream Stout, Left Hand Milk Stout, Widmer Snowplow Milk Stout

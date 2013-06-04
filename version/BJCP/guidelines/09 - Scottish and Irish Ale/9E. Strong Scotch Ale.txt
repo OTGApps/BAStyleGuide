@@ -1,0 +1,41 @@
+p
+  b Aroma:
+  | Deeply malty, with caramel often apparent. Peaty, earthy and/or smoky secondary aromas may also be present, adding complexity.  Caramelization often is mistaken for diacetyl, which should be low to none.  Low to moderate esters and alcohol are often present in stronger versions.  Hops are very low to none.
+p
+  b Appearance:
+  | Light copper to dark brown color, often with deep ruby highlights.  Clear.  Usually has a large tan head, which may not persist in stronger versions.  Legs may be evident in stronger versions.
+p
+  b Flavor:
+  | Richly malty with kettle caramelization often apparent (particularly in stronger versions).  Hints of roasted malt or smoky flavor may be present, as may some nutty character, all of which may last into the finish.  Hop flavors and bitterness are low to medium-low, so malt impression should dominate.  Diacetyl is low to none, although caramelization may sometimes be mistaken for it.  Low to moderate esters and alcohol are usually present.  Esters may suggest plums, raisins or dried fruit.  The palate is usually full and sweet, but the finish may be sweet to medium-dry (from light use of roasted barley).
+p
+  b Mouthfeel:
+  | Medium-full to full-bodied, with some versions (but not all) having a thick, chewy viscosity. A smooth, alcoholic warmth is usually present and is quite welcome since it balances the malty sweetness.  Moderate carbonation.
+p
+  b Overall Impression:
+  | Rich, malty and usually sweet, which can be suggestive of a dessert. Complex secondary malt flavors prevent a one-dimensional impression.  Strength and maltiness can vary.
+p
+  b Comments:
+  | Also known as a “wee heavy.”  Fermented at cooler temperatures than most ales, and with lower hopping rates, resulting in clean, intense malt flavors.  Well suited to the region of origin, with abundant malt and cool fermentation and aging temperature.  Hops, which are not native to Scotland and formerly expensive to import, were kept to a minimum.
+p
+  b Ingredients:
+  | Well-modified pale malt, with up to 3% roasted barley.  May use some crystal malt for color adjustment; sweetness usually comes not from crystal malts rather from low hopping, high mash temperatures, and kettle caramelization. A small proportion of smoked malt may add depth, though a peaty character (sometimes perceived as earthy or smoky) may also originate from the yeast and native water. Hop presence is minimal, although English varieties are most authentic. Fairly soft water is typical.
+table border="1" cellpadding="5"
+  tr
+    td
+      b> Vital Statistics
+      | \:
+    td
+      | OG: 1.070 &ndash; 1.130
+  tr
+    td
+      | IBUs: 17 &ndash; 35
+    td
+      | FG: 1.018 &ndash; 1.056
+  tr
+    td
+      | SRM: 14 &ndash; 25
+    td
+      | ABV: 6.5 &ndash; 10%
+p
+  b Commercial Examples:
+  | Traquair House Ale, Belhaven Wee Heavy, McEwan's Scotch Ale, Founders Dirty Bastard, MacAndrew's Scotch Ale, AleSmith Wee Heavy, Orkney Skull Splitter, Inveralmond Black Friar, Broughton Old Jock, Gordon Highland Scotch Ale, Dragonmead Under the Kilt

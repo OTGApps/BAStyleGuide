@@ -1,0 +1,44 @@
+p
+  b Aroma:
+  | Moderate to strong malt aroma, often with a lightly toasted quality and low melanoidins.  Moderately low to no noble hop aroma, often with a spicy quality.  Clean.  No diacetyl.  Fruity esters should be low to none. Some alcohol may be noticeable.  May have a light DMS aroma from Pils malt.
+p
+  b Appearance:
+  | Deep gold to light amber in color.  Lagering should provide good clarity.  Large, creamy, persistent, white head.
+p
+  b Flavor:
+  | The rich flavor of continental European pale malts dominates (Pils malt flavor with some toasty notes and/or melanoidins). Little to no caramelization.  May have a light DMS flavor from Pils malt.  Moderate to no noble hop flavor.  May have a low spicy or peppery quality from hops and/or alcohol.  Moderate hop bitterness (more so in the balance than in other bocks).  Clean, with no fruity esters or diacetyl.  Well-attenuated, not cloying, with a moderately dry finish that may taste of both malt and hops.
+p
+  b Mouthfeel:
+  | Medium-bodied.  Moderate to moderately high carbonation.  Smooth and clean with no harshness or astringency, despite the increased hop bitterness.  Some alcohol warming may be present.
+p
+  b Overall Impression:
+  | A relatively pale, strong, malty lager beer.  Designed to walk a fine line between blandness and too much color.  Hop character is generally more apparent than in other bocks.
+p
+  b Comments:
+  | Can be thought of as either a pale version of a traditional bock, or a Munich helles brewed to bock strength.  While quite malty, this beer typically has less dark and rich malt flavors than a traditional bock.  May also be drier, hoppier, and more bitter than a traditional bock.  The hops compensate for the lower level of melanoidins.  There is some dispute whether Helles (“pale”) Bock and Mai (“May”) Bock are synonymous.  Most agree that they are identical (as is the consensus for Märzen and Oktoberfest), but some believe that Maibock is a “fest” type beer hitting the upper limits of hopping and color for the range. Any fruitiness is due to Munich and other specialty malts, not yeast-derived esters developed during fermentation.
+p
+  b History:
+  | A fairly recent development in comparison to the other members of the bock family.  The serving of Maibock is specifically associated with springtime and the month of May.
+p
+  b Ingredients:
+  | Base of Pils and/or Vienna malt with some Munich malt to add character (although much less than in a traditional bock).  No non-malt adjuncts.  Noble hops.  Soft water preferred so as to avoid harshness.  Clean lager yeast.  Decoction mash is typical, but boiling is less than in traditional bocks to restrain color development.
+table border="1" cellpadding="5"
+  tr
+    td
+      b> Vital Statistics
+      | \:
+    td
+      | OG: 1.064 &ndash; 1.072
+  tr
+    td
+      | IBUs: 23 &ndash; 35
+    td
+      | FG: 1.011 &ndash; 1.018
+  tr
+    td
+      | SRM: 6 &ndash; 11
+    td
+      | ABV: 6.3 &ndash; 7.4%
+p
+  b Commercial Examples:
+  | Ayinger Maibock, Mahr’s Bock, Hacker-Pschorr Hubertus Bock, Capital Maibock, Einbecker Mai-Urbock, Hofbräu Maibock, Victory St. Boisterous, Gordon Biersch Blonde Bock, Smuttynose Maibock

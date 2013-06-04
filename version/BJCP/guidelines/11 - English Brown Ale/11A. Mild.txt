@@ -1,0 +1,44 @@
+p
+  b Aroma:
+  | Low to moderate malt aroma, and may have some fruitiness.  The malt expression can take on a wide range of character, which can include caramelly, grainy, toasted, nutty, chocolate, or lightly roasted.  Little to no hop aroma.  Very low to no diacetyl.
+p
+  b Appearance:
+  | Copper to dark brown or mahogany color.  A few paler examples (medium amber to light brown) exist. Generally clear, although is traditionally unfiltered.  Low to moderate off-white to tan head.  Retention may be poor due to low carbonation, adjunct use and low gravity.
+p
+  b Flavor:
+  | Generally a malty beer, although may have a very wide range of malt- and yeast-based flavors (e.g., malty, sweet, caramel, toffee, toast, nutty, chocolate, coffee, roast, vinous, fruit, licorice, molasses, plum, raisin).  Can finish sweet or dry.  Versions with darker malts may have a dry, roasted finish.  Low to moderate bitterness, enough to provide some balance but not enough to overpower the malt.  Fruity esters moderate to none.  Diacetyl and hop flavor low to none.
+p
+  b Mouthfeel:
+  | Light to medium body.  Generally low to medium-low carbonation.  Roast-based versions may have a light astringency.  Sweeter versions may seem to have a rather full mouthfeel for the gravity.
+p
+  b Overall Impression:
+  | A light-flavored, malt-accented beer that is readily suited to drinking in quantity.  Refreshing, yet flavorful.  Some versions may seem like lower gravity brown porters.
+p
+  b Comments:
+  | Most are low-gravity session beers in the range 3.1-3.8%, although some versions may be made in the stronger (4%+) range for export, festivals, seasonal and/or special occasions.  Generally served on cask; session-strength bottled versions don’t often travel well.  A wide range of interpretations are possible.
+p
+  b History:
+  | May have evolved as one of the elements of early porters.  In modern terms, the name “mild” refers to the relative lack of hop bitterness (i.e., less hoppy than a pale ale, and not so strong).  Originally, the “mildness” may have referred to the fact that this beer was young and did not yet have the moderate sourness that aged batches had.  Somewhat rare in England, good versions may still be found in the Midlands around Birmingham.
+p
+  b Ingredients:
+  | Pale English base malts (often fairly dextrinous), crystal and darker malts should comprise the grist.  May use sugar adjuncts.  English hop varieties would be most suitable, though their character is muted.  Characterful English ale yeast.
+table border="1" cellpadding="5"
+  tr
+    td
+      b> Vital Statistics
+      | \:
+    td
+      | OG: 1.030 &ndash; 1.038
+  tr
+    td
+      | IBUs: 10 &ndash; 25
+    td
+      | FG: 1.008 &ndash; 1.013
+  tr
+    td
+      | SRM: 12 &ndash; 25
+    td
+      | ABV: 2.8 &ndash; 4.5%
+p
+  b Commercial Examples:
+  | Moorhouse Black Cat, Gale’s Festival Mild, Theakston Traditional Mild, Highgate Mild, Sainsbury Mild, Brain’s Dark, Banks's Mild, Coach House Gunpowder Strong Mild, Woodforde’s Mardler’s Mild, Greene King XX Mild, Motor City Brewing Ghettoblaster

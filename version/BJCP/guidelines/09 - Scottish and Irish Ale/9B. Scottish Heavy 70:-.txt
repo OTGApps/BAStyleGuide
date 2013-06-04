@@ -1,0 +1,44 @@
+p
+  b Aroma:
+  | Low to medium malty sweetness, sometimes accentuated by low to moderate kettle caramelization.  Some examples have a low hop aroma, light fruitiness, low diacetyl, and/or a low to moderate peaty aroma (all are optional).  The peaty aroma is sometimes perceived as earthy, smoky or very lightly roasted.
+p
+  b Appearance:
+  | Deep amber to dark copper. Usually very clear due to long, cool fermentations.  Low to moderate, creamy off-white to light tan-colored head.
+p
+  b Flavor:
+  | Malt is the primary flavor, but isn’t overly strong.  The initial malty sweetness is usually accentuated by a low to moderate kettle caramelization, and is sometimes accompanied by a low diacetyl component.  Fruity esters may be moderate to none.  Hop bitterness is low to moderate, but the balance will always be towards the malt (although not always by much).  Hop flavor is low to none.  A low to moderate peaty character is optional, and may be perceived as earthy or smoky. Generally has a grainy, dry finish due to small amounts of unmalted roasted barley.
+p
+  b Mouthfeel:
+  | Medium-low to medium body. Low to moderate carbonation.  Sometimes a bit creamy, but often quite dry due to use of roasted barley.
+p
+  b Overall Impression:
+  | Cleanly malty with a drying finish, perhaps a few esters, and on occasion a faint bit of peaty earthiness (smoke).  Most beers finish fairly dry considering their relatively sweet palate, and as such have a different balance than strong Scotch ales.
+p
+  b Comments:
+  | The malt-hop balance is slightly to moderately tilted towards the malt side. Any caramelization comes from kettle caramelization and not caramel malt (and is sometimes confused with diacetyl).  Although unusual, any smoked character is yeast- or water-derived and not from the use of peat-smoked malts.  Use of peat-smoked malt to replicate the peaty character should be restrained; overly smoky beers should be entered in the Other Smoked Beer category (22B) rather than here.
+p
+  b History:
+  | Traditional Scottish session beers reflecting the indigenous ingredients (water, malt), with less hops than their English counterparts (due to the need to import them).  Long, cool fermentations are traditionally used in Scottish brewing.
+p
+  b Ingredients:
+  | Scottish or English pale base malt. Small amounts of roasted barley add color and flavor, and lend a dry, slightly roasty finish. English hops. Clean, relatively un-attenuative ale yeast. Some commercial brewers add small amounts of crystal, amber, or wheat malts, and adjuncts such as sugar.  The optional peaty, earthy and/or smoky character comes from the traditional yeast and from the local malt and water rather than using smoked malts.
+table border="1" cellpadding="5"
+  tr
+    td
+      b> Vital Statistics
+      | \:
+    td
+      | OG: 1.035 &ndash; 1.040
+  tr
+    td
+      | IBUs: 10 &ndash; 25
+    td
+      | FG: 1.010 &ndash; 1.015
+  tr
+    td
+      | SRM: 9 &ndash; 17
+    td
+      | ABV: 3.2 &ndash; 3.9%
+p
+  b Commercial Examples:
+  | Caledonian 70/- (Caledonian Amber Ale in the US), Belhaven 70/-, Orkney Raven Ale, Maclay 70/-, Tennents Special, Broughton Greenmantle Ale

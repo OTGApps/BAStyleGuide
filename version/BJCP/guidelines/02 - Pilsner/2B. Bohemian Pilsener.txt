@@ -1,0 +1,44 @@
+p
+  b Aroma:
+  | Rich with complex malt and a spicy, floral Saaz hop bouquet. Some pleasant, restrained diacetyl is acceptable, but need not be present. Otherwise clean, with no fruity esters.
+p
+  b Appearance:
+  | Very pale gold to deep burnished gold, brilliant to very clear, with a dense, long-lasting, creamy white head.
+p
+  b Flavor:
+  | Rich, complex maltiness combined with a pronounced yet soft and rounded bitterness and spicy flavor from Saaz hops.  Some diacetyl is acceptable, but need not be present. Bitterness is prominent but never harsh, and does not linger. The aftertaste is balanced between malt and hops. Clean, no fruity esters.
+p
+  b Mouthfeel:
+  | Medium-bodied (although diacetyl, if present, may make it seem medium-full), medium carbonation.
+p
+  b Overall Impression:
+  | Crisp, complex and well-rounded yet refreshing.
+p
+  b Comments:
+  | Uses Moravian malted barley and a decoction mash for rich, malt character.  Saaz hops and low sulfate, low carbonate water provide a distinctively soft, rounded hop profile.  Traditional yeast sometimes can provide a background diacetyl note.  Dextrins provide additional body, and diacetyl enhances the perception of a fuller palate.
+p
+  b History:
+  | First brewed in 1842, this style was the original clear, light-colored beer.
+p
+  b Ingredients:
+  | Soft water with low mineral content, Saaz hops, Moravian malted barley, Czech lager yeast.
+table border="1" cellpadding="5"
+  tr
+    td
+      b> Vital Statistics
+      | \:
+    td
+      | OG: 1.044 &ndash; 1.056
+  tr
+    td
+      | IBUs: 35 &ndash; 45
+    td
+      | FG: 1.013 &ndash; 1.017
+  tr
+    td
+      | SRM: 3.5 &ndash; 6
+    td
+      | ABV: 4.2 &ndash; 5.4%
+p
+  b Commercial Examples:
+  | Pilsner Urquell, Krušovice Imperial 12°, Budweiser Budvar (Czechvar in the US), Czech Rebel, Staropramen, Gambrinus Pilsner, Zlaty Bazant Golden Pheasant, Dock Street Bohemian Pilsner

@@ -1,0 +1,44 @@
+p
+  b Aroma:
+  | Rich, Munich malt sweetness, like bread crusts (and sometimes toast.)  Hints of chocolate, nuts, caramel, and/or toffee are also acceptable.  No fruity esters or diacetyl should be detected, but a slight noble hop aroma is acceptable.
+p
+  b Appearance:
+  | Deep copper to dark brown, often with a red or garnet tint.  Creamy, light to medium tan head.  Usually clear, although murky unfiltered versions exist.
+p
+  b Flavor:
+  | Dominated by the rich and complex flavor of Munich malt, usually with melanoidins reminiscent of bread crusts.  The taste can be moderately sweet, although it should not be overwhelming or cloying.  Mild caramel, chocolate, toast or nuttiness may be present.  Burnt or bitter flavors from roasted malts are inappropriate, as are pronounced caramel flavors from crystal malt. Hop bitterness is moderately low but perceptible, with the balance tipped firmly towards maltiness.  Noble hop flavor is low to none. Aftertaste remains malty, although the hop bitterness may become more apparent in the medium-dry finish.  Clean lager character with no fruity esters or diacetyl.
+p
+  b Mouthfeel:
+  | Medium to medium-full body, providing a firm and dextrinous mouthfeel without being heavy or cloying.  Moderate carbonation.  May have a light astringency and a slight alcohol warming.
+p
+  b Overall Impression:
+  | Characterized by depth and complexity of Munich malt and the accompanying melanoidins.  Rich Munich flavors, but not as intense as a bock or as roasted as a schwarzbier.
+p
+  b Comments:
+  | Unfiltered versions from Germany can taste like liquid bread, with a yeasty, earthy richness not found in exported filtered dunkels.
+p
+  b History:
+  | The classic brown lager style of Munich which developed as a darker, malt-accented beer in part because of the moderately carbonate water.  While originating in Munich, the style has become very popular throughout Bavaria (especially Franconia).
+p
+  b Ingredients:
+  | Grist is traditionally made up of German Munich malt (up to 100% in some cases) with the remainder German Pilsner malt.  Small amounts of crystal malt can add dextrins and color but should not introduce excessive residual sweetness. Slight additions of roasted malts (such as Carafa or chocolate) may be used to improve color but should not add strong flavors.  Noble German hop varieties and German lager yeast strains should be used.  Moderately carbonate water.  Often decoction mashed (up to a triple decoction) to enhance the malt flavors and create the depth of color.
+table border="1" cellpadding="5"
+  tr
+    td
+      b> Vital Statistics
+      | \:
+    td
+      | OG: 1.048 &ndash; 1.056
+  tr
+    td
+      | IBUs: 18 &ndash; 28
+    td
+      | FG: 1.010 &ndash; 1.016
+  tr
+    td
+      | SRM: 14 &ndash; 28
+    td
+      | ABV: 4.5 &ndash; 5.6%
+p
+  b Commercial Examples:
+  | Ayinger Altbairisch Dunkel, Hacker-Pschorr Alt Munich Dark, Paulaner Alt Münchner Dunkel, Weltenburger Kloster Barock-Dunkel, Ettaler Kloster Dunkel, Hofbräu Dunkel, Penn Dark Lager, König Ludwig Dunkel, Capital Munich Dark, Harpoon Munich-type Dark Beer, Gordon Biersch Dunkels, Dinkel Acker Dark.  In Bavaria, Ettaler Dunkel, Löwenbräu Dunkel, Hartmann Dunkel, Kneitinger Dunkel, Augustiner Dunkel.

@@ -1,0 +1,41 @@
+p
+  b Aroma:
+  | Low to moderate malt aroma, generally caramel-like but occasionally toasty or toffee-like in nature.  May have a light buttery character (although this is not required).  Hop aroma is low to none (usually not present).  Quite clean.
+p
+  b Appearance:
+  | Amber to deep reddish copper color (most examples have a deep reddish hue).  Clear.  Low off-white to tan colored head.
+p
+  b Flavor:
+  | Moderate caramel malt flavor and sweetness, occasionally with a buttered toast or toffee-like quality.  Finishes with a light taste of roasted grain, which lends a characteristic dryness to the finish.  Generally no flavor hops, although some examples may have a light English hop flavor.  Medium-low hop bitterness, although light use of roasted grains may increase the perception of bitterness to the medium range.  Medium-dry to dry finish.  Clean and smooth (lager versions can be very smooth).  No esters.
+p
+  b Mouthfeel:
+  | Medium-light to medium body, although examples containing low levels of diacetyl may have a slightly slick mouthfeel.  Moderate carbonation.  Smooth.  Moderately attenuated (more so than Scottish ales).  May have a slight alcohol warmth in stronger versions.
+p
+  b Overall Impression:
+  | An easy-drinking pint.  Malt-focused with an initial sweetness and a roasted dryness in the finish.
+p
+  b Comments:
+  | Sometimes brewed as a lager (if so, generally will not exhibit a diacetyl character).  When served too cold, the roasted character and bitterness may seem more elevated.
+p
+  b Ingredients:
+  | May contain some adjuncts (corn, rice, or sugar), although excessive adjunct use will harm the character of the beer.  Generally has a bit of roasted barley to provide reddish color and dry roasted finish.  UK/Irish malts, hops, yeast.
+table border="1" cellpadding="5"
+  tr
+    td
+      b> Vital Statistics
+      | \:
+    td
+      | OG: 1.044 &ndash; 1.060
+  tr
+    td
+      | IBUs: 17 &ndash; 28
+    td
+      | FG: 1.010 &ndash; 1.014
+  tr
+    td
+      | SRM: 9 &ndash; 18
+    td
+      | ABV: 4.0 &ndash; 6.0%
+p
+  b Commercial Examples:
+  | Three Floyds Brian Boru Old Irish Ale, Great Lakes Conway’s Irish Ale (a bit strong at 6.5%), Kilkenny Irish Beer, O’Hara’s Irish Red Ale, Smithwick’s Irish Ale, Beamish Red Ale, Caffrey’s Irish Ale, Goose Island Kilgubbin Red Ale, Murphy’s Irish Red (lager), Boulevard Irish Ale, Harpoon Hibernian Ale

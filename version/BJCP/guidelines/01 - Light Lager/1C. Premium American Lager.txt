@@ -1,0 +1,50 @@
+						<p>
+							<b>Aroma:</b> Low to medium-low malt aroma, which can be grainy, sweet or corn-like. Hop aroma may range from very low to a medium-low, spicy or floral hop presence. Low levels of yeast character (green apples, DMS, or fruitiness) are optional but acceptable. No diacetyl.
+						</p>
+						<p>
+							<b>Appearance:</b> Pale straw to gold color. White, frothy head may not be long lasting. Very clear.
+						</p>
+						<p>
+							<b>Flavor:</b> Crisp and dry flavor with some low levels of grainy or malty sweetness. Hop flavor ranges from none to low levels. Hop bitterness at low to medium level. Balance may vary from slightly malty to slightly bitter, but is relatively close to even. High levels of carbonation may provide a slight acidity or dry "sting." No diacetyl. No fruitiness.
+						</p>
+						<p>
+							<b>Mouthfeel:</b> Medium-light body from use of adjuncts such as rice or corn. Highly carbonated with slight carbonic bite on the tongue. 
+						</p>
+						<p>
+							<b>Overall Impression:</b> Refreshing and thirst quenching, although generally more filling than standard/lite versions.
+						</p>
+						<p>
+							<b>Comments:</b> Premium beers tend to have fewer adjuncts than standard/lite lagers, and can be all-malt. Strong flavors are a fault, but premium lagers have more flavor than standard/lite lagers. A broad category of international mass-market lagers ranging from up-scale American lagers to the typical "import" or "green bottle" international beers found in America.
+						</p>
+						<p>
+							<b>Ingredients:</b> Two- or six-row barley with up to 25% rice or corn as adjuncts.
+						</p>
+						<table cellpadding="5" border="1">
+							<tr>
+								<td>
+									<b>Vital Statistics</b>:
+								</td>
+								<td>
+									OG: 1.046 &ndash; 1.056
+								</td>
+							</tr>
+							<tr>
+								<td>
+									IBUs: 15 &ndash; 25
+								</td>
+								<td>
+									FG: 1.008 &ndash; 1.012
+								</td>
+							</tr>
+							<tr>
+								<td>
+									SRM: 2 &ndash; 6
+								</td>
+								<td>
+									ABV: 4.6 &ndash; 6%
+								</td>
+							</tr>
+						</table>
+						<p>
+							<b>Commercial Examples:</b> Full Sail Session Premium Lager, Miller Genuine Draft, Corona Extra, Michelob, Coors Extra Gold, Birra Moretti, Heineken, Beck's, Stella Artois, Red Stripe, Singha
+						</p>

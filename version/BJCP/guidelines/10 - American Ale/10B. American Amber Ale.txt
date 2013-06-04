@@ -1,0 +1,44 @@
+p
+  b Aroma:
+  | Low to moderate hop aroma from dry hopping or late kettle additions of American hop varieties.  A citrusy hop character is common, but not required.  Moderately low to moderately high maltiness balances and sometimes masks the hop presentation, and usually shows a moderate caramel character. Esters vary from moderate to none.  No diacetyl.
+p
+  b Appearance:
+  | Amber to coppery brown in color.  Moderately large off-white head with good retention.  Generally quite clear, although dry-hopped versions may be slightly hazy.
+p
+  b Flavor:
+  | Moderate to high hop flavor from American hop varieties, which often but not always has a citrusy quality.  Malt flavors are moderate to strong, and usually show an initial malty sweetness followed by a moderate caramel flavor (and sometimes other character malts in lesser amounts).  Malt and hop bitterness are usually balanced and mutually supportive.  Fruity esters can be moderate to none.  Caramel sweetness and hop flavor/bitterness can linger somewhat into the medium to full finish.  No diacetyl.
+p
+  b Mouthfeel:
+  | Medium to medium-full body.  Carbonation moderate to high.  Overall smooth finish without astringency often associated with high hopping rates.  Stronger versions may have a slight alcohol warmth.
+p
+  b Overall Impression:
+  | Like an American pale ale with more body, more caramel richness, and a balance more towards malt than hops (although hop rates can be significant).
+p
+  b Comments:
+  | Can overlap in color with American pale ales.  However, American amber ales differ from American pale ales not only by being usually darker in color, but also by having more caramel flavor, more body, and usually being balanced more evenly between malt and bitterness.  Should not have a strong chocolate or roast character that might suggest an American brown ale (although small amounts are OK).
+p
+  b History:
+  | Known simply as Red Ales in some regions, these beers were popularized in the hop-loving Northern California and the Pacific Northwest areas before spreading nationwide.
+p
+  b Ingredients:
+  | Pale ale malt, typically American two-row.  Medium to dark crystal malts.  May also contain specialty grains which add additional character and uniqueness.  American hops, often with citrusy flavors, are common but others may also be used. Water can vary in sulfate and carbonate content.
+table border="1" cellpadding="5"
+  tr
+    td
+      b> Vital Statistics
+      | \:
+    td
+      | OG: 1.045 &ndash; 1.060
+  tr
+    td
+      | IBUs: 25 &ndash; 40
+    td
+      | FG: 1.010 &ndash; 1.015
+  tr
+    td
+      | SRM: 10 &ndash; 17
+    td
+      | ABV: 4.5 &ndash; 6.2%
+p
+  b Commercial Examples:
+  | North Coast Red Seal Ale, Tröegs HopBack Amber Ale, Deschutes Cinder Cone Red, Pyramid Broken Rake, St. Rogue Red Ale, Anderson Valley Boont Amber Ale, Lagunitas Censored Ale, Avery Redpoint Ale, McNeill’s Firehouse Amber Ale, Mendocino Red Tail Ale, Bell's Amber

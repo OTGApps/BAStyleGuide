@@ -1,0 +1,44 @@
+p
+  b Aroma:
+  | Typically features a light grainy Pils malt character (sometimes Graham cracker-like) and distinctive flowery or spicy noble hops.  Clean, no fruity esters, no diacetyl.  May have an initial sulfury aroma (from water and/or yeast) and a low background note of DMS (from Pils malt).
+p
+  b Appearance:
+  | Straw to light gold, brilliant to very clear, with a creamy, long-lasting white head.
+p
+  b Flavor:
+  | Crisp and bitter, with a dry to medium-dry finish.  Moderate to moderately-low yet well attenuated maltiness, although some grainy flavors and slight Pils malt sweetness are acceptable.  Hop bitterness dominates taste and continues through the finish and lingers into the aftertaste. Hop flavor can range from low to high but should only be derived from German noble hops.  Clean, no fruity esters, no diacetyl.
+p
+  b Mouthfeel:
+  | Medium-light body, medium to high carbonation.
+p
+  b Overall Impression:
+  | Crisp, clean, refreshing beer that prominently features noble German hop bitterness accentuated by sulfates in the water.
+p
+  b Comments:
+  | Drier and crisper than a Bohemian Pilsener with a bitterness that tends to linger more in the aftertaste due to higher attenuation and higher-sulfate water.  Lighter in body and color, and with higher carbonation than a Bohemian Pilsener.  Modern examples of German Pilsners tend to become paler in color, drier in finish, and more bitter as you move from South to North in Germany.
+p
+  b History:
+  | A copy of Bohemian Pilsener adapted to brewing conditions in Germany.
+p
+  b Ingredients:
+  | Pilsner malt, German hop varieties (especially noble varieties such as Hallertauer, Tettnanger and Spalt for taste and aroma), medium sulfate water, German lager yeast.
+table border="1" cellpadding="5"
+  tr
+    td
+      b> Vital Statistics
+      | \:
+    td
+      | OG: 1.044 &ndash; 1.050
+  tr
+    td
+      | IBUs: 25 &ndash; 45
+    td
+      | FG: 1.008 &ndash; 1.013
+  tr
+    td
+      | SRM: 2 &ndash; 5
+    td
+      | ABV: 4.4 &ndash; 5.2%
+p
+  b Commercial Examples:
+  | Victory Prima Pils, Bitburger, Warsteiner, Trumer Pils, Old Dominion Tupper’s Hop Pocket Pils, König Pilsener, Jever Pils, Left Hand Polestar Pilsner, Holsten Pils, Spaten Pils, Brooklyn Pilsner

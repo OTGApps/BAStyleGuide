@@ -1,0 +1,41 @@
+p
+  b Aroma:
+  | Little to no malt aroma.  Medium-low to no roast and caramel malt aroma.  Hop aroma may range from none to light spicy or floral hop presence.  Can have low levels of yeast character (green apples, DMS, or fruitiness).  No diacetyl.
+p
+  b Appearance:
+  | Deep amber to dark brown with bright clarity and ruby highlights.  Foam stand may not be long lasting, and is usually light tan in color.
+p
+  b Flavor:
+  | Moderately crisp with some low to moderate levels of sweetness.  Medium-low to no caramel and/or roasted malt flavors (and may include hints of coffee, molasses or cocoa).  Hop flavor ranges from none to low levels.  Hop bitterness at low to medium levels.  No diacetyl.  May have a very light fruitiness.  Burnt or moderately strong roasted malt flavors are a defect.
+p
+  b Mouthfeel:
+  | Light to somewhat medium body.  Smooth, although a highly-carbonated beer.
+p
+  b Overall Impression:
+  | A somewhat sweeter version of standard/premium lager with a little more body and flavor.
+p
+  b Comments:
+  | A broad range of international lagers that are darker than pale, and not assertively bitter and/or roasted.
+p
+  b Ingredients:
+  | Two- or six-row barley, corn or rice as adjuncts.  Light use of caramel and darker malts.  Commercial versions may use coloring agents.
+table border="1" cellpadding="5"
+  tr
+    td
+      b> Vital Statistics
+      | \:
+    td
+      | OG: 1.044 &ndash; 1.056
+  tr
+    td
+      | IBUs: 8 &ndash; 20
+    td
+      | FG: 1.008 &ndash; 1.012
+  tr
+    td
+      | SRM: 14 &ndash; 22
+    td
+      | ABV: 4.2 &ndash; 6%
+p
+  b Commercial Examples:
+  | Dixie Blackened Voodoo, Shiner Bock, San Miguel Dark, Baltika #4, Beck's Dark, Saint Pauli Girl Dark, Warsteiner Dunkel, Heineken Dark Lager, Crystal Diplomat Dark Beer

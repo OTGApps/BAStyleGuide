@@ -1,0 +1,41 @@
+p
+  b Aroma:
+  | Malty, sweet and rich, which often has a chocolate, caramel, nutty and/or toasty quality.  Hop aroma is typically low to moderate.  Some interpretations of the style may feature a stronger hop aroma, a citrusy American hop character, and/or a fresh dry-hopped aroma (all are optional).  Fruity esters are moderate to very low.  The dark malt character is more robust than other brown ales, yet stops short of being overly porter-like.  The malt and hops are generally balanced.  Moderately low to no diacetyl.
+p
+  b Appearance:
+  | Light to very dark brown color.  Clear.  Low to moderate off-white to light tan head.
+p
+  b Flavor:
+  | Medium to high malty flavor (often with caramel, toasty and/or chocolate flavors), with medium to medium-high bitterness.  The medium to medium-dry finish provides an aftertaste having both malt and hops.  Hop flavor can be light to moderate, and may optionally have a citrusy character.  Very low to moderate fruity esters.  Moderately low to no diacetyl.
+p
+  b Mouthfeel:
+  | Medium to medium-full body.  More bitter versions may have a dry, resiny impression.  Moderate to moderately high carbonation.  Stronger versions may have some alcohol warmth in the finish.
+p
+  b Overall Impression:
+  | Can be considered a bigger, maltier, hoppier interpretation of Northern English brown ale or a hoppier, less malty Brown Porter, often including the citrus-accented hop presence that is characteristic of American hop varieties.
+p
+  b Comments:
+  | A strongly flavored, hoppy brown beer, originated by American home brewers.  Related to American Pale and American Amber Ales, although with more of a caramel and chocolate character, which tends to balance the hop bitterness and finish.  Most commercial American Browns are not as aggressive as the original homebrewed versions, and some modern craft brewed examples.  IPA-strength brown ales should be entered in the Specialty Beer category (23).
+p
+  b Ingredients:
+  | Well-modified pale malt, either American or Continental, plus crystal and darker malts should complete the malt bill.  American hops are typical, but UK or noble hops can also be used. Moderate carbonate water would appropriately balance the dark malt acidity.
+table border="1" cellpadding="5"
+  tr
+    td
+      b> Vital Statistics
+      | \:
+    td
+      | OG: 1.045 &ndash; 1.060
+  tr
+    td
+      | IBUs: 20 &ndash; 40
+    td
+      | FG: 1.010 &ndash; 1.016
+  tr
+    td
+      | SRM: 18 &ndash; 35
+    td
+      | ABV: 4.3 &ndash; 6.2%
+p
+  b Commercial Examples:
+  | Bell’s Best Brown, Smuttynose Old Brown Dog Ale, Big Sky Moose Drool Brown Ale, North Coast Acme Brown, Brooklyn Brown Ale, Lost Coast Downtown Brown, Left Hand Deep Cover Brown Ale

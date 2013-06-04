@@ -1,0 +1,44 @@
+p
+  b Aroma:
+  | Malt aroma with mild roastiness should be evident, and may have a chocolaty quality.  May also show some non-roasted malt character in support (caramelly, grainy, bready, nutty, toffee-like and/or sweet).  English hop aroma moderate to none.  Fruity esters moderate to none.  Diacetyl low to none.
+p
+  b Appearance:
+  | Light brown to dark brown in color, often with ruby highlights when held up to light.  Good clarity, although may approach being opaque.  Moderate off-white to light tan head with good to fair retention.
+p
+  b Flavor:
+  | Malt flavor includes a mild to moderate roastiness (frequently with a chocolate character) and often a significant caramel, nutty, and/or toffee character.  May have other secondary flavors such as coffee, licorice, biscuits or toast in support.  Should not have a significant black malt character (acrid, burnt, or harsh roasted flavors), although small amounts may contribute a bitter chocolate complexity.  English hop flavor moderate to none.  Medium-low to medium hop bitterness will vary the balance from slightly malty to slightly bitter.  Usually fairly well attenuated, although somewhat sweet versions exist.  Diacetyl should be moderately low to none.  Moderate to low fruity esters.
+p
+  b Mouthfeel:
+  | Medium-light to medium body.  Moderately low to moderately high carbonation.
+p
+  b Overall Impression:
+  | A fairly substantial English dark ale with restrained roasty characteristics.
+p
+  b Comments:
+  | Differs from a robust porter in that it usually has softer, sweeter and more caramelly flavors, lower gravities, and usually less alcohol.  More substance and roast than a brown ale.  Higher in gravity than a dark mild.  Some versions are fermented with lager yeast.  Balance tends toward malt more than hops.  Usually has an “English” character.  Historical versions with Brettanomyces, sourness, or smokiness should be entered in the Specialty Beer category (23).
+p
+  b History:
+  | Originating in England, porter evolved from a blend of beers or gyles known as “Entire.” A precursor to stout.  Said to have been favored by porters and other physical laborers.
+p
+  b Ingredients:
+  | English ingredients are most common.  May contain several malts, including chocolate and/or other dark roasted malts and caramel-type malts. Historical versions would use a significant amount of brown malt.  Usually does not contain large amounts of black patent malt or roasted barley.  English hops are most common, but are usually subdued.  London or Dublin-type water (moderate carbonate hardness) is traditional.  English or Irish ale yeast, or occasionally lager yeast, is used.  May contain a moderate amount of adjuncts (sugars, maize, molasses, treacle, etc.).
+table border="1" cellpadding="5"
+  tr
+    td
+      b> Vital Statistics
+      | \:
+    td
+      | OG: 1.040 &ndash; 1.052
+  tr
+    td
+      | IBUs: 18 &ndash; 35
+    td
+      | FG: 1.008 &ndash; 1.014
+  tr
+    td
+      | SRM: 20 &ndash; 30
+    td
+      | ABV: 4 &ndash; 5.4%
+p
+  b Commercial Examples:
+  | Fuller's London Porter, Samuel Smith Taddy Porter, Burton Bridge Burton Porter, RCH Old Slug Porter, Nethergate Old Growler Porter, Hambleton Nightmare Porter, Harvey’s Tom Paine Original Old Porter, Salopian Entire Butt English Porter, St. Peters Old-Style Porter, Shepherd Neame Original Porter, Flag Porter, Wasatch Polygamy Porter

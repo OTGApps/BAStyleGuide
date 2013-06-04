@@ -1,0 +1,41 @@
+p
+  b Aroma:
+  | Subtle malty, sometimes grainy aroma.  Low to no noble hop aroma.  Clean, lager character with very restrained ester profile.  No diacetyl.
+p
+  b Appearance:
+  | Light copper to light brown color; very clear from extended cold conditioning. Low to moderate off-white to white head with good retention.
+p
+  b Flavor:
+  | Fairly bitter yet balanced by a smooth and sometimes sweet malt character that may have a rich, biscuity and/or lightly caramelly flavor.  Dry finish often with lingering bitterness.  Clean, lager character sometimes with slight sulfury notes and very low to no esters.  Very low to medium noble hop flavor.  No diacetyl.
+p
+  b Mouthfeel:
+  | Medium-light to medium body.  Moderate to moderately high carbonation.  Smooth mouthfeel.
+p
+  b Overall Impression:
+  | A very clean and relatively bitter beer, balanced by some malt character.  Generally darker, sometimes more caramelly, and usually sweeter and less bitter than Düsseldorf Altbier.
+p
+  b Comments:
+  | Most Altbiers produced outside of Düsseldorf are of the Northern German style.   Most are simply moderately bitter brown lagers.  Ironically “alt” refers to the old style of brewing (i.e., making ales), which makes the term “Altbier” somewhat inaccurate and inappropriate.  Those that are made as ales are fermented at cool ale temperatures and lagered at cold temperatures (as with Düsseldorf Alt).
+p
+  b Ingredients:
+  | Typically made with a Pils base and colored with roasted malt or dark crystal.  May include small amounts of Munich or Vienna malt.  Noble hops.  Usually made with an attenuative lager yeast.
+table border="1" cellpadding="5"
+  tr
+    td
+      b> Vital Statistics
+      | \:
+    td
+      | OG: 1.046 &ndash; 1.054
+  tr
+    td
+      | IBUs: 25 &ndash; 40
+    td
+      | FG: 1.010 &ndash; 1.015
+  tr
+    td
+      | SRM: 13 &ndash; 19
+    td
+      | ABV: 4.5 &ndash; 5.2%
+p
+  b Commercial Examples:
+  | DAB Traditional, Hannen Alt, Schwelmer Alt, Grolsch Amber, Alaskan Amber, Long Trail Ale, Otter Creek Copper Ale, Schmaltz’ Alt

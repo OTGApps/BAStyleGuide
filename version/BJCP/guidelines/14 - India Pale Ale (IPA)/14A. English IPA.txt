@@ -1,0 +1,44 @@
+p
+  b Aroma:
+  | A moderate to moderately high hop aroma of floral, earthy or fruity nature is typical, although the intensity of hop character is usually lower than American versions.  A slightly grassy dry-hop aroma is acceptable, but not required.  A moderate caramel-like or toasty malt presence is common.  Low to moderate fruitiness, either from esters or hops, can be present.  Some versions may have a sulfury note, although this character is not mandatory.
+p
+  b Appearance:
+  | Color ranges from golden amber to light copper, but most are pale to medium amber with an orange-ish tint.  Should be clear, although unfiltered dry-hopped versions may be a bit hazy.  Good head stand with off-white color should persist.
+p
+  b Flavor:
+  | Hop flavor is medium to high, with a moderate to assertive hop bitterness.  The hop flavor should be similar to the aroma (floral, earthy, fruity, and/or slightly grassy).  Malt flavor should be medium-low to medium-high, but should be noticeable, pleasant, and support the hop aspect.  The malt should show an English character and be somewhat bready, biscuit-like, toasty, toffee-like and/or caramelly.  Despite the substantial hop character typical of these beers, sufficient malt flavor, body and complexity to support the hops will provide the best balance. Very low levels of diacetyl are acceptable, and fruitiness from the fermentation or hops adds to the overall complexity.  Finish is medium to dry, and bitterness may linger into the aftertaste but should not be harsh.  If high sulfate water is used, a distinctively minerally, dry finish, some sulfur flavor, and a lingering bitterness are usually present.  Some clean alcohol flavor can be noted in stronger versions.  Oak is inappropriate in this style.
+p
+  b Mouthfeel:
+  | Smooth, medium-light to medium-bodied mouthfeel without hop-derived astringency, although moderate to medium-high carbonation can combine to render an overall dry sensation in the presence of malt sweetness.  Some smooth alcohol warming can and should be sensed in stronger (but not all) versions.
+p
+  b Overall Impression:
+  | A hoppy, moderately strong pale ale that features characteristics consistent with the use of English malt, hops and yeast.  Has less hop character and a more pronounced malt flavor than American versions.
+p
+  b Comments:
+  | A pale ale brewed to an increased gravity and hop rate.  Modern versions of English IPAs generally pale in comparison (pun intended) to their ancestors.  The term “IPA” is loosely applied in commercial English beers today, and has been (incorrectly) used in beers below 4% ABV.  Generally will have more finish hops and less fruitiness and/or caramel than English pale ales and bitters.  Fresher versions will obviously have a more significant finishing hop character.
+p
+  b History:
+  | Brewed to survive the voyage from England to India.  The temperature extremes and rolling of the seas resulted in a highly attenuated beer upon arrival.  English pale ales were derived from India Pale Ales.
+p
+  b Ingredients:
+  | Pale ale malt (well-modified and suitable for single-temperature infusion mashing); English hops; English yeast that can give a fruity or sulfury/minerally profile. Refined sugar may be used in some versions.  High sulfate and low carbonate water is essential to achieving a pleasant hop bitterness in authentic Burton versions, although not all examples will exhibit the strong sulfate character.
+table border="1" cellpadding="5"
+  tr
+    td
+      b> Vital Statistics
+      | \:
+    td
+      | OG: 1.050 &ndash; 1.075
+  tr
+    td
+      | IBUs: 40 &ndash; 60
+    td
+      | FG: 1.010 &ndash; 1.018
+  tr
+    td
+      | SRM: 8 &ndash; 14
+    td
+      | ABV: 5 &ndash; 7.5%
+p
+  b Commercial Examples:
+  | Meantime India Pale Ale, Freeminer Trafalgar IPA, Fuller's IPA, Ridgeway Bad Elf, Summit India Pale Ale, Samuel Smith's India Ale, Hampshire Pride of Romsey IPA, Burton Bridge Empire IPA,Middle Ages ImPailed Ale, Goose Island IPA, Brooklyn East India Pale Ale

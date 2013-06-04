@@ -1,0 +1,44 @@
+p
+  b Aroma:
+  | Moderately rich German malt aroma (of Vienna and/or Munich malt).  A light toasted malt aroma may be present.  Similar, though less intense than Oktoberfest.  Clean lager character, with no fruity esters or diacetyl.  Noble hop aroma may be low to none.  Caramel aroma is inappropriate.
+p
+  b Appearance:
+  | Light reddish amber to copper color. Bright clarity.  Large, off-white, persistent head.
+p
+  b Flavor:
+  | Soft, elegant malt complexity is in the forefront, with a firm enough hop bitterness to provide a balanced finish. Some toasted character from the use of Vienna malt.  No roasted or caramel flavor.  Fairly dry finish, with both malt and hop bitterness present in the aftertaste.  Noble hop flavor may be low to none.
+p
+  b Mouthfeel:
+  | Medium-light to medium body, with a gentle creaminess.  Moderate carbonation.  Smooth.  Moderately crisp finish.  May have a bit of alcohol warming.
+p
+  b Overall Impression:
+  | Characterized by soft, elegant maltiness that dries out in the finish to avoid becoming sweet.
+p
+  b Comments:
+  | American versions can be a bit stronger, drier and more bitter, while European versions tend to be sweeter.  Many Mexican amber and dark lagers used to be more authentic, but unfortunately are now more like sweet, adjunct-laden American Dark Lagers.
+p
+  b History:
+  | The original amber lager developed by Anton Dreher shortly after the isolation of lager yeast.  Nearly extinct in its area of origin, the style continues in Mexico where it was brought by Santiago Graf and other Austrian immigrant brewers in the late 1800s.  Regrettably, most modern examples use adjuncts which lessen the rich malt complexity characteristic of the best examples of this style.  The style owes much of its character to the method of malting (Vienna malt). Lighter malt character overall than Oktoberfest, yet still decidedly balanced toward malt.
+p
+  b Ingredients:
+  | Vienna malt provides a lightly toasty and complex, melanoidin-rich malt profile.  As with Oktoberfests, only the finest quality malt should be used, along with Continental hops (preferably noble varieties).  Moderately hard, carbonate-rich water.  Can use some caramel malts and/or darker malts to add color and sweetness, but caramel malts shouldn’t add significant aroma and flavor and dark malts shouldn’t provide any roasted character.
+table border="1" cellpadding="5"
+  tr
+    td
+      b> Vital Statistics
+      | \:
+    td
+      | OG: 1.046 – 1.052
+  tr
+    td
+      | IBUs: 18 – 30
+    td
+      | FG: 1.010 – 1.014
+  tr
+    td
+      | SRM: 10 – 16
+    td
+      | ABV: 4.5 – 5.5%
+p
+  b Commercial Examples:
+  | Great Lakes Eliot Ness (unusual in its 6.2% strength and 35 IBUs), Boulevard Bobs 47 Munich-Style Lager, Negra Modelo, Old Dominion Aviator Amber Lager, Gordon Biersch Vienna Lager, Capital Wisconsin Amber, Olde Saratoga Lager, Penn Pilsner

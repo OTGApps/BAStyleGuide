@@ -1,0 +1,42 @@
+p
+  b Aroma:
+  | Low to moderate grainy wheat or rye character.  Some malty sweetness is acceptable.  Esters can be moderate to none, although should reflect American yeast strains.  The clove and banana aromas common to German hefeweizens are inappropriate.  Hop aroma may be low to moderate, and can have either a citrusy American or a spicy or floral noble hop character.  Slight crisp sharpness is optional.  No diacetyl.
+p
+  b Appearance:
+  | Usually pale yellow to gold.  Clarity may range from brilliant to hazy with yeast approximating the German hefeweizen style of beer.  Big, long-lasting white head.
+p
+  b Flavor:
+  | Light to moderately strong grainy wheat or rye flavor, which can linger into the finish.  Rye versions are richer and spicier than wheat.  May have a moderate malty sweetness or finish quite dry.  Low to moderate hop bitterness, which sometimes lasts into the finish.  Low to moderate hop flavor (citrusy American or spicy/floral noble).  Esters can be moderate to none, but should not take on a German Weizen character (banana).  No clove phenols, although a light spiciness from wheat or rye is acceptable.  May have a slightly crisp or sharp finish.  No diacetyl.
+p
+  b Mouthfeel:
+  | Medium-light to medium body.  Medium-high to high carbonation.  May have a light alcohol warmth in stronger examples.
+p
+  b Overall Impression:
+  | Refreshing wheat or rye beers that can display more hop character and less yeast character than their German cousins.
+p
+  b Comments:
+  | Different variations exist, from an easy-drinking fairly sweet beer to a dry, aggressively hopped beer with a strong wheat or rye flavor.  Dark versions approximating dunkelweizens (with darker, richer malt flavors in addition to the color) should be entered in the Specialty Beer category.
+  b THE BREWER SHOULD SPECIFY IF RYE IS USED; IF NO DOMINANT GRAIN IS SPECIFIED, WHEAT WILL BE ASSUMED.
+p
+  b Ingredients:
+  | Clean American ale yeast, but also can be made as a lager. Large proportion of wheat malt (often 50% or more, but this isn’t a legal requirement as in Germany).  American or noble hops.  American Rye Beers can follow the same general guidelines, substituting rye for some or all of the wheat.  Other base styles (e.g., IPA, stout) with a noticeable rye character should be entered in the Specialty Beer category (23).
+table border="1" cellpadding="5"
+  tr
+    td
+      b> Vital Statistics
+      | \:
+    td
+      | OG: 1.040 &ndash; 1.055
+  tr
+    td
+      | IBUs: 15 &ndash; 30
+    td
+      | FG: 1.008 &ndash; 1.013
+  tr
+    td
+      | SRM: 3 &ndash; 6
+    td
+      | ABV: 4 &ndash; 5.5%
+p
+  b Commercial Examples:
+  | Bell’s Oberon, Harpoon UFO Hefeweizen, Three Floyds Gumballhead, Pyramid Hefe-Weizen, Widmer Hefeweizen, Sierra Nevada Unfiltered Wheat Beer, Anchor Summer Beer, Redhook Sunrye, Real Ale Full Moon Pale Rye

@@ -1,0 +1,41 @@
+p
+  b Aroma:
+  | Moderate to strong aroma of roasted malts, often having a roasted coffee or dark chocolate quality.  Burnt or charcoal aromas are low to none.  Medium to very low hop aroma, often with a citrusy or resiny American hop character.  Esters are optional, but can be present up to medium intensity.  Light alcohol-derived aromatics are also optional.  No diacetyl.
+p
+  b Appearance:
+  | Generally a jet black color, although some may appear very dark brown.  Large, persistent head of light tan to light brown in color.  Usually opaque.
+p
+  b Flavor:
+  | Moderate to very high roasted malt flavors, often tasting of coffee, roasted coffee beans, dark or bittersweet chocolate.  May have a slightly burnt coffee ground flavor, but this character should not be prominent if present.  Low to medium malt sweetness, often with rich chocolate or caramel flavors.  Medium to high bitterness.  Hop flavor can be low to high, and generally reflects citrusy or resiny American varieties.  Light esters may be present but are not required.  Medium to dry finish, occasionally with a light burnt quality.  Alcohol flavors can be present up to medium levels, but smooth.  No diacetyl.
+p
+  b Mouthfeel:
+  | Medium to full body.  Can be somewhat creamy, particularly if a small amount of oats have been used to enhance mouthfeel.  Can have a bit of roast-derived astringency, but this character should not be excessive.  Medium-high to high carbonation.  Light to moderately strong alcohol warmth, but smooth and not excessively hot.
+p
+  b Overall Impression:
+  | A hoppy, bitter, strongly roasted Foreign-style Stout (of the export variety).
+p
+  b Comments:
+  | Breweries express individuality through varying the roasted malt profile, malt sweetness and flavor, and the amount of finishing hops used.  Generally has bolder roasted malt flavors and hopping than other traditional stouts (except Imperial Stouts).
+p
+  b Ingredients:
+  | Common American base malts and yeast.  Varied use of dark and roasted malts, as well as caramel-type malts.  Adjuncts such as oatmeal may be present in low quantities.  American hop varieties.
+table border="1" cellpadding="5"
+  tr
+    td
+      b> Vital Statistics
+      | \:
+    td
+      | OG: 1.050 &ndash; 1.075
+  tr
+    td
+      | IBUs: 35 &ndash; 75
+    td
+      | FG: 1.010 &ndash; 1.022
+  tr
+    td
+      | SRM: 30 &ndash; 40
+    td
+      | ABV: 5 &ndash; 7%
+p
+  b Commercial Examples:
+  | Rogue Shakespeare Stout, Deschutes Obsidian Stout, Sierra Nevada Stout, North Coast Old No. 38, Bar Harbor Cadillac Mountain Stout, Avery Out of Bounds Stout, Lost Coast 8 Ball Stout, Mad River Steelhead Extra Stout

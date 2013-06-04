@@ -1,0 +1,44 @@
+p
+  b Aroma:
+  | Dominated by a balance of rich, intense malt and a definite alcohol presence.  No hop aroma.  No diacetyl.  May have significant fruity esters, particularly those reminiscent of plum, prune or grape.  Alcohol aromas should not be harsh or solventy.
+p
+  b Appearance:
+  | Deep copper to dark brown in color, often with attractive ruby highlights.  Lagering should provide good clarity.  Head retention may be impaired by higher-than-average alcohol content and low carbonation.  Off-white to deep ivory colored head. Pronounced legs are often evident.
+p
+  b Flavor:
+  | Rich, sweet malt balanced by a significant alcohol presence.  The malt can have melanoidins, toasty qualities, some caramel, and occasionally a slight chocolate flavor.  No hop flavor.  Hop bitterness just offsets the malt sweetness enough to avoid a cloying character. No diacetyl.  May have significant fruity esters, particularly those reminiscent of plum, prune or grape.  The alcohol should be smooth, not harsh or hot, and should help the hop bitterness balance the strong malt presence.  The finish should be of malt and alcohol, and can have a certain dryness from the alcohol.  It should not by sticky, syrupy or cloyingly sweet.  Clean, lager character.
+p
+  b Mouthfeel:
+  | Full to very full bodied.  Low carbonation.  Significant alcohol warmth without sharp hotness.  Very smooth without harsh edges from alcohol, bitterness, fusels, or other concentrated flavors.
+p
+  b Overall Impression:
+  | An extremely strong, full and malty dark lager.
+p
+  b Comments:
+  | Eisbocks are not simply stronger doppelbocks; the name refers to the process of freezing and concentrating the beer.  Some doppelbocks are stronger than Eisbocks.  Extended lagering is often needed post-freezing to smooth the alcohol and enhance the malt and alcohol balance.  Any fruitiness is due to Munich and other specialty malts, not yeast-derived esters developed during fermentation.
+p
+  b History:
+  | A traditional Kulmbach specialty brewed by freezing a doppelbock and removing the ice to concentrate the flavor and alcohol content (as well as any defects).
+p
+  b Ingredients:
+  | Same as doppelbock.  Commercial eisbocks are generally concentrated anywhere from 7% to 33% (by volume).
+table border="1" cellpadding="5"
+  tr
+    td
+      b> Vital Statistics
+      | \:
+    td
+      | OG: 1.078 &ndash; 1.120
+  tr
+    td
+      | IBUs: 25 &ndash; 35
+    td
+      | FG: 1.020 &ndash; 1.035
+  tr
+    td
+      | SRM: 18 &ndash; 30
+    td
+      | ABV: 9 &ndash; 14%
+p
+  b Commercial Examples:
+  | Kulmbacher Reichelbräu Eisbock, Eggenberg Urbock Dunkel Eisbock, Niagara Eisbock, Capital Eisphyre, Southampton Eisbock

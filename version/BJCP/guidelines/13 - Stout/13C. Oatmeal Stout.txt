@@ -1,0 +1,44 @@
+p
+  b Aroma:
+  | Mild roasted grain aromas, often with a coffee-like character.  A light sweetness can imply a coffee-and-cream impression.  Fruitiness should be low to medium. Diacetyl medium-low to none.  Hop aroma low to none (UK varieties most common).  A light oatmeal aroma is optional.
+p
+  b Appearance:
+  | Medium brown to black in color.  Thick, creamy, persistent tan- to brown-colored head.  Can be opaque (if not, it should be clear).
+p
+  b Flavor:
+  | Medium sweet to medium dry palate, with the complexity of oats and dark roasted grains present.  Oats can add a nutty, grainy or earthy flavor.  Dark grains can combine with malt sweetness to give the impression of milk chocolate or coffee with cream.  Medium hop bitterness with the balance toward malt.  Diacetyl medium-low to none.  Hop flavor medium-low to none.
+p
+  b Mouthfeel:
+  | Medium-full to full body, smooth, silky, sometimes an almost oily slickness from the oatmeal.  Creamy. Medium to medium-high carbonation.
+p
+  b Overall Impression:
+  | A very dark, full-bodied, roasty, malty ale with a complementary oatmeal flavor.
+p
+  b Comments:
+  | Generally between sweet and dry stouts in sweetness.  Variations exist, from fairly sweet to quite dry.  The level of bitterness also varies, as does the oatmeal impression.  Light use of oatmeal may give a certain silkiness of body and richness of flavor, while heavy use of oatmeal can be fairly intense in flavor with an almost oily mouthfeel.  When judging, allow for differences in interpretation.
+p
+  b History:
+  | An English seasonal variant of sweet stout that is usually less sweet than the original, and relies on oatmeal for body and complexity rather than lactose for body and sweetness.
+p
+  b Ingredients:
+  | Pale, caramel and dark roasted malts and grains. Oatmeal (5-10%+) used to enhance fullness of body and complexity of flavor. Hops primarily for bittering.  Ale yeast.  Water source should have some carbonate hardness.
+table border="1" cellpadding="5"
+  tr
+    td
+      b> Vital Statistics
+      | \:
+    td
+      | OG: 1.048 &ndash; 1.065
+  tr
+    td
+      | IBUs: 25 &ndash; 40
+    td
+      | FG: 1.010 &ndash; 1.018
+  tr
+    td
+      | SRM: 22 &ndash; 40
+    td
+      | ABV: 4.2 &ndash; 5.9%
+p
+  b Commercial Examples:
+  | Samuel Smith Oatmeal Stout, Young's Oatmeal Stout, McAuslan Oatmeal Stout, Maclay’s Oat Malt Stout, Broughton Kinmount Willie Oatmeal Stout, Anderson Valley Barney Flats Oatmeal Stout, Tröegs Oatmeal Stout, New Holland The Poet, Goose Island Oatmeal Stout, Wolaver’s Oatmeal Stout

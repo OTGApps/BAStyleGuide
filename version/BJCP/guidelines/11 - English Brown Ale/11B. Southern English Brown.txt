@@ -1,0 +1,44 @@
+p
+  b Aroma:
+  | Malty-sweet, often with a rich, caramel or toffee-like character. Moderately fruity, often with notes of dark fruits such as plums and/or raisins.  Very low to no hop aroma.  No diacetyl.
+p
+  b Appearance:
+  | Light to dark brown, and can be almost black.  Nearly opaque, although should be relatively clear if visible.  Low to moderate off-white to tan head.
+p
+  b Flavor:
+  | Deep, caramel- or toffee-like malty sweetness on the palate and lasting into the finish.  Hints of biscuit and coffee are common.  May have a moderate dark fruit complexity.  Low hop bitterness.  Hop flavor is low to non-existent.  Little or no perceivable roasty or bitter black malt flavor.  Moderately sweet finish with a smooth, malty aftertaste.  Low to no diacetyl.
+p
+  b Mouthfeel:
+  | Medium body, but the residual sweetness may give a heavier impression.  Low to moderately low carbonation.  Quite creamy and smooth in texture, particularly for its gravity.
+p
+  b Overall Impression:
+  | A luscious, malt-oriented brown ale, with a caramel, dark fruit complexity of malt flavor.  May seem somewhat like a smaller version of a sweet stout or a sweet version of a dark mild.
+p
+  b Comments:
+  | Increasingly rare; Mann’s has over 90% market share in Britain.  Some consider it a bottled version of dark mild, but this style is sweeter than virtually all modern examples of mild.
+p
+  b History:
+  | English brown ales are generally split into sub-styles along geographic lines.  Southern English (or “London-style”) brown ales are darker, sweeter, and lower gravity than their Northern cousins. Developed as a bottled product in the early 20th century out of a reaction against vinous vatted porter and often unpalatable mild. Well suited to London’s water supply.
+p
+  b Ingredients:
+  | English pale ale malt as a base with a healthy proportion of darker caramel malts and often some roasted (black) malt and wheat malt.  Moderate to high carbonate water would appropriately balance the dark malt acidity.  English hop varieties are most authentic, though with low flavor and bitterness almost any type could be used.
+table border="1" cellpadding="5"
+  tr
+    td
+      b> Vital Statistics
+      | \:
+    td
+      | OG: 1.033 &ndash; 1.042
+  tr
+    td
+      | IBUs: 12 &ndash; 20
+    td
+      | FG: 1.011 &ndash; 1.014
+  tr
+    td
+      | SRM: 19 &ndash; 35
+    td
+      | ABV: 2.8 &ndash; 4.1%
+p
+  b Commercial Examples:
+  | Mann's Brown Ale (bottled, but not available in the US), Harvey’s Nut Brown Ale, Woodeforde’s Norfolk Nog
