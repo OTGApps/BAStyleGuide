@@ -217,23 +217,6 @@ class SRMAnalyzerScreen < PM::Screen
     label.setHidden(true)
   end
 
-  def should_rotate(orientation)
-    puts "Trying to determine rotation"
-    UIDeviceOrientationPortrait == orientation
-  end
-
-  def should_autorotate
-    puts "should autorotate?"
-    false
-  end
-
-  def supported_orientations
-    puts "checking supported orientations"
-    orientations = 0
-    orientations |= UIInterfaceOrientationMaskPortrait
-    orientations
-  end
-
   def move_slider_to_srm(srm)
     UIView.animateWithDuration(0.75,
       animations:lambda {
@@ -247,8 +230,15 @@ class SRMAnalyzerScreen < PM::Screen
   end
 
   def close_modal
-    # EM.cancel_timer(@camera_timer)
     close
+  end
+
+  def should_autorotate
+    true
+  end
+
+  def supported_orientations
+    UIInterfaceOrientationMaskPortrait
   end
 
 end
