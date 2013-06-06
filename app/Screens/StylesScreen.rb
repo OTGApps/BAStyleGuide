@@ -176,20 +176,29 @@ class StylesScreen < ProMotion::SectionedTableScreen
   end
 
   def introduction_section
-    {
-      title: nil,
-      cells:
-      [{
-        title: "Introduction",
+    all_introductions = introductions_listing
+    intro = {
+      title: "Introduction",
+      cells: []
+    }
+    intro[:title] << "s" if all_introductions.count > 1
+
+    all_introductions.each do |d|
+      title = File.basename(d, File.extname(d))
+      intro[:cells] <<
+      {
+        title: title,
         cell_identifier: "ImagedCell",
-        image: { image: UIImage.imageNamed("ba_logo_thumb.png") },
+        image: { image: UIImage.imageNamed("logo_thumb.png") },
         action: :open_style,
         arguments: {
-          :path => File.join(guidelines_path, "Introduction.html"),
-          :name => "Introduction"
+          :path => File.join(guidelines_path, d),
+          :name => title
         }
-      }]
-    }
+      }
+    end
+
+    intro
   end
 
   def open_style(args={})
@@ -236,6 +245,12 @@ class StylesScreen < ProMotion::SectionedTableScreen
   		!File.directory?(File.join(path, d)) and not_dotfile(d)
   	}
 	end
+
+  def introductions_listing
+    Dir.entries(guidelines_path).select{|d|
+      d.include? "Introduction"
+    }
+  end
 
   def not_dotfile(d)
     !(d =='.' || d == '..' || d[0] == '.')
