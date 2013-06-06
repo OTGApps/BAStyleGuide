@@ -1,6 +1,7 @@
 class StylesScreen < ProMotion::SectionedTableScreen
   title "Back"
   searchable :placeholder => "Search Styles"
+  attr_accessor :torch_on
 
   def will_appear
     self.setTitle("orginization"._, subtitle:"version"._)
@@ -50,7 +51,7 @@ class StylesScreen < ProMotion::SectionedTableScreen
   end
 
   def judging_tools_section
-    {
+    tools = {
       title: "Judging Tools",
       cells:
       [{
@@ -73,6 +74,10 @@ class StylesScreen < ProMotion::SectionedTableScreen
         search_text: "color"
       }]
     }
+
+    tools[:cells] << torch_cell if torch_supported?
+
+    tools
   end
 
   def analyzer_unlocked?
@@ -81,6 +86,84 @@ class StylesScreen < ProMotion::SectionedTableScreen
 
   def analyzer_image
     analyzer_unlocked? ? "eyedropper.png" : "lock.png"
+  end
+
+  def torch_supported?
+    return true
+    AVCaptureDevice.defaultDeviceWithMediaType(AVMediaTypeVideo).hasTorch
+  end
+
+  def torch_cell
+    {
+      title: "Clairity Analyzer",
+      cell_identifier: "ImagedCell",
+      image: analyzer_image,
+      action: :torch_toggle,
+      search_text: "light flashlight",
+      accessory: :switch
+    }
+  end
+
+  def accessory_toggled_switch(button)
+    ap button
+  end
+
+  # def toggle_torch
+  #   device = AVCaptureDevice.defaultDeviceWithMediaType(AVMediaTypeVideo)
+
+  #   if device.torchMode == AVCaptureTorchModeOff
+  #     # Create an AV session
+  #     session = AVCaptureSession.new
+
+  #     # Create device input and add to current session
+  #     input = AVCaptureDeviceInput.deviceInputWithDevice(device, error:nil)
+  #     session.addInput(input)
+
+  #     # Create video output and add to current session
+  #     output = AVCaptureVideoDataOutput.new
+  #     session.addOutput(output)
+
+  #     # Start session configuration
+  #     session.beginConfiguration
+  #     device.lockForConfiguration(nil)
+
+  #     # Set torch to on
+  #     device.setTorchMode(AVCaptureTorchModeOn)
+
+  #     device.unlockForConfiguration
+  #     session.commitConfiguration
+
+  #     # Start the session
+  #     session.startRunning
+
+  #     # Keep the session around
+  #     self.setAVSession(session)
+  #   else
+  #     AVSession.stopRunning
+  #     AVSession = nil
+  #   end
+
+  # end
+
+  def toggle_torch
+    # check if flashlight available
+    captureDeviceClass = NSClassFromString("AVCaptureDevice")
+    return false if captureDeviceClass.nil?
+
+    device = AVCaptureDevice.defaultDeviceWithMediaType(AVMediaTypeVideo)
+    if device.hasTorch && device.hasFlash
+      device.lockForConfiguration(nil)
+      if self.torch_on
+        device.setTorchMode(AVCaptureTorchModeOff)
+        device.setFlashMode(AVCaptureFlashModeOff)
+        self.torch_on = false
+      else
+        device.setTorchMode(AVCaptureTorchModeOn)
+        device.setFlashMode(AVCaptureFlashModeOn)
+        self.torch_on = true
+      end
+      device.unlockForConfiguration
+    end
   end
 
   def introduction_section
