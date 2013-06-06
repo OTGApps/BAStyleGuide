@@ -76,7 +76,6 @@ class StylesScreen < ProMotion::SectionedTableScreen
     }
 
     tools[:cells] << torch_cell if torch_supported?
-
     tools
   end
 
@@ -89,7 +88,11 @@ class StylesScreen < ProMotion::SectionedTableScreen
   end
 
   def torch_supported?
-    return true
+    return true if Device.simulator? # We want the functionality in the simulator
+
+    capture_device = Module.const_get("AVCaptureDevice")
+    return false if capture_device.nil?
+
     AVCaptureDevice.defaultDeviceWithMediaType(AVMediaTypeVideo).hasTorch
   end
 
@@ -97,15 +100,17 @@ class StylesScreen < ProMotion::SectionedTableScreen
     {
       title: "Clairity Analyzer",
       cell_identifier: "ImagedCell",
-      image: analyzer_image,
-      action: :torch_toggle,
-      search_text: "light flashlight",
+      image: "torch.png",
+      accessory_action: :torch_switched,
+      search_text: "light flashlight torch",
       accessory: :switch
     }
   end
 
-  def accessory_toggled_switch(button)
-    ap button
+  def torch_switched(switch)
+    ap switch
+    ap switch[:value]
+    toggle_torch if torch_supported?
   end
 
   # def toggle_torch
@@ -146,8 +151,12 @@ class StylesScreen < ProMotion::SectionedTableScreen
   # end
 
   def toggle_torch
+    ap 'toggling torch'
+
+    return if Device.simulator?
+
     # check if flashlight available
-    captureDeviceClass = NSClassFromString("AVCaptureDevice")
+    captureDeviceClass = Module.const_get("AVCaptureDevice")
     return false if captureDeviceClass.nil?
 
     device = AVCaptureDevice.defaultDeviceWithMediaType(AVMediaTypeVideo)
