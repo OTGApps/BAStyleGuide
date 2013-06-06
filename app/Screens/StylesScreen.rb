@@ -50,6 +50,17 @@ class StylesScreen < ProMotion::SectionedTableScreen
   	 c
   end
 
+  def table_data_index
+    table_data.collect do |section|
+      first = section[:title].split(" ").first
+      if ("A".."Z").to_a.include? first[0].upcase
+        first[0]
+      else
+        first.to_i.to_s
+      end
+    end
+  end
+
   def judging_tools_section
     tools = {
       title: "Judging Tools",
