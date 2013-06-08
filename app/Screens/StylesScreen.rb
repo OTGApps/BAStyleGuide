@@ -108,7 +108,7 @@ class StylesScreen < ProMotion::SectionedTableScreen
 
   def torch_cell
     {
-      title: "Clairity Analyzer",
+      title: "Torch",
       cell_identifier: "ImagedCell",
       image: "torch.png",
       accessory: {
@@ -162,7 +162,6 @@ class StylesScreen < ProMotion::SectionedTableScreen
   # end
 
   def toggle_torch(on_off)
-    ap 'toggling torch'
 
     return if Device.simulator?
 
@@ -174,11 +173,9 @@ class StylesScreen < ProMotion::SectionedTableScreen
     if device.hasTorch && device.hasFlash
       device.lockForConfiguration(nil)
       if on_off
-        ap "turning torch on"
         device.setTorchMode(AVCaptureTorchModeOn)
         device.setFlashMode(AVCaptureFlashModeOn)
       else
-        ap "turning torch off"
         device.setTorchMode(AVCaptureTorchModeOff)
         device.setFlashMode(AVCaptureFlashModeOff)
       end
