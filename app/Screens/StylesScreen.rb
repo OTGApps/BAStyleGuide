@@ -1,7 +1,6 @@
 class StylesScreen < ProMotion::SectionedTableScreen
   title "Back"
   searchable :placeholder => "Search Styles"
-  attr_accessor :torch_on
 
   def will_appear
     self.setTitle("orginization"._, subtitle:"version"._)
@@ -112,16 +111,17 @@ class StylesScreen < ProMotion::SectionedTableScreen
       title: "Clairity Analyzer",
       cell_identifier: "ImagedCell",
       image: "torch.png",
-      accessory_action: :torch_switched,
-      search_text: "light flashlight torch",
-      accessory: :switch
+      accessory: {
+        view: :switch,
+        action: :torch_switched,
+        value: false
+      },
+      search_text: "light flashlight torch"
     }
   end
 
   def torch_switched(switch)
-    ap switch
-    ap switch[:value]
-    toggle_torch if torch_supported?
+    toggle_torch(switch[:value]) if torch_supported?
   end
 
   # def toggle_torch
@@ -161,7 +161,7 @@ class StylesScreen < ProMotion::SectionedTableScreen
 
   # end
 
-  def toggle_torch
+  def toggle_torch(on_off)
     ap 'toggling torch'
 
     return if Device.simulator?
@@ -173,14 +173,14 @@ class StylesScreen < ProMotion::SectionedTableScreen
     device = AVCaptureDevice.defaultDeviceWithMediaType(AVMediaTypeVideo)
     if device.hasTorch && device.hasFlash
       device.lockForConfiguration(nil)
-      if self.torch_on
-        device.setTorchMode(AVCaptureTorchModeOff)
-        device.setFlashMode(AVCaptureFlashModeOff)
-        self.torch_on = false
-      else
+      if on_off
+        ap "turning torch on"
         device.setTorchMode(AVCaptureTorchModeOn)
         device.setFlashMode(AVCaptureFlashModeOn)
-        self.torch_on = true
+      else
+        ap "turning torch off"
+        device.setTorchMode(AVCaptureTorchModeOff)
+        device.setFlashMode(AVCaptureFlashModeOff)
       end
       device.unlockForConfiguration
     end
