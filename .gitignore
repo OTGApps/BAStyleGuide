@@ -23,3 +23,5 @@ vendor/**/*.bridgesupport
 
 /resources/
 /provisioning/
+
+*.sublime-*

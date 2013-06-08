@@ -49,8 +49,19 @@ class StylesScreen < ProMotion::SectionedTableScreen
   	 c
   end
 
+  def table_data_index
+    table_data.collect do |section|
+      first = section[:title].split(" ").first
+      if ("A".."Z").to_a.include? first[0].upcase
+        first[0]
+      else
+        first.to_i.to_s
+      end
+    end
+  end
+
   def judging_tools_section
-    {
+    tools = {
       title: "Judging Tools",
       cells:
       [{
@@ -73,6 +84,9 @@ class StylesScreen < ProMotion::SectionedTableScreen
         search_text: "color"
       }]
     }
+
+    tools[:cells] << torch_cell if torch_supported?
+    tools
   end
 
   def analyzer_unlocked?
@@ -81,6 +95,92 @@ class StylesScreen < ProMotion::SectionedTableScreen
 
   def analyzer_image
     analyzer_unlocked? ? "eyedropper.png" : "lock.png"
+  end
+
+  def torch_supported?
+    return true if Device.simulator? # We want the functionality in the simulator
+
+    capture_device = Module.const_get("AVCaptureDevice")
+    return false if capture_device.nil?
+
+    AVCaptureDevice.defaultDeviceWithMediaType(AVMediaTypeVideo).hasTorch
+  end
+
+  def torch_cell
+    {
+      title: "Torch",
+      cell_identifier: "ImagedCell",
+      image: "torch.png",
+      accessory: {
+        view: :switch,
+        action: :torch_switched,
+        value: false
+      },
+      search_text: "light flashlight torch"
+    }
+  end
+
+  def torch_switched(switch)
+    toggle_torch(switch[:value]) if torch_supported?
+  end
+
+  # def toggle_torch
+  #   device = AVCaptureDevice.defaultDeviceWithMediaType(AVMediaTypeVideo)
+
+  #   if device.torchMode == AVCaptureTorchModeOff
+  #     # Create an AV session
+  #     session = AVCaptureSession.new
+
+  #     # Create device input and add to current session
+  #     input = AVCaptureDeviceInput.deviceInputWithDevice(device, error:nil)
+  #     session.addInput(input)
+
+  #     # Create video output and add to current session
+  #     output = AVCaptureVideoDataOutput.new
+  #     session.addOutput(output)
+
+  #     # Start session configuration
+  #     session.beginConfiguration
+  #     device.lockForConfiguration(nil)
+
+  #     # Set torch to on
+  #     device.setTorchMode(AVCaptureTorchModeOn)
+
+  #     device.unlockForConfiguration
+  #     session.commitConfiguration
+
+  #     # Start the session
+  #     session.startRunning
+
+  #     # Keep the session around
+  #     self.setAVSession(session)
+  #   else
+  #     AVSession.stopRunning
+  #     AVSession = nil
+  #   end
+
+  # end
+
+  def toggle_torch(on_off)
+
+    return if Device.simulator?
+
+    # check if flashlight available
+    captureDeviceClass = Module.const_get("AVCaptureDevice")
+    return false if captureDeviceClass.nil?
+
+    device = AVCaptureDevice.defaultDeviceWithMediaType(AVMediaTypeVideo)
+    if device.hasTorch && device.hasFlash
+      device.lockForConfiguration(nil)
+      if on_off
+        device.setTorchMode(AVCaptureTorchModeOn)
+        device.setFlashMode(AVCaptureFlashModeOn)
+      else
+        device.setTorchMode(AVCaptureTorchModeOff)
+        device.setFlashMode(AVCaptureFlashModeOff)
+      end
+      device.unlockForConfiguration
+    end
   end
 
   def introduction_section
