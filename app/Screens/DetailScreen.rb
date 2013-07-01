@@ -47,16 +47,8 @@ class DetailScreen < SizeableWebScreen
 <h1>#{the_title}</h1>
 <div class="srmrange">&nbsp;</div>
 
-#{style.html(:aroma)}
-#{style.html(:appearance)}
-#{style.html(:flavor)}
-#{style.html(:mouthfeel)}
-#{style.html(:impression)}
-#{style.html(:comments)}
-#{style.html(:history)}
-#{style.html(:ingredients)}
+#{style.html(:description)}
 #{style.html(:specs)}
-#{style.html(:examples)}
 
     CONTENT
   end

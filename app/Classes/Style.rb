@@ -1,6 +1,6 @@
 class Style
 
-  PROPERTIES = [:id, :category, :name, :aroma, :appearance, :flavor, :mouthfeel, :impression, :comments, :history, :ingredients, :og, :fg, :ibu, :srm, :abv, :examples]
+  PROPERTIES = [:id, :category, :name, :description, :og, :og_plato, :fg, :fg_plato, :abv, :abw, :ibu, :srm, :ebc]
   PROPERTIES.each { |prop|
     attr_accessor prop
   }
@@ -18,11 +18,16 @@ class Style
   end
 
   def html(property)
+    ap property
     return specs_html if property == :specs
     return "" unless respond_to? "#{property.to_s}="
 
-    "<h2>#{property_title(property)}</h2>
-     <p>#{self.send(property)}</p>"
+    text = "";
+    self.send(property).split("\r").compact.each do |p|
+      text << "<p>#{p}</p>"
+    end
+    ap text
+    text
   end
 
   def specs_html
@@ -46,15 +51,19 @@ class Style
 
   def search_text
     search = ""
-    %w(impression appearance ingredients examples aroma mouthfeel flavor).each do |prop|
+    %w(description).each do |prop|
       search << (" " + self.send(prop)) unless self.send(prop).nil? || self.send(prop).downcase == "n/a"
     end
     search.split(/\W+/).uniq.join(" ")
   end
 
   def srm_range
-    return nil if self.srm.nil? || self.srm.downcase == "n/a"
-    self.srm.split(" - ")
+    return nil if self.srm.nil? || self.srm.downcase == "n/a" || self.srm.downcase.include?("varies")
+    srm = self.srm
+    if self.srm.include? "+"
+      srm = "#{srm.chomp('+')}-#{srm.chomp('+')}"
+    end
+    srm.split("-")
   end
 
 end
