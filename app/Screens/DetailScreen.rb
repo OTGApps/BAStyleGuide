@@ -28,7 +28,7 @@ class DetailScreen < SizeableWebScreen
 
   def the_title
     return "" unless defined? style.id
-    "#{style.category}#{style.id.as_letter}: #{style.name}"
+    style.name
   end
 
   def load_finished

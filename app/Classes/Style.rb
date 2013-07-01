@@ -14,7 +14,7 @@ class Style
   end
 
   def title
-    "#{self.category}#{self.id.as_letter}: #{self.name}"
+    self.name
   end
 
   def html(property)

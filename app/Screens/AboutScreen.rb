@@ -1,6 +1,6 @@
 class AboutScreen < PM::WebScreen
 
-  title "About BJCP Styles"
+  title "About BA Styles"
 
   def content
     "AboutScreen.html"

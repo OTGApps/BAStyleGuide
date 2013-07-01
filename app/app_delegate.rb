@@ -34,12 +34,6 @@ class AppDelegate < ProMotion::Delegate
       App::Persistence['font_size'] = 100
     end
 
-    # Check to see if the user is calling a style from an external URL when the application isn't in memory yet
-    if defined?(options[UIApplicationLaunchOptionsURLKey])
-      suffix = options[UIApplicationLaunchOptionsURLKey].absoluteString.split("//").last
-      open_style_when_launched suffix
-    end
-
     main_screen = MainScreen.new(nav_bar: true)
 
     if Device.ipad?
@@ -56,24 +50,6 @@ class AppDelegate < ProMotion::Delegate
 
   def applicationWillEnterForeground(application)
     Appirater.appEnteredForeground true unless Device.simulator?
-  end
-
-  def application(application, openURL:url, sourceApplication:sourceApplication, annotation:annotation)
-    suffix = url.absoluteString.split("//").last
-
-    if suffix == "reset_tools"
-      App::Persistence['hide_judging_tools'] = nil
-      App.notification_center.post "ReloadNotification"
-    else
-      open_style_when_launched suffix
-    end
-
-    true
-  end
-
-  def open_style_when_launched(style)
-      self.jump_to_style = style
-      App.notification_center.post("GoDirectlyToStyle", object:style)
   end
 
 end

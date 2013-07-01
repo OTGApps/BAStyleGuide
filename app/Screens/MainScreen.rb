@@ -1,5 +1,5 @@
 class MainScreen < ProMotion::SectionedTableScreen
-  title "2013 Brewers Association Styles"
+  title "2013 BA Styles"
   searchable :placeholder => "Search Styles"
 
   def will_appear
@@ -27,36 +27,8 @@ class MainScreen < ProMotion::SectionedTableScreen
     end
   end
 
-  def auto_open_style(style)
-    cat = style[0..-2].to_i
-    subcat = style[-1]
-
-    # Find it in the array
-    requested_style = @styles[cat - 1][:substyles][subcat.as_integer - 1]
-    App.delegate.jump_to_style = nil
-
-    if requested_style.nil?
-      App.alert "Invalid style requested: \"#{style}\"."
-    else
-      # TODO: Pop back to the root view controller
-      # pop_to_root animated: false
-      open_style style: requested_style
-
-      # TODO:
-      # Scroll down to the correct section on the ipad
-    end
-  end
-
   def on_appear
     self.navigationController.setToolbarHidden(true, animated:true) unless searching?
-
-    # Check to see if we should go directly into a style when the app is not in memory.
-    auto_open_style App.delegate.jump_to_style unless App.delegate.jump_to_style.nil?
-
-    # Re-call on_appear when the application resumes from the background state since it's not called automatically.
-    @on_appear_observer ||= App.notification_center.observe UIApplicationDidBecomeActiveNotification do |notification|
-      on_appear
-    end
   end
 
   def table_data
@@ -65,18 +37,18 @@ class MainScreen < ProMotion::SectionedTableScreen
       s = []
       s << judging_section_links if BeerJudge.is_installed?
       s << judging_section_preview if shows_beer_judging_section?
-      s << {
-        title: "Introductions",
-        cells: [
-          intro_cell("Beer Introduction"),
-          intro_cell("Mead Introduction"),
-          intro_cell("Cider Introduction")
-        ]
-      }
+      # s << {
+      #   title: "Introductions",
+      #   cells: [
+      #     intro_cell("Beer Introduction"),
+      #     intro_cell("Mead Introduction"),
+      #     intro_cell("Cider Introduction")
+      #   ]
+      # }
 
       @styles.each do |section|
         s << {
-          title: "#{section[:id]}: #{section[:name]}",
+          title: section[:name],
           cells: build_subcategories(section)
         }
       end
@@ -152,17 +124,6 @@ class MainScreen < ProMotion::SectionedTableScreen
       }
     end
     c
-  end
-
-  def table_data_index
-    return if table_data.count < 1
-    # Get the style number of the section
-    drop = shows_beer_judging_section? ? 2 : 2
-    droped_intro = shows_beer_judging_section? ? ["{search}", "J", "?"] : ["{search}", "?"]
-
-    droped_intro + table_data.drop( drop ).collect do |section|
-      section[:title].split(" ").first[0..-2]
-    end
   end
 
   def open_style(args={})
