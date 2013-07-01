@@ -37,14 +37,12 @@ class MainScreen < ProMotion::SectionedTableScreen
       s = []
       s << judging_section_links if BeerJudge.is_installed?
       s << judging_section_preview if shows_beer_judging_section?
-      # s << {
-      #   title: "Introductions",
-      #   cells: [
-      #     intro_cell("Beer Introduction"),
-      #     intro_cell("Mead Introduction"),
-      #     intro_cell("Cider Introduction")
-      #   ]
-      # }
+      s << {
+        title: "Introduction",
+        cells: [
+          html_cell("Introduction")
+        ]
+      }
 
       @styles.each do |section|
         s << {
@@ -52,11 +50,19 @@ class MainScreen < ProMotion::SectionedTableScreen
           cells: build_subcategories(section)
         }
       end
+
+      s << {
+        title: "Bibliography",
+        cells: [
+          html_cell("Bibliography of Resources")
+        ]
+      }
+
       s
     end
   end
 
-  def intro_cell(name)
+  def html_cell(name)
     {
       title: name,
       searchable: false,
