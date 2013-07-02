@@ -15,7 +15,7 @@ class AppDelegate < ProMotion::Delegate
 
       # Flurry
       NSSetUncaughtExceptionHandler("uncaughtExceptionHandler")
-      Flurry.startSession("YSNRBSKM9B3ZZXPG7CG7")
+      Flurry.startSession("2C4JRB6VQR6FYS54NFRC")
 
       # Appirater
       Appirater.setAppId app_id
@@ -30,9 +30,7 @@ class AppDelegate < ProMotion::Delegate
     end
 
     # Set initial font size (%)
-    if App::Persistence['font_size'].nil?
-      App::Persistence['font_size'] = 100
-    end
+    App::Persistence['font_size'] = 100 if App::Persistence['font_size'].nil?
 
     main_screen = MainScreen.new(nav_bar: true)
 
