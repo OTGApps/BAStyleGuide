@@ -31,7 +31,7 @@ class JudgingInfoScreen < PM::Screen
         numberOfPages: PAGES.count
       }
 
-      set_nav_bar_right_button "Close", action: :close_modal, type: UIBarButtonItemStyleDone
+      set_nav_bar_right_button "Close", action: :close, type: UIBarButtonItemStyleDone
       self.navigationController.setToolbarHidden(false)
       self.toolbarItems = [dont_show_button, flexible_space, purchase_button]
     end
@@ -103,8 +103,20 @@ class JudgingInfoScreen < PM::Screen
     App.open_url url_string
   end
 
-  def close_modal
-    self.navigationController.dismissModalViewControllerAnimated(true)
+  def supportedInterfaceOrientations
+    if Device.iphone?
+      UIInterfaceOrientationMaskPortrait
+    else
+      UIInterfaceOrientationMaskAll
+    end
+  end
+
+  def shouldAutorotateToInterfaceOrientation(interfaceOrientation)
+    if Device.iphone?
+      interfaceOrientation == UIInterfaceOrientationPortrait
+    else
+      true
+    end
   end
 
 end
