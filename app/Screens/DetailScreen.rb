@@ -1,20 +1,25 @@
 class DetailScreen < SizeableWebScreen
   attr_accessor :style, :cell
 
-  def will_appear
-    @view_loaded ||= begin
+  def on_load
+    if Device.ipad?
+      set_nav_bar_right_button UIImage.imageNamed("info.png"), action: :open_about_screen
 
-      if Device.ipad?
-        set_nav_bar_right_button UIImage.imageNamed("info.png"), action: :open_about_screen
-      end
+      view.when_swiped do |swipe|
+        App.delegate.main_screen.next
+      end.direction = UISwipeGestureRecognizerDirectionLeft
 
-      if defined? style.id
-        self.setTitle the_title
-        set_attributes view, {background_color:UIColor.whiteColor}
-      else
-        self.setTitle "Welcome"
-        set_attributes view, {background_color:"#CCCC99".to_color}
-      end
+      view.when_swiped do |swipe|
+        App.delegate.main_screen.previous
+      end.direction = UISwipeGestureRecognizerDirectionRight
+    end
+
+    if defined? style.id
+      self.setTitle the_title
+      set_attributes view, {background_color:UIColor.whiteColor}
+    else
+      self.setTitle "Welcome"
+      set_attributes view, {background_color:"#CCCC99".to_color}
     end
   end
 
@@ -43,9 +48,9 @@ class DetailScreen < SizeableWebScreen
 
 #{css}
 
-<div class="srmrange">&nbsp;</div>
+<div class="srmrange top">&nbsp;</div>
 <h1>#{the_title}</h1>
-<div class="srmrange">&nbsp;</div>
+<div class="srmrange bottom">&nbsp;</div>
 
 #{style.html(:description)}
 #{style.html(:specs)}

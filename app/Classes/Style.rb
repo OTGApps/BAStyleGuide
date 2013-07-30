@@ -18,7 +18,6 @@ class Style
   end
 
   def html(property)
-    ap property
     return specs_html if property == :specs
     return "" unless respond_to? "#{property.to_s}="
 
@@ -26,15 +25,20 @@ class Style
     self.send(property).split("\r").compact.each do |p|
       text << "<p>#{p}</p>"
     end
-    ap text
     text
   end
 
   def specs_html
-    table = "<h2>Vital Statistics</h2>"
+    table_stats = ""
     %w(og fg ibu srm abv).each do |spec|
-      table << "<li>" + spec.upcase + ": " + self.send(spec) + "</li>"
+      ap self.send(spec)
+      table_stats << "<li>" + spec.upcase + ": " + self.send(spec) + "</li>" unless self.send(spec).empty?
     end
+
+    return "" if table_stats.empty?
+
+    table = "<h2>Vital Statistics</h2>"
+    table << "<ul>" << table_stats << "</ul>"
     table
   end
 

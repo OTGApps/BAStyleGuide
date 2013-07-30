@@ -1,30 +1,31 @@
-class MainScreen < ProMotion::SectionedTableScreen
+class MainScreen < ProMotion::TableScreen
   title "2013 BA Styles"
   searchable :placeholder => "Search Styles"
+  attr_accessor :selected_cell
 
-  def will_appear
-    @view_set_up ||= begin
-      set_attributes self.view, { backgroundColor: UIColor.whiteColor }
+  def on_load
+    SVProgressHUD.showWithStatus("Loading".__, maskType:SVProgressHUDMaskTypeBlack)
 
-      unless Device.ipad?
-        set_nav_bar_right_button UIImage.imageNamed("info.png"), action: :open_about_screen
-      end
+    set_attributes self.view, { backgroundColor: UIColor.whiteColor }
 
-      backBarButtonItem = UIBarButtonItem.alloc.initWithTitle("Back", style:UIBarButtonItemStyleBordered, target:nil, action:nil)
-      self.navigationItem.backBarButtonItem = backBarButtonItem
-
-      @reload_observer = App.notification_center.observe "ReloadNotification" do |notification|
-        @table_setup = nil
-        update_table_data
-      end
-
-      # Check to see if we should go directly into a style when the app is already loaded.
-      @style_observer ||= App.notification_center.observe "GoDirectlyToStyle" do |notification|
-        App.delegate.jump_to_style = notification.object[:object]
-      end
-
-      read_data
+    unless Device.ipad?
+      set_nav_bar_right_button UIImage.imageNamed("info.png"), action: :open_about_screen
     end
+
+    backBarButtonItem = UIBarButtonItem.alloc.initWithTitle("Back", style:UIBarButtonItemStyleBordered, target:nil, action:nil)
+    self.navigationItem.backBarButtonItem = backBarButtonItem
+
+    @reload_observer = App.notification_center.observe "ReloadNotification" do |notification|
+      @table_setup = nil
+      update_table_data
+    end
+
+    # Check to see if we should go directly into a style when the app is already loaded.
+    @style_observer ||= App.notification_center.observe "GoDirectlyToStyle" do |notification|
+      App.delegate.jump_to_style = notification.object[:object]
+    end
+
+    read_data
   end
 
   def on_appear
@@ -40,7 +41,7 @@ class MainScreen < ProMotion::SectionedTableScreen
       s << {
         title: "Introduction",
         cells: [
-          html_cell("Introduction")
+          intro_cell("Introduction")
         ]
       }
 
@@ -54,7 +55,7 @@ class MainScreen < ProMotion::SectionedTableScreen
       s << {
         title: "Bibliography",
         cells: [
-          html_cell("Bibliography of Resources")
+          intro_cell("Bibliography of Resources")
         ]
       }
 
@@ -62,7 +63,38 @@ class MainScreen < ProMotion::SectionedTableScreen
     end
   end
 
-  def html_cell(name)
+  def next
+    return if self.selected_cell.nil?
+
+    section = self.selected_cell.section
+    row = self.selected_cell.row
+
+    if !table_data[section][:cells][row + 1].nil?
+      scroll_to NSIndexPath.indexPathForRow(row + 1, inSection: section)
+    elsif section + 1 < table_data.count
+      scroll_to NSIndexPath.indexPathForRow(0, inSection: section + 1)
+    end
+  end
+
+  def previous
+    return if self.selected_cell.nil?
+
+    section = self.selected_cell.section
+    row = self.selected_cell.row
+
+    if row != 0
+      scroll_to NSIndexPath.indexPathForRow(row - 1, inSection: section)
+    elsif defined? table_data[section - 1]
+      scroll_to NSIndexPath.indexPathForRow(table_data[section - 1][:cells].count - 1, inSection: section - 1)
+    end
+  end
+
+  def scroll_to(ip)
+    table_view.selectRowAtIndexPath(ip, animated:true, scrollPosition:UITableViewScrollPositionMiddle)
+    tableView(table_view, didSelectRowAtIndexPath:ip)
+  end
+
+  def intro_cell(name)
     {
       title: name,
       searchable: false,
@@ -98,7 +130,7 @@ class MainScreen < ProMotion::SectionedTableScreen
   end
 
   def shows_beer_judging_section?
-    return true if BeerJudge.is_installed?
+    return false if BeerJudge.is_installed? || Device.ios_version.to_i < 6.0
     App::Persistence['hide_judging_tools'].nil? ||  App::Persistence['hide_judging_tools'] == false
   end
 
@@ -164,9 +196,9 @@ class MainScreen < ProMotion::SectionedTableScreen
 
   private
   def read_data
-    @done_read_data ||= begin
+    Dispatch::Queue.concurrent.async do
+      styles = []
 
-      @styles = []
       db = SQLite3::Database.new(File.join(App.resources_path, "styles.sqlite"))
       db.execute("SELECT * FROM category ORDER BY id") do |row|
         substyles = []
@@ -174,12 +206,33 @@ class MainScreen < ProMotion::SectionedTableScreen
           substyles << Style.new(row2)
         end
         row[:substyles] = substyles
-        @styles << row
+        styles << row
       end
 
-      @table_setup = nil
-      update_table_data
+      Dispatch::Queue.main.sync do
+        @styles = styles
+        @table_setup = nil
+        update_table_data
+        SVProgressHUD.dismiss
+      end
     end
+  end
+
+  # Override form Promotion
+  def tableView(table_view, didSelectRowAtIndexPath:index_path)
+    if Device.ipad?
+      table_view.deselectRowAtIndexPath(self.selected_cell, animated: true) unless self.selected_cell.nil?
+      self.selected_cell = index_path
+    else
+      table_view.deselectRowAtIndexPath(index_path, animated: true)
+    end
+
+    data_cell = @promotion_table_data.cell(index_path: index_path)
+
+    data_cell[:arguments] ||= {}
+    data_cell[:arguments][:cell] = data_cell if data_cell[:arguments].is_a?(Hash) # TODO: Should we really do this?
+
+    trigger_action(data_cell[:action], data_cell[:arguments]) if data_cell[:action]
   end
 
 end

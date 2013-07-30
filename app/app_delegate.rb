@@ -1,13 +1,8 @@
 class AppDelegate < ProMotion::Delegate
 
-  attr_accessor :jump_to_style
+  attr_accessor :main_screen
 
   def on_load(app, options)
-
-    if defined? TestFlight
-      TestFlight.setDeviceIdentifier UIDevice.currentDevice.uniqueIdentifier
-      TestFlight.takeOff "e9a2e874-1b13-426c-ad0f-6958e7b2889c"
-    end
 
     # 3rd Party integrations
     unless Device.simulator?
@@ -32,12 +27,12 @@ class AppDelegate < ProMotion::Delegate
     # Set initial font size (%)
     App::Persistence['font_size'] = 100 if App::Persistence['font_size'].nil?
 
-    main_screen = MainScreen.new(nav_bar: true)
+    self.main_screen = MainScreen.new(nav_bar: true)
 
     if Device.ipad?
-      open_split_screen main_screen, DetailScreen.new(nav_bar: true), title: "Split Screen Title"
+      open_split_screen self.main_screen, DetailScreen.new(nav_bar: true), title: "Split Screen Title"
     else
-      open main_screen
+      open self.main_screen
     end
   end
 

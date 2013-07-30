@@ -5,6 +5,7 @@
 
 h1 {
 	font-size: 18px;
+	margin:3px 0px;
 }
 
 h2 {
@@ -28,6 +29,10 @@ div.pre {
 	font-size: 12px;
 	padding:0px;
 	margin:0px;
+}
+
+div.srmrange.bottom {
+	margin-bottom:10px;
 }
 
 .center {
