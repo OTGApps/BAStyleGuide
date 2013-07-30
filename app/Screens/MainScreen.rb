@@ -4,7 +4,7 @@ class MainScreen < ProMotion::TableScreen
   attr_accessor :selected_cell
 
   def on_load
-    SVProgressHUD.showWithStatus("Loading".__, maskType:SVProgressHUDMaskTypeBlack)
+    SVProgressHUD.showWithStatus("Loading", maskType:SVProgressHUDMaskTypeBlack)
 
     set_attributes self.view, { backgroundColor: UIColor.whiteColor }
 
