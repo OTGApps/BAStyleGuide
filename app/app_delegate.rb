@@ -1,5 +1,7 @@
 class AppDelegate < ProMotion::Delegate
 
+  tint_color "#933C06".to_color
+
   attr_accessor :main_screen
 
   def on_load(app, options)
@@ -30,9 +32,9 @@ class AppDelegate < ProMotion::Delegate
     self.main_screen = MainScreen.new(nav_bar: true)
 
     if Device.ipad?
-      open_split_screen self.main_screen, DetailScreen.new(nav_bar: true), title: "Split Screen Title"
+      open_split_screen main_screen, DetailScreen.new(nav_bar: true), title: "2013 BA Styles".__
     else
-      open self.main_screen
+      open main_screen
     end
   end
 
@@ -41,7 +43,7 @@ class AppDelegate < ProMotion::Delegate
     Flurry.logError("Uncaught", message:"Crash!", exception:exception)
   end
 
-  def applicationWillEnterForeground(application)
+  def will_enter_foreground
     Appirater.appEnteredForeground true unless Device.simulator?
   end
 
