@@ -20,7 +20,7 @@ class String
   def numeric?
     return false if self == ""
     return true if self =~ /^\d+$/
-    true if Float(self) rescue false
+    false
   end
 
 end
