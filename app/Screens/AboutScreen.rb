@@ -12,6 +12,7 @@ class AboutScreen < PM::WebScreen
 
       self.navigationController.setToolbarHidden(false)
       self.toolbarItems = [flexible_space, made_in_label, made_in_image, flexible_space]
+      web.backgroundColor = UIColor.whiteColor
     end
 
     Flurry.logEvent "AboutViewed" unless Device.simulator?
