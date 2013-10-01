@@ -5,7 +5,7 @@
 
 h1 {
 	font-size: 18px;
-	margin:3px 0px;
+	margin: 3px 0px;
 }
 
 h2 {
@@ -31,10 +31,8 @@ div.pre {
 	margin:0px;
 }
 
-div.srmrange.bottom {
-	margin-bottom:10px;
-}
-
 .center {
 	text-align: center;
 }
+
+.highlight { background-color: yellow }
