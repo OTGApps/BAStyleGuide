@@ -105,7 +105,6 @@ class SRM
         stops << SRM.hex(srm)
       end
     end
-    ap stops
 
     if stops.count > 0
       "background-image: -webkit-linear-gradient(left, #{stops.join(', ')});"
