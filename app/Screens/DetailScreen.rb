@@ -1,5 +1,5 @@
 class DetailScreen < SizeableWebScreen
-  attr_accessor :style, :cell
+  attr_accessor :style, :cell, :search_string
 
   def on_load
     if Device.ipad?
@@ -42,11 +42,12 @@ class DetailScreen < SizeableWebScreen
   end
 
   def content
-    return "DefaultScreen.html" if self.style.nil?
+    return Internationalization.resources_path("DefaultScreen.html") if self.style.nil?
 
     <<-CONTENT
 
 #{css}
+#{js}
 
 <div class="srmrange top">&nbsp;</div>
 <h1>#{the_title}</h1>
@@ -60,6 +61,16 @@ class DetailScreen < SizeableWebScreen
 
   def css
     "<style>" << File.read(File.join(App.resources_path, "style.css")) << "</style>"
+  end
+
+  def js
+    return "" if self.search_string.nil?
+    "<script>" << File.read(File.join(App.resources_path, "highlighter.js")) << "</script>"
+  end
+
+  def search_js
+    return "" if self.search_string.nil?
+    "<script>" << "$('p').highlight('" << self.search_string << "')" << "</script>"
   end
 
   def set_srm_range
