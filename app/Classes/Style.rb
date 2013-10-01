@@ -1,6 +1,6 @@
 class Style
 
-  PROPERTIES = [:id, :category, :name, :description, :og, :og_plato, :fg, :fg_plato, :abv, :abw, :ibu, :srm, :ebc]
+  PROPERTIES = [:id, :category, :name, :transname, :description, :og, :og_plato, :fg, :fg_plato, :abv, :abw, :ibu, :srm, :ebc]
   PROPERTIES.each { |prop|
     attr_accessor prop
   }
@@ -25,7 +25,7 @@ class Style
     return specs_html if property == :specs
     return "" unless respond_to? "#{property.to_s}="
 
-    text = "";
+    text = "<h2>#{property_title(property)}</h2>"
     self.send(property).split("\r").compact.each do |p|
       text << "<p>#{p}</p>"
     end
@@ -33,17 +33,13 @@ class Style
   end
 
   def specs_html
-    table_stats = ""
+    table_stats = "<h2>" + "Vital Statistics".__ + "</h2>"
+    table_stats << "<ul>"
     %w(og fg ibu srm abv).each do |spec|
-      ap self.send(spec)
       table_stats << "<li>" + spec.upcase + ": " + self.send(spec) + "</li>" unless self.send(spec).empty?
     end
-
-    return "" if table_stats.empty?
-
-    table = "<h2>Vital Statistics</h2>"
-    table << "<ul>" << table_stats << "</ul>"
-    table
+    table_stats << "</ul>"
+    table_stats || ""
   end
 
   def property_title(property)
