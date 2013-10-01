@@ -20,11 +20,6 @@ class MainScreen < ProMotion::TableScreen
       update_table_data
     end
 
-    # Check to see if we should go directly into a style when the app is already loaded.
-    @style_observer ||= App.notification_center.observe "GoDirectlyToStyle" do |notification|
-      App.delegate.jump_to_style = notification.object[:object]
-    end
-
     read_data
   end
 
