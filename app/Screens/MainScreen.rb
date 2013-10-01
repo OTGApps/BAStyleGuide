@@ -1,10 +1,10 @@
 class MainScreen < ProMotion::TableScreen
-  title "2013 BA Styles"
-  searchable :placeholder => "Search Styles"
+  title "2013 BA Styles".__
+  searchable :placeholder => "Search Styles".__
   attr_accessor :selected_cell
 
   def on_load
-    SVProgressHUD.showWithStatus("Loading", maskType:SVProgressHUDMaskTypeBlack)
+    SVProgressHUD.showWithStatus("Loading".__, maskType:SVProgressHUDMaskTypeBlack)
 
     set_attributes self.view, { backgroundColor: UIColor.whiteColor }
 
@@ -12,7 +12,7 @@ class MainScreen < ProMotion::TableScreen
       set_nav_bar_right_button UIImage.imageNamed("info.png"), action: :open_about_screen
     end
 
-    backBarButtonItem = UIBarButtonItem.alloc.initWithTitle("Back", style:UIBarButtonItemStyleBordered, target:nil, action:nil)
+    backBarButtonItem = UIBarButtonItem.alloc.initWithTitle("Back".__, style:UIBarButtonItemStyleBordered, target:nil, action:nil)
     self.navigationItem.backBarButtonItem = backBarButtonItem
 
     @reload_observer = App.notification_center.observe "ReloadNotification" do |notification|
@@ -39,7 +39,7 @@ class MainScreen < ProMotion::TableScreen
       s << judging_section_links if BeerJudge.is_installed?
       s << judging_section_preview if shows_beer_judging_section?
       s << {
-        title: "Introduction",
+        title: "Introduction".__,
         cells: [
           intro_cell("Introduction")
         ]
@@ -100,14 +100,14 @@ class MainScreen < ProMotion::TableScreen
       searchable: false,
       cell_identifier: "IntroductionCell",
       action: :open_intro_screen,
-      arguments: {:file => "#{name}.html", :title => name}
+      arguments: {:file => Internationalization.resources_path("#{name}.html"), :title => name}
     }
   end
 
   def judging_section_links
     # Show the judging Tools
     {
-      title: "Judging Tools",
+      title: "Judging Tools".__,
       cells: judging_cells
     }
   end
@@ -115,9 +115,9 @@ class MainScreen < ProMotion::TableScreen
   def judging_section_preview
     # Show the intro screen
     {
-      title: "Judging Tools",
+      title: "Judging Tools".__,
       cells: [{
-        title: "Check Out the App!",
+        title: "Check Out the App!".__,
         cell_identifier: "JudgingCell",
         searchable: false,
         action: :open_judging_info_screen,
@@ -165,10 +165,12 @@ class MainScreen < ProMotion::TableScreen
   end
 
   def open_style(args={})
+    open_args = args
+    open_args = args.merge({search_string: search_string}) if searching?
     if Device.ipad?
-      open DetailScreen.new(args), nav_bar:true, in_detail: true
+      open DetailScreen.new(open_args), nav_bar:true, in_detail: true
     else
-      open DetailScreen.new(args)
+      open DetailScreen.new(open_args)
     end
   end
 
@@ -195,11 +197,13 @@ class MainScreen < ProMotion::TableScreen
   end
 
   private
+
   def read_data
+
     Dispatch::Queue.concurrent.async do
       styles = []
 
-      db = SQLite3::Database.new(File.join(App.resources_path, "styles.sqlite"))
+      db = SQLite3::Database.new Internationalization.full_path("styles.sqlite")
       db.execute("SELECT * FROM category ORDER BY id") do |row|
         substyles = []
         db.execute("SELECT * FROM subcategory WHERE category = #{row[:id]} ORDER BY id") do |row2|
