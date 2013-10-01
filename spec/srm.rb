@@ -13,7 +13,7 @@ describe "SRM class unit tests" do
 	end
 
 	it "should return all SRM steps" do
-		SRM.steps.count.should == 50
+		SRM.steps.count.should == 40
 	end
 
 	it "should return the full spectrum" do

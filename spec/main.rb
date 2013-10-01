@@ -32,35 +32,4 @@ describe "MainScreen functionality" do
     	end
     end
 	end
-
-  it "should select all cells and go back" do
-    wait 0.5 do
-
-      ips = []
-
-
-      (1..@screen.table_view.numberOfSections-1).to_a.each do |section| # (skip the first section)
-        rows = @screen.table_view.numberOfRowsInSection(section)
-        (0..rows-1).to_a.each do |row|
-          ips << NSIndexPath.indexPathForRow(row, inSection:section)
-        end
-      end
-
-      ips.each do |ip|
-        wait 0.75 do
-          @screen.table_view.scrollToRowAtIndexPath(ip, atScrollPosition:UITableViewScrollPositionMiddle, animated:false)
-
-          # wait 1.5 do
-          #   # puts "#{section}, #{row} (#{indexPath})"
-          #   tap(@screen.table_view.cellForRowAtIndexPath(indexPath))
-
-          #   wait 0.75 do
-          #     tap("Back")
-          #   end
-          # end
-        end
-      end
-
-    end
-  end
 end

@@ -12,4 +12,18 @@ describe "Core Ruby Extensions" do
 		"THIS IS ALL CAPS".titlecase.should == "This Is All Caps"
 	end
 
+	it "should return letters as integers" do
+		"a".as_integer.should == 1
+		"A".as_integer.should == 1
+		"z".as_integer.should == 26
+		"Z".as_integer.should == 26
+		"m".as_integer.should == 12
+	end
+
+	it "should return integers as letters" do
+		1.as_letter.should == "A"
+		10.as_letter.should == "J"
+		26.as_letter.should == "Z"
+	end
+
 end
