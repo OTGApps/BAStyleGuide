@@ -16,6 +16,13 @@ class String
   def image
     UIImage.imageNamed(self)
   end
+
+  def numeric?
+    return false if self == ""
+    return true if self =~ /^\d+$/
+    true if Float(self) rescue false
+  end
+
 end
 
 class Integer

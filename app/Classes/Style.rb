@@ -33,13 +33,23 @@ class Style
   end
 
   def specs_html
-    table_stats = "<h2>" + "Vital Statistics".__ + "</h2>"
-    table_stats << "<ul>"
-    %w(og fg ibu srm abv).each do |spec|
-      table_stats << "<li>" + spec.upcase + ": " + self.send(spec) + "</li>" unless self.send(spec).empty?
+    specs = ""
+    %w(og fg ibu srm ebc abv abw).each do |spec|
+      plato = ""
+      if PROPERTIES.member? "#{spec}_plato".to_sym
+        plato_score = self.send(spec + '_plato')
+        plato = " (#{plato_score} plato)" if plato_score.chomp != ""
+      end
+
+      specs << "<li>" + spec.upcase + ": " + self.send(spec) + "#{plato}</li>" unless self.send(spec).empty?
     end
-    table_stats << "</ul>"
-    table_stats || ""
+    return specs if specs == ""
+
+    table = "<h2>" + "Vital Statistics".__ + "</h2>"
+    table << "<ul>"
+    table << specs
+    table << "</ul>"
+    table
   end
 
   def property_title(property)
@@ -62,7 +72,8 @@ class Style
   end
 
   def srm_range
-    return nil if self.srm.nil? || self.srm.downcase == "n/a" || self.srm.downcase.include?("varies")
+    return nil if self.srm.nil? || self.srm.downcase == "n/a" || self.srm.downcase.include?("varies") || !self.srm[0,1].numeric?
+
     srm = self.srm
     if self.srm.include? "+"
       srm = "#{srm.chomp('+')}-#{srm.chomp('+')}"
