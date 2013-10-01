@@ -22,7 +22,7 @@ class DetailScreen < SizeableWebScreen
       set_attributes web, {background_color:UIColor.whiteColor}
     else
       self.setTitle "Welcome".__
-      set_attributes web, {background_color:"#CCCC99".to_color}
+      set_attributes web, {background_color:"#F3E3B0".to_color}
     end
   end
 
