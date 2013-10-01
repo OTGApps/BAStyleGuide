@@ -1,14 +1,14 @@
 class AboutScreen < PM::WebScreen
 
-  title "About BA Styles"
+  title "About BA Styles".__
 
   def content
-    "AboutScreen.html"
+    Internationalization.resources_path "AboutScreen.html"
   end
 
   def will_appear
     @view_loaded ||= begin
-      set_nav_bar_right_button "Done", action: :close, type: UIBarButtonItemStyleDone
+      set_nav_bar_right_button "Done".__, action: :close, type: UIBarButtonItemStyleDone
 
       self.navigationController.setToolbarHidden(false)
       self.toolbarItems = [flexible_space, made_in_label, made_in_image, flexible_space]
@@ -22,12 +22,20 @@ class AboutScreen < PM::WebScreen
       frame: CGRectMake(0.0 , 11.0, view.frame.size.width, 21.0),
       font: UIFont.fontWithName("Helvetica-Bold", size:16),
       background_color: UIColor.clearColor,
-      text: "Made in North Carolina",
+      text: "Made in North Carolina".__,
       text_alignment: UITextAlignmentCenter,
-      text_color: (Device.ipad? ? UIColor.darkTextColor : UIColor.whiteColor )
+      text_color: made_in_label_color
     }
     label.sizeToFit
     UIBarButtonItem.alloc.initWithCustomView(label)
+  end
+
+  def made_in_label_color
+    if Device.ios_version.to_f >= 7.0
+      UIColor.darkTextColor
+    else
+      Device.ipad? ? UIColor.darkTextColor : UIColor.whiteColor
+    end
   end
 
   def made_in_image
