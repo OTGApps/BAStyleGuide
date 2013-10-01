@@ -95,10 +95,18 @@ class SRM
   def self.css_gradient(from_to)
     return "display:none;" if from_to.count == 0
     stops = []
+
     count = from_to[1].to_i - from_to[0].to_i
-    (from_to[0].to_i..from_to[1].to_i).each do |srm|
-      stops << SRM.hex(srm)
+    if count == 0
+        stops << SRM.hex(from_to[1].to_i)
+        stops << SRM.hex(from_to[1].to_i)
+    else
+      (from_to[0].to_i..from_to[1].to_i).each do |srm|
+        stops << SRM.hex(srm)
+      end
     end
+    ap stops
+
     if stops.count > 0
       "background-image: -webkit-linear-gradient(left, #{stops.join(', ')});"
     else
