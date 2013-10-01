@@ -17,6 +17,10 @@ class Style
     self.name
   end
 
+  def subtitle
+    self.transname
+  end
+
   def html(property)
     return specs_html if property == :specs
     return "" unless respond_to? "#{property.to_s}="
@@ -45,11 +49,11 @@ class Style
   def property_title(property)
     case property
     when :appearance, :aroma, :comments, :ingredients, :mouthfeel, :flavor, :history
-      property.to_s.titlecase
+      property.to_s.titlecase.__
     when :impression
-      "Overall Impression"
+      "Overall Impression".__
     when :examples
-      "Commercial Examples"
+      "Commercial Examples".__
     end
   end
 
