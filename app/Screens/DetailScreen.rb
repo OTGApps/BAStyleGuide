@@ -2,6 +2,7 @@ class DetailScreen < SizeableWebScreen
   attr_accessor :style, :cell, :search_string
 
   def on_load
+
     if Device.ipad?
       set_nav_bar_right_button UIImage.imageNamed("info.png"), action: :open_about_screen
 
@@ -13,13 +14,15 @@ class DetailScreen < SizeableWebScreen
         App.delegate.main_screen.previous
       end.direction = UISwipeGestureRecognizerDirectionRight
     end
+  end
 
+  def will_appear
     if defined? style.id
-      self.setTitle the_title
-      set_attributes view, {background_color:UIColor.whiteColor}
+      self.setTitle the_title(false)
+      set_attributes web, {background_color:UIColor.whiteColor}
     else
-      self.setTitle "Welcome"
-      set_attributes view, {background_color:"#CCCC99".to_color}
+      self.setTitle "Welcome".__
+      set_attributes web, {background_color:"#CCCC99".to_color}
     end
   end
 
@@ -31,9 +34,13 @@ class DetailScreen < SizeableWebScreen
     Flurry.logEvent("StyleViewed", withParameters:flurry_params) unless Device.simulator?
   end
 
-  def the_title
+  def the_title(with_subtitle = true)
     return "" unless defined? style.id
-    style.name
+    t = style.name
+    if with_subtitle
+      t << "<br /><small>(#{style.transname})<small>" unless style.transname.nil? || style.transname.empty?
+    end
+    t
   end
 
   def load_finished
@@ -49,13 +56,14 @@ class DetailScreen < SizeableWebScreen
 #{css}
 #{js}
 
-<div class="srmrange top">&nbsp;</div>
+<div class="srmrange">&nbsp;</div>
 <h1>#{the_title}</h1>
-<div class="srmrange bottom">&nbsp;</div>
+<div class="srmrange">&nbsp;</div>
 
 #{style.html(:description)}
 #{style.html(:specs)}
 
+#{search_js}
     CONTENT
   end
 
