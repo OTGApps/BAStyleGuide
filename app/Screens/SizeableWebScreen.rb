@@ -7,13 +7,13 @@ class SizeableWebScreen < PM::WebScreen
   end
 
   def buttons_ios6
-    increase_size = UIBarButtonItem.alloc.initWithImage(
+    increase_size = UIBarButtonItem.alloc.initWithTitle(
       "A",
       style: UIBarButtonItemStyleBordered,
       target: self,
       action: :increase_size)
 
-    decrease_size = UIBarButtonItem.alloc.initWithImage(
+    decrease_size = UIBarButtonItem.alloc.initWithTitle(
       "a",
       style: UIBarButtonItemStyleBordered,
       target: self,
