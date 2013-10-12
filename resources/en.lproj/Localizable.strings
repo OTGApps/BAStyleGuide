@@ -1,6 +1,8 @@
 /* App Strings */
 "2013 BA Styles" = "2013 BA Styles";
+"2013 Brewers Association Styles" = "2013 Brewers Association Styles";
 "Search Styles" = "Search Styles";
+"Styles" = "Styles";
 "Loading" = "Loading";
 "Back" = "Back";
 "No" = "No";
@@ -14,7 +16,7 @@
 "Check Out the App!" = "Check Out the App!";
 
 /* About Screen */
-"About BJCP Styles" = "About BJCP Styles";
+"About BA Styles" = "About BA Styles";
 "Made in North Carolina" = "Made in North Carolina";
 "Done" = "Done";
 

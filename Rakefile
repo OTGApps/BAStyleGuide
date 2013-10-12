@@ -15,8 +15,8 @@ Motion::Project::App.setup do |app|
   app.device_family = [:iphone, :ipad]
   app.interface_orientations = [:portrait, :landscape_left, :landscape_right, :portrait_upside_down]
   app.identifier = 'com.mohawkapps.BAStyleGuide'
-  app.version = "1"
-  app.short_version = "1.0.0"
+  app.version = "2"
+  app.short_version = "1.0.1"
   app.frameworks += ["/usr/lib/libsqlite3.dylib", "QuartzCore"]
   app.prerendered_icon = true
   app.icons = Dir.glob("resources/Icon*.png").map{|icon| icon.split("/").last}

@@ -1,5 +1,12 @@
 class MainScreen < ProMotion::TableScreen
-  title "2013 BA Styles".__
+
+  if Device.ipad?
+    title "2013 BA Styles".__
+    title "2013 Brewers Association Styles".__
+  else
+    title "2013 BA Styles".__
+  end
+
   searchable :placeholder => "Search Styles".__
   attr_accessor :selected_cell
 
