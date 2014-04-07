@@ -2,14 +2,13 @@
 
 ### A [RubyMotion](http://www.rubymotion.com/) application brought to you by [Mohawk Apps](http://www.mohawkapps.com/).
 
-![App Icon](https://raw.github.com/MohawkApps/BAStyleGuide/master/resources/Icon@2x.png)
+![App Icon](resources/Icon@2x.png)
 
 A full copy of the 2013 Brewers Association Style Guidelines always at the ready on your iOS device. Whether you're a beer judge, a homebrewer, or an enthusiast, this free app will come in handy whenever you want a quick lookup of a style description.
 
 ## Download form the App Store
 
 [![image](http://ax.phobos.apple.com.edgesuite.net/images/web/linkmaker/badge_appstore-lrg.gif)](https://itunes.apple.com/us/app/ba-styles/id293788663?mt=8&at=10l4yY)
-
 
 ## How to run the app from source:
 
