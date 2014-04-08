@@ -8,7 +8,7 @@ A full copy of the 2013 Brewers Association Style Guidelines always at the ready
 
 ## Download form the App Store
 
-[![image](http://ax.phobos.apple.com.edgesuite.net/images/web/linkmaker/badge_appstore-lrg.gif)](https://itunes.apple.com/us/app/ba-styles/id293788663?mt=8&at=10l4yY)
+[![image](http://ax.phobos.apple.com.edgesuite.net/images/web/linkmaker/badge_appstore-lrg.gif)](https://itunes.apple.com/us/app/ba-styles/id293788663?mt=8&at=10l4yY&ct=github)
 
 ## How to run the app from source:
 
@@ -38,6 +38,3 @@ At a minimum, we need the following files translated:
 * `Localized.strings`
 
 Once you've created that folder in the `resources` directory, [send me a pull request](https://help.github.com/articles/using-pull-requests)!
-
----
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/MohawkApps/bastyleguide/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
