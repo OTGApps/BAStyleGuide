@@ -136,9 +136,7 @@ class MainScreen < ProMotion::TableScreen
   end
 
   def section_title(section)
-    s = "#{section[:id]}: #{section[:name]}"
-    s.insert(0, section[:type].as_type) if Version.version_2015? && section[:type] > 1
-    s
+    "#{section[:id]}: #{section[:name]}"
   end
 
   def next
@@ -315,26 +313,13 @@ class MainScreen < ProMotion::TableScreen
       styles = []
 
       db = SQLite3::Database.new Internationalization.full_path("styles.sqlite")
-
-      if Version.version_2015?
-        query = "SELECT * FROM category ORDER BY type, id"
-      else
-        query = "SELECT * FROM category ORDER BY id"
-      end
+      query = "SELECT * FROM category ORDER BY id"
 
       db.execute(query) do |row|
-        if Version.version_2015?
-          query = "SELECT * FROM subcategory WHERE category = #{row[:internal_id]} ORDER BY id"
-        else
-          query = "SELECT * FROM subcategory WHERE category = #{row[:id]} ORDER BY id"
-        end
+        query = "SELECT * FROM subcategory WHERE category = #{row[:id]} ORDER BY id"
 
         substyles = []
         db.execute(query) do |row2|
-          if Version.version_2015?
-            row2[:category] = row[:id]
-            row2[:type] = row[:type].as_type
-          end
           substyles << Style.new(row2)
         end
         row[:substyles] = substyles
