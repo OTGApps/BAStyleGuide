@@ -24,16 +24,17 @@ class Style
   def html(property)
     return specs_html if property == :specs
     return "" unless respond_to? "#{property.to_s}="
+    return "" if self.send(property).nil? || self.send(property) == ""
 
-    text = "<h2>#{property_title(property)}</h2>"
-    self.send(property).split("\r").compact.each do |p|
-      text << "<p>#{p}</p>"
-    end
-    text
+    title = "<h2>#{property_title(property)}</h2>"
+    title << "<p>#{self.send(property)}</p>"
+    title
   end
 
   def specs_html
-    specs = ""
+    table = "<h2>" + I18n.t(:statistics) + "</h2>"
+    li = ""
+    table << "<ul>"
     %w(og fg ibu srm ebc abv abw).each do |spec|
       plato = ""
       if PROPERTIES.member? "#{spec}_plato".to_sym
@@ -41,13 +42,13 @@ class Style
         plato = " (#{plato_score} plato)" if plato_score.chomp != ""
       end
 
-      specs << "<li>" + spec.upcase + ": " + self.send(spec) + "#{plato}</li>" unless self.send(spec).empty?
+      li << "<li>" + spec.upcase + ": " + self.send(spec) + "#{plato}</li>" unless self.send(spec).empty?
     end
-    return specs if specs == ""
+    return li if li == ""
 
-    table = "<h2>" + "Vital Statistics".__ + "</h2>"
+    table = "<h2>" + I18n.t(:statistics) + "</h2>"
     table << "<ul>"
-    table << specs
+    table << li
     table << "</ul>"
     table
   end
@@ -55,11 +56,11 @@ class Style
   def property_title(property)
     case property
     when :appearance, :aroma, :comments, :ingredients, :mouthfeel, :flavor, :history
-      property.to_s.titlecase.__
+      I18n.t(property)
     when :impression
-      "Overall Impression".__
+      I18n.t(:impression)
     when :examples
-      "Commercial Examples".__
+      I18n.t(:examples)
     end
   end
 
@@ -72,13 +73,8 @@ class Style
   end
 
   def srm_range
-    return nil if self.srm.nil? || self.srm.downcase == "n/a" || self.srm.downcase.include?("varies") || !self.srm[0,1].numeric?
-
-    srm = self.srm
-    if self.srm.include? "+"
-      srm = "#{srm.chomp('+')}-#{srm.chomp('+')}"
-    end
-    srm.split("-")
+    return nil if self.srm.nil? || self.srm.downcase == "n/a"
+    self.srm.split(/\ ?-\ ?/) # gets 2-4 or 2 - 4
   end
 
 end

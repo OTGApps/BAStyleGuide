@@ -1,20 +1,17 @@
 source 'https://rubygems.org'
+gem "rake"
 
-# Cocoapods
 gem "motion-cocoapods"
-gem "cocoapods"
 
-# RubyMotion
-gem 'bubble-wrap', :git => 'https://github.com/rubymotion/BubbleWrap', :require => ['bubble-wrap/core', 'bubble-wrap/reactor']
-# gem 'ProMotion', :git => 'git://github.com/clearsightstudio/ProMotion.git', :branch => 'master'
-gem 'ProMotion', :path => "../ProMotion/"
+gem 'redpotion', github: 'infinitered/redpotion'
+# gem 'RedAlert'
+# gem "ProMotion", path: "../ProMotion/"
+gem "ProMotion", github: 'clearsightstudio/ProMotion'
+# gem 'PackingPeanut'
+gem 'bubble-wrap', '~> 1.9.2', :require => ['bubble-wrap/core', 'bubble-wrap/reactor']
 gem 'motion-sqlite3', :path => "vendor/motion-sqlite3"
+gem 'sugarcube', :require => ['sugarcube-files']
 
-# Rubygems
-gem "rake", '>= 0.9.4'
-
-# Testflight
-gem 'motion-testflight'
-
-# Development
-gem 'awesome_print_motion'
+gem 'motion-blitz'
+gem 'motion-i18n'
+gem 'motion_print'

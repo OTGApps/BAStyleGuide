@@ -1,6 +1,6 @@
 # Brewers Association Style Guide App
 
-### A [RubyMotion](http://www.rubymotion.com/) application brought to you by [Mohawk Apps](http://www.mohawkapps.com/).
+### A [RubyMotion](http://www.rubymotion.com/) application brought to you by [Off The Grid Apps](http://www.otgapps.io/).
 
 ![App Icon](resources/Icon@2x.png)
 
@@ -14,7 +14,7 @@ A full copy of the 2013 Brewers Association Style Guidelines always at the ready
 
 1. You **must** have a valid license of [RubyMotion](http://www.rubymotion.com/).
 2. Download the source code.
-3. Open a terminal and `cd` into the directory. 
+3. Open a terminal and `cd` into the directory.
 4. Run `bundle` to install dependencies.
 5. Run `rake` to launch the app in the simulator.
 
@@ -38,6 +38,3 @@ At a minimum, we need the following files translated:
 * `Localized.strings`
 
 Once you've created that folder in the `resources` directory, [send me a pull request](https://help.github.com/articles/using-pull-requests)!
-
----
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/MohawkApps/bastyleguide/trend.png)](https://bitdeli.com/free "Bitdeli Badge")

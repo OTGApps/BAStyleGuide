@@ -1,11 +1,10 @@
 class DetailScreen < SizeableWebScreen
   attr_accessor :style, :cell, :search_string
+  nav_bar true
 
   def on_load
 
-    if Device.ipad?
-      set_nav_bar_right_button UIImage.imageNamed("info.png"), action: :open_about_screen
-
+    if device.ipad?
       view.when_swiped do |swipe|
         App.delegate.main_screen.next
       end.direction = UISwipeGestureRecognizerDirectionLeft
@@ -21,22 +20,19 @@ class DetailScreen < SizeableWebScreen
       self.setTitle the_title(false)
       set_attributes web, {background_color:UIColor.whiteColor}
     else
-      self.setTitle "Welcome".__
-      set_attributes web, {background_color:"#F3E3B0".to_color}
+      self.setTitle I18n.t(:welcome)
+      set_attributes web, {background_color:"#CCCC99".to_color}
     end
   end
 
   def on_appear
     return unless defined? style.id
     super
-
-    flurry_params = {style: the_title}
-    Flurry.logEvent("StyleViewed", withParameters:flurry_params) unless Device.simulator?
   end
 
   def the_title(with_subtitle = true)
     return "" unless defined? style.id
-    t = style.name
+    t = style.title
     if with_subtitle
       t << "<br /><small>(#{style.transname})<small>" unless style.transname.nil? || style.transname.empty?
     end
@@ -49,7 +45,7 @@ class DetailScreen < SizeableWebScreen
   end
 
   def content
-    return Internationalization.resources_path("DefaultScreen.html") if self.style.nil?
+    return Internationalization.file_url("DefaultScreen.html") if self.style.nil?
 
     <<-CONTENT
 
